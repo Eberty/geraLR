@@ -1,0 +1,4 @@
+stmt -> if_stmt
+     |  'other';
+if_stmt -> 'if' stmt
+        |  'if' stmt 'else' stmt;

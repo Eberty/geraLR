@@ -1,0 +1,509 @@
+/*
++----------------------------------------+
+|  File name : gram08.grm.out            |
+|  Created by: geraLR v.graphviz-Eberty  |
+|  Date/Time : Tue May 29 16:28:52 2018  |
++----------------------------------------+
+
+  COMMAND LINE
+  ------------
+  ./geraLR -w 0 -yndfoxlsLSNDA -C bege_marrom.cfg gram08.grm 
+
+*/
+
++------------+
+| RULES:   5 |
++------------+
+
+  1: stmt' -> stmt $
+  2: stmt -> if_stmt
+  3: stmt -> other
+  4: if_stmt -> if stmt
+  5: if_stmt -> if stmt else stmt
+
++--------------------+
+| NON-TERMINALS:   3 |
++--------------------+
+
+Symbol 1001: stmt'
+In lefthand  side of 1 rules: 1  
+In righthand side of 0 rules: 
+
+Symbol 1002: stmt
+In lefthand  side of 2 rules: 2  3  
+In righthand side of 3 rules: 1  4  5  
+
+Symbol 1003: if_stmt
+In lefthand  side of 2 rules: 4  5  
+In righthand side of 1 rules: 2  
+
++----------------+
+| TERMINALS:   4 |
++----------------+
+
+Symbol 0001: $ (END_OF_INPUT)
+In righthand side of 1 rules: 1  
+
+Symbol 0002: other
+In righthand side of 1 rules: 3  
+
+Symbol 0003: if
+In righthand side of 2 rules: 4  5  
+
+Symbol 0004: else
+In righthand side of 1 rules: 5  
+
++---------+
+| Epsilon |
++---------+
+
+Symbol 0000: _epsilon_
+In righthand side of 0 rules: 
+
++-------------------+
+| NFA STATES: 15    |
++-------------------+
+
+State 10001: 
+Single shift on non-terminal & epsilon transition(s)
+  stmt' -> • stmt $
+
+State 10002: 
+Single shift on non-terminal & epsilon transition(s)
+  stmt -> • if_stmt
+
+State 10003: 
+Single shift on terminal
+  stmt -> • other
+
+State 10004: 
+Single shift on terminal
+  if_stmt -> • if stmt
+
+State 10005: 
+Single shift on terminal
+  if_stmt -> • if stmt else stmt
+
+State 10006: 
+Single shift on terminal
+  stmt' -> stmt • $
+
+State 10007: 
+Single reduction
+  stmt -> if_stmt •
+
+State 10008: 
+Single reduction
+  stmt -> other •
+
+State 10009: 
+Single shift on non-terminal & epsilon transition(s)
+  if_stmt -> if • stmt
+
+State 10010: 
+Single shift on non-terminal & epsilon transition(s)
+  if_stmt -> if • stmt else stmt
+
+State 10011: 
+Single reduction
+  stmt' -> stmt $ •
+
+State 10012: 
+Single reduction
+  if_stmt -> if stmt •
+
+State 10013: 
+Single shift on terminal
+  if_stmt -> if stmt • else stmt
+
+State 10014: 
+Single shift on non-terminal & epsilon transition(s)
+  if_stmt -> if stmt else • stmt
+
+State 10015: 
+Single reduction
+  if_stmt -> if stmt else stmt •
+
++-------------------------+
+| REDUCTION STATES: 5     |
++------------+------------+
+|    State   |     Rule   |
++------------+------------+
+|    10007   |        2   |
+|    10008   |        3   |
+|    10011   |        1   |
+|    10012   |        4   |
+|    10015   |        5   |
++------------+------------+
+
++---------------------------+
+| STATE TRANSITIONS: 20     |
++-------+-------+-----------+
+| From  | To    | With      |
+| state | state | symbol    |
++-------+-------+-----------+
+| 10001 | 10006 | stmt      |
+| 10001 | 10002 | _epsilon_ |
+| 10001 | 10003 | _epsilon_ |
+| 10002 | 10007 | if_stmt   |
+| 10002 | 10004 | _epsilon_ |
+| 10002 | 10005 | _epsilon_ |
+| 10003 | 10008 | other     |
+| 10004 | 10009 | if        |
+| 10005 | 10010 | if        |
+| 10006 | 10011 | $         |
+| 10009 | 10012 | stmt      |
+| 10009 | 10002 | _epsilon_ |
+| 10009 | 10003 | _epsilon_ |
+| 10010 | 10013 | stmt      |
+| 10010 | 10002 | _epsilon_ |
+| 10010 | 10003 | _epsilon_ |
+| 10013 | 10014 | else      |
+| 10014 | 10015 | stmt      |
+| 10014 | 10002 | _epsilon_ |
+| 10014 | 10003 | _epsilon_ |
++-------+-------+-----------+
+
++---------------------------------------------------------------------+
+|                    NFA STATE TRANSITIONS SUMMARY                    |
++---------------------------------------------------------------------+
+
++-------+---------------+          +--------------------+-------------+
+|       |  TRANSITIONS  |          | GRAMMAR SYMBOL     | Number of   |
+| STATE +-------+-------+          +--------+-----------+ transitions |
+|       | From  |    To |          |   Code | String    | with symbol |
++-------+-------+-------+          +--------+-----------+-------------+
+| 10001 |     3 |     0 |          |   1001 | stmt'     |        0    |
+| 10002 |     3 |     4 |          |   1002 | stmt      |        4    |
+| 10003 |     1 |     4 |          |   1003 | if_stmt   |        1    |
+| 10004 |     1 |     1 |          |      1 | $         |        1    |
+| 10005 |     1 |     1 |          |      2 | other     |        1    |
+| 10006 |     1 |     1 |          |      3 | if        |        2    |
+| 10007 |     0 |     1 |          |      4 | else      |        1    |
+| 10008 |     0 |     1 |          |        | _epsilon_ |       10    |
+| 10009 |     3 |     1 |          +--------+-----------+-------------+
+| 10010 |     3 |     1 |
+| 10011 |     0 |     1 |
+| 10012 |     0 |     1 |
+| 10013 |     1 |     1 |
+| 10014 |     3 |     1 |
+| 10015 |     0 |     1 |
++-------+-------+-------+
+
++--------------------------+
+|    NFA STATES SUMMARY    |
++--------------------------+
+|      Shift states:     5 |
+|     Reduce states:     5 |
+| Non-deterministic:     5 |
+|      TOTAL STATES:    15 |
++--------------------------+
+
++--------------------+
+|    NFA SUMMARY     |
++--------------------+
+|      States:    15 |
+|       Items:    15 |
+| Transitions:    20 |
++--------------------+
+
++-------------------+
+| DFA STATES: 9     |
++-------------------+
+
+State 1: 
+Shift(s) only
+  stmt' -> • stmt $
+  stmt -> • if_stmt
+  stmt -> • other
+  if_stmt -> • if stmt
+  if_stmt -> • if stmt else stmt
+
+State 2: 
+Shift(s) only
+  stmt' -> stmt • $
+
+State 3: 
+Single reduction only
+  stmt -> if_stmt •
+
+State 4: 
+Single reduction only
+  stmt -> other •
+
+State 5: 
+Shift(s) only
+  if_stmt -> if • stmt
+  if_stmt -> if • stmt else stmt
+  stmt -> • if_stmt
+  stmt -> • other
+  if_stmt -> • if stmt
+  if_stmt -> • if stmt else stmt
+
+State 6: 
+Single reduction only
+  stmt' -> stmt $ •
+
+State 7: 
+Shift(s) & single reduction
+  if_stmt -> if stmt •
+  if_stmt -> if stmt • else stmt
+
+State 8: 
+Shift(s) only
+  if_stmt -> if stmt else • stmt
+  stmt -> • if_stmt
+  stmt -> • other
+  if_stmt -> • if stmt
+  if_stmt -> • if stmt else stmt
+
+State 9: 
+Single reduction only
+  if_stmt -> if stmt else stmt •
+
++---------------------------+
+| SHIFT STATES: 4           |
++-------+-------------------+
+| State | Transition symbol |
++-------+-------------------+
+|     1 | stmt              |
+|       | if_stmt           |
+|       | other             |
+|       | if                |
+|       | if                |
++-------+-------------------+
+|     2 | $                 |
++-------+-------------------+
+|     5 | stmt              |
+|       | stmt              |
+|       | if_stmt           |
+|       | other             |
+|       | if                |
+|       | if                |
++-------+-------------------+
+|     8 | stmt              |
+|       | if_stmt           |
+|       | other             |
+|       | if                |
+|       | if                |
++-------+-------------------+
+
++-------------------------+
+| REDUCTION STATES: 4     |
++------------+------------+
+|    State   |     Rule   |
++------------+------------+
+|        3   |        2   |
+|        4   |        3   |
+|        6   |        1   |
+|        9   |        5   |
++------------+------------+
+
++-------------------------------+
+| SHIFT-REDUCE CONFLICTS: 1     |
++-------+-----------------------+
+| State | Actions               |
++-------+-----------------------+
+|     7 | reduce by rule 4      |
+|       | shift else            |
++-------+-----------------------+
+
++--------------------------------+
+| REDUCE-REDUCE CONFLICTS: 0     |
++--------------------------------+
+
++--------------------------------------+
+| SHIFT-REDUCE-REDUCE CONFLICTS: 0     |
++--------------------------------------+
+
+
++---------------------------+
+| STATE TRANSITIONS: 14     |
++-------+-------+-----------+
+|  From |    To | With      |
+| state | state | symbol    |
++-------+-------+-----------+
+|     1 |     2 | stmt      |
+|     1 |     3 | if_stmt   |
+|     1 |     4 | other     |
+|     1 |     5 | if        |
+|     2 |     6 | $         |
+|     5 |     7 | stmt      |
+|     5 |     3 | if_stmt   |
+|     5 |     4 | other     |
+|     5 |     5 | if        |
+|     7 |     8 | else      |
+|     8 |     9 | stmt      |
+|     8 |     3 | if_stmt   |
+|     8 |     4 | other     |
+|     8 |     5 | if        |
++-------+-------+-----------+
+
++---------------------------------------------------------------------+
+|                    DFA STATE TRANSITIONS SUMMARY                    |
++---------------------------------------------------------------------+
+
++-------+---------------+          +--------------------+-------------+
+|       |  TRANSITIONS  |          | GRAMMAR SYMBOL     | Number of   |
+| STATE +-------+-------+          +--------+-----------+ transitions |
+|       | From  |    To |          |   Code | String    | with symbol |
++-------+-------+-------+          +--------+-----------+-------------+
+|     1 |     4 |     0 |          |   1001 | stmt'     |        0    |
+|     2 |     1 |     1 |          |   1002 | stmt      |        3    |
+|     3 |     0 |     3 |          |   1003 | if_stmt   |        3    |
+|     4 |     0 |     3 |          |      1 | $         |        1    |
+|     5 |     4 |     3 |          |      2 | other     |        3    |
+|     6 |     0 |     1 |          |      3 | if        |        3    |
+|     7 |     1 |     1 |          |      4 | else      |        1    |
+|     8 |     4 |     1 |          |        | _epsilon_ |        0    |
+|     9 |     0 |     1 |          +--------+-----------+-------------+
++-------+-------+-------+
+
++----------------------------+
+|     DFA STATES SUMMARY     |
++----------------------------+
+|  UNAMBIGUOUS STATES:     8 |
+|        Shift states:     4 |
+|       Reduce states:     4 |
+|     CONFLICT STATES:     1 |
+|        Shift-reduce:     1 |
+|       Reduce-reduce:     0 |
+| Shift-reduce-reduce:     0 |
+|        TOTAL STATES:     9 |
++----------------------------+
+
++--------------------+
+|    DFA SUMMARY     |
++--------------------+
+|      States:     9 |
+|       Items:    23 |
+| Transitions:    14 |
++--------------------+
+
++------------+
+| FIRST sets |
++------------+
+
+Symbol 1001: stmt'
+  0002: other
+  0003: if
+
+Symbol 1002: stmt
+  0002: other
+  0003: if
+
+Symbol 1003: if_stmt
+  0003: if
+
+Symbol 0001: $
+  0001: $
+
+Symbol 0002: other
+  0002: other
+
+Symbol 0003: if
+  0003: if
+
+Symbol 0004: else
+  0004: else
+
++-------------+
+| FOLLOW sets |
++-------------+
+
+Symbol 1001: stmt'
+  0001: $
+
+Symbol 1002: stmt
+  0001: $
+  0004: else
+
+Symbol 1003: if_stmt
+  0001: $
+  0004: else
+
++-------------------------------------------------------+
+| LR(0) Parse Table                                     |
++-------+-------------------------------+---------------+    +-----------------+
+|       |             ACTION            |      GOTO     |    |  TOTAL ACTIONS  |
+| STATE +-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|       |   $   | other |   if  |  else |  stmt |if_stmt|    |shift| red | goto|
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|    1  |       |   s4  |   s5  |       |   2   |   3   |    |   2 |   0 |   2 |
+|    2  |   s6  |       |       |       |       |       |    |   1 |   0 |   0 |
+|    3  |   r2  |   r2  |   r2  |   r2  |       |       |    |   0 |   4 |   0 |
+|    4  |   r3  |   r3  |   r3  |   r3  |       |       |    |   0 |   4 |   0 |
+|    5  |       |   s4  |   s5  |       |   7   |   3   |    |   2 |   0 |   2 |
+|    6  |  ACC  |  ACC  |  ACC  |  ACC  |       |       |    |   0 |   4 |   0 |
+|>   7 <|   r4  |   r4  |   r4  |   s8  |       |       |    |   1 |   4 |   0 |
+|       |       |       |       |   r4  |       |       |    |     |     |     |
+|    8  |       |   s4  |   s5  |       |   9   |   3   |    |   2 |   0 |   2 |
+|    9  |   r5  |   r5  |   r5  |   r5  |       |       |    |   0 |   4 |   0 |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+
++-------------------------------------------------------+
+| TOTAL ACTIONS                                         |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|shift  |    1  |    3  |    3  |    1  |    0  |    0  |    |   8 |     |     |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|reduce |    5  |    5  |    5  |    5  |    0  |    0  |    |     |  20 |     |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|goto   |    0  |    0  |    0  |    0  |    3  |    3  |    |     |     |   6 |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+
+
++-------------------------------------------------------+
+| sLR(1) Parse Table                                    |
++-------+-------------------------------+---------------+    +-----------------+
+|       |             ACTION            |      GOTO     |    |  TOTAL ACTIONS  |
+| STATE +-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|       |   $   | other |   if  |  else |  stmt |if_stmt|    |shift| red | goto|
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|    1  |       |   s4  |   s5  |       |   2   |   3   |    |   2 |   0 |   2 |
+|    2  |   s6  |       |       |       |       |       |    |   1 |   0 |   0 |
+|    3  |   r2  |       |       |   r2  |       |       |    |   0 |   2 |   0 |
+|    4  |   r3  |       |       |   r3  |       |       |    |   0 |   2 |   0 |
+|    5  |       |   s4  |   s5  |       |   7   |   3   |    |   2 |   0 |   2 |
+|    6  |  ACC  |       |       |       |       |       |    |   0 |   1 |   0 |
+|>   7 <|   r4  |       |       |   s8  |       |       |    |   1 |   2 |   0 |
+|       |       |       |       |   r4  |       |       |    |     |     |     |
+|    8  |       |   s4  |   s5  |       |   9   |   3   |    |   2 |   0 |   2 |
+|    9  |   r5  |       |       |   r5  |       |       |    |   0 |   2 |   0 |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+
++-------------------------------------------------------+
+| TOTAL ACTIONS                                         |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|shift  |    1  |    3  |    3  |    1  |    0  |    0  |    |   8 |     |     |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|reduce |    5  |    0  |    0  |    4  |    0  |    0  |    |     |   9 |     |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|goto   |    0  |    0  |    0  |    0  |    3  |    3  |    |     |     |   6 |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+
+
++-------------------------------------------------------+
+| LR(0) and sLR(1) table differences                    |
++-------+-------------------------------+---------------+    +-----------------+
+|       |             ACTION            |      GOTO     |    |  TOTAL ACTIONS  |
+| STATE +-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|       |   $   | other |   if  |  else |  stmt |if_stmt|    |shift| red | goto|
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|    3  |       |   r2  |   r2  |       |       |       |    |   0 |   2 |   0 |
+|    4  |       |   r3  |   r3  |       |       |       |    |   0 |   2 |   0 |
+|    6  |       |  ACC  |  ACC  |  ACC  |       |       |    |   0 |   3 |   0 |
+|    7  |       |   r4  |   r4  |       |       |       |    |   0 |   2 |   0 |
+|    9  |       |   r5  |   r5  |       |       |       |    |   0 |   2 |   0 |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+
++-------------------------------------------------------+
+| TOTAL ACTIONS                                         |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|shift  |    0  |    0  |    0  |    0  |    0  |    0  |    |   0 |     |     |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|reduce |    0  |    5  |    5  |    1  |    0  |    0  |    |     |  11 |     |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+|goto   |    0  |    0  |    0  |    0  |    0  |    0  |    |     |     |   0 |
++-------+-------+-------+-------+-------+-------+-------+    +-----+-----+-----+
+
+

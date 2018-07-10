@@ -1,0 +1,6 @@
+List -> 'id'
+     | List OptComma 'id'
+     | List ',' ;
+
+OptComma -> ','
+         | ;

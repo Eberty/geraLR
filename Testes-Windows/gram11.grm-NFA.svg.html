@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="snap.svg-min.js"></script>
+        <script>
+        window.onload = function () {
+            var s = Snap("#SvgAnimado");
+            var funcIdex=0;
+            var timeoutAnim = function(time, nextElem){
+				s.animate({},time, nextElem);
+			}
+			var nextFrame = function(){
+			if(funcIdex <= ultimaAnim){
+					funcs[funcIdex]();
+					funcIdex++;
+				}
+			}
+			var previousFrame = function(){
+				while(funcIdex>0 && names[funcIdex-1] == null){
+					funcIdex--;
+				}
+				if(funcIdex > 0 && names[funcIdex-1] != null){
+					if(s.select("#"+names[funcIdex-1]).attr("opacity")==0)
+						s.select("#"+names[funcIdex-1]).animate({opacity:1}, 200);
+					else
+						s.select("#"+names[funcIdex-1]).animate({opacity: 0}, 200);
+					funcIdex--;
+				}
+			}
+			var showElem = function(elem, time, next){
+				if(next == null)
+					s.select("#"+elem).animate({opacity: 1}, time);
+				else{
+					s.select("#"+elem).animate({opacity: 1}, time, timeoutAnim(time, next));
+					funcIdex++;
+				}
+			}
+			var hideElem = function(elem, time, next){
+				if(next == null)
+					s.select("#"+elem).animate({opacity: 0}, time);
+				else{
+					s.select("#"+elem).animate({opacity: 0}, time, timeoutAnim(time, next));
+					funcIdex++;
+				}
+			}
+
+			s.select("#"+"state_10001").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10001_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10001_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_2").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10007").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10007_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10007_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_3").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10002").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10002_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10002_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10003").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10003_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10003_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_14").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10013").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10013_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10013_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_4").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10008").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10008_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10008_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_5").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10004").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10004_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10004_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_6").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10005").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10005_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10005_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_7").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10010").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10010_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10010_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_8").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10006").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10006_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10006_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_15").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10014").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10014_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10014_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_9").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10011").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10011_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10011_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_10").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10012").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10012_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10012_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_11").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10009").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10009_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10009_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_12").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_13").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_18").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10016").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10016_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10016_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_19").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_16").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_10015").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10015_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_10015_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_17").animate({opacity: 0}, 100);
+
+			var anim0 = function(){
+				timeoutAnim(500, anim1);
+				funcIdex++;
+			}
+			var anim1 = function(){
+				var name = "state_10001";
+				var next = anim2;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim2 = function(){
+				timeoutAnim(500, anim3);
+				funcIdex++;
+			}
+			var anim3 = function(){
+				var name = "a_state_10001_title";
+				var next = anim4;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim4 = function(){
+				timeoutAnim(500, anim5);
+				funcIdex++;
+			}
+			var anim5 = function(){
+				var name = "a_state_10001_item_1";
+				var next = anim6;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim6 = function(){
+				timeoutAnim(500, anim7);
+				funcIdex++;
+			}
+			var anim7 = function(){
+				var name = "a_state_10001_item_1";
+				var next = anim8;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim8 = function(){
+				timeoutAnim(500, anim9);
+				funcIdex++;
+			}
+			var anim9 = function(){
+				var name = "a_state_10001_item_1";
+				var next = anim10;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim10 = function(){
+				timeoutAnim(500, anim11);
+				funcIdex++;
+			}
+			var anim11 = function(){
+				var name = "a_state_10001_item_1";
+				var next = anim12;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim12 = function(){
+				timeoutAnim(500, anim13);
+				funcIdex++;
+			}
+			var anim13 = function(){
+				var name = "a_state_10001_item_1";
+				var next = anim14;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim14 = function(){
+				timeoutAnim(500, anim15);
+				funcIdex++;
+			}
+			var anim15 = function(){
+				var name = "trans_2";
+				var next = anim16;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim16 = function(){
+				timeoutAnim(500, anim17);
+				funcIdex++;
+			}
+			var anim17 = function(){
+				var name = "state_10007";
+				var next = anim18;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim18 = function(){
+				timeoutAnim(500, anim19);
+				funcIdex++;
+			}
+			var anim19 = function(){
+				var name = "a_state_10007_title";
+				var next = anim20;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim20 = function(){
+				timeoutAnim(500, anim21);
+				funcIdex++;
+			}
+			var anim21 = function(){
+				var name = "a_state_10007_item_1";
+				var next = anim22;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim22 = function(){
+				timeoutAnim(500, anim23);
+				funcIdex++;
+			}
+			var anim23 = function(){
+				var name = "trans_3";
+				var next = anim24;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim24 = function(){
+				timeoutAnim(500, anim25);
+				funcIdex++;
+			}
+			var anim25 = function(){
+				var name = "state_10002";
+				var next = anim26;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim26 = function(){
+				timeoutAnim(500, anim27);
+				funcIdex++;
+			}
+			var anim27 = function(){
+				var name = "a_state_10002_title";
+				var next = anim28;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim28 = function(){
+				timeoutAnim(500, anim29);
+				funcIdex++;
+			}
+			var anim29 = function(){
+				var name = "a_state_10002_item_1";
+				var next = anim30;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim30 = function(){
+				timeoutAnim(500, anim31);
+				funcIdex++;
+			}
+			var anim31 = function(){
+				var name = "trans_1";
+				var next = anim32;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim32 = function(){
+				timeoutAnim(500, anim33);
+				funcIdex++;
+			}
+			var anim33 = function(){
+				var name = "state_10003";
+				var next = anim34;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim34 = function(){
+				timeoutAnim(500, anim35);
+				funcIdex++;
+			}
+			var anim35 = function(){
+				var name = "a_state_10003_title";
+				var next = anim36;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim36 = function(){
+				timeoutAnim(500, anim37);
+				funcIdex++;
+			}
+			var anim37 = function(){
+				var name = "a_state_10003_item_1";
+				var next = anim38;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim38 = function(){
+				timeoutAnim(500, anim39);
+				funcIdex++;
+			}
+			var anim39 = function(){
+				var name = "a_state_10007_item_1";
+				var next = anim40;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim40 = function(){
+				timeoutAnim(500, anim41);
+				funcIdex++;
+			}
+			var anim41 = function(){
+				var name = "a_state_10007_item_1";
+				var next = anim42;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim42 = function(){
+				timeoutAnim(500, anim43);
+				funcIdex++;
+			}
+			var anim43 = function(){
+				var name = "a_state_10007_item_1";
+				var next = anim44;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim44 = function(){
+				timeoutAnim(500, anim45);
+				funcIdex++;
+			}
+			var anim45 = function(){
+				var name = "a_state_10007_item_1";
+				var next = anim46;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim46 = function(){
+				timeoutAnim(500, anim47);
+				funcIdex++;
+			}
+			var anim47 = function(){
+				var name = "trans_14";
+				var next = anim48;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim48 = function(){
+				timeoutAnim(500, anim49);
+				funcIdex++;
+			}
+			var anim49 = function(){
+				var name = "state_10013";
+				var next = anim50;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim50 = function(){
+				timeoutAnim(500, anim51);
+				funcIdex++;
+			}
+			var anim51 = function(){
+				var name = "a_state_10013_title";
+				var next = anim52;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim52 = function(){
+				timeoutAnim(500, anim53);
+				funcIdex++;
+			}
+			var anim53 = function(){
+				var name = "a_state_10013_item_1";
+				var next = anim54;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim54 = function(){
+				timeoutAnim(500, anim55);
+				funcIdex++;
+			}
+			var anim55 = function(){
+				var name = "a_state_10002_item_1";
+				var next = anim56;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim56 = function(){
+				timeoutAnim(500, anim57);
+				funcIdex++;
+			}
+			var anim57 = function(){
+				var name = "a_state_10002_item_1";
+				var next = anim58;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim58 = function(){
+				timeoutAnim(500, anim59);
+				funcIdex++;
+			}
+			var anim59 = function(){
+				var name = "a_state_10002_item_1";
+				var next = anim60;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim60 = function(){
+				timeoutAnim(500, anim61);
+				funcIdex++;
+			}
+			var anim61 = function(){
+				var name = "a_state_10002_item_1";
+				var next = anim62;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim62 = function(){
+				timeoutAnim(500, anim63);
+				funcIdex++;
+			}
+			var anim63 = function(){
+				var name = "trans_4";
+				var next = anim64;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim64 = function(){
+				timeoutAnim(500, anim65);
+				funcIdex++;
+			}
+			var anim65 = function(){
+				var name = "state_10008";
+				var next = anim66;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim66 = function(){
+				timeoutAnim(500, anim67);
+				funcIdex++;
+			}
+			var anim67 = function(){
+				var name = "a_state_10008_title";
+				var next = anim68;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim68 = function(){
+				timeoutAnim(500, anim69);
+				funcIdex++;
+			}
+			var anim69 = function(){
+				var name = "a_state_10008_item_1";
+				var next = anim70;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim70 = function(){
+				timeoutAnim(500, anim71);
+				funcIdex++;
+			}
+			var anim71 = function(){
+				var name = "trans_5";
+				var next = anim72;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim72 = function(){
+				timeoutAnim(500, anim73);
+				funcIdex++;
+			}
+			var anim73 = function(){
+				var name = "state_10004";
+				var next = anim74;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim74 = function(){
+				timeoutAnim(500, anim75);
+				funcIdex++;
+			}
+			var anim75 = function(){
+				var name = "a_state_10004_title";
+				var next = anim76;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim76 = function(){
+				timeoutAnim(500, anim77);
+				funcIdex++;
+			}
+			var anim77 = function(){
+				var name = "a_state_10004_item_1";
+				var next = anim78;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim78 = function(){
+				timeoutAnim(500, anim79);
+				funcIdex++;
+			}
+			var anim79 = function(){
+				var name = "trans_6";
+				var next = anim80;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim80 = function(){
+				timeoutAnim(500, anim81);
+				funcIdex++;
+			}
+			var anim81 = function(){
+				var name = "state_10005";
+				var next = anim82;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim82 = function(){
+				timeoutAnim(500, anim83);
+				funcIdex++;
+			}
+			var anim83 = function(){
+				var name = "a_state_10005_title";
+				var next = anim84;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim84 = function(){
+				timeoutAnim(500, anim85);
+				funcIdex++;
+			}
+			var anim85 = function(){
+				var name = "a_state_10005_item_1";
+				var next = anim86;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim86 = function(){
+				timeoutAnim(500, anim87);
+				funcIdex++;
+			}
+			var anim87 = function(){
+				var name = "a_state_10003_item_1";
+				var next = anim88;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim88 = function(){
+				timeoutAnim(500, anim89);
+				funcIdex++;
+			}
+			var anim89 = function(){
+				var name = "a_state_10003_item_1";
+				var next = anim90;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim90 = function(){
+				timeoutAnim(500, anim91);
+				funcIdex++;
+			}
+			var anim91 = function(){
+				var name = "a_state_10003_item_1";
+				var next = anim92;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim92 = function(){
+				timeoutAnim(500, anim93);
+				funcIdex++;
+			}
+			var anim93 = function(){
+				var name = "a_state_10003_item_1";
+				var next = anim94;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim94 = function(){
+				timeoutAnim(500, anim95);
+				funcIdex++;
+			}
+			var anim95 = function(){
+				var name = "trans_7";
+				var next = anim96;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim96 = function(){
+				timeoutAnim(500, anim97);
+				funcIdex++;
+			}
+			var anim97 = function(){
+				var name = "state_10010";
+				var next = anim98;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim98 = function(){
+				timeoutAnim(500, anim99);
+				funcIdex++;
+			}
+			var anim99 = function(){
+				var name = "a_state_10010_title";
+				var next = anim100;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim100 = function(){
+				timeoutAnim(500, anim101);
+				funcIdex++;
+			}
+			var anim101 = function(){
+				var name = "a_state_10010_item_1";
+				var next = anim102;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim102 = function(){
+				timeoutAnim(500, anim103);
+				funcIdex++;
+			}
+			var anim103 = function(){
+				var name = "trans_8";
+				var next = anim104;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim104 = function(){
+				timeoutAnim(500, anim105);
+				funcIdex++;
+			}
+			var anim105 = function(){
+				var name = "state_10006";
+				var next = anim106;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim106 = function(){
+				timeoutAnim(500, anim107);
+				funcIdex++;
+			}
+			var anim107 = function(){
+				var name = "a_state_10006_title";
+				var next = anim108;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim108 = function(){
+				timeoutAnim(500, anim109);
+				funcIdex++;
+			}
+			var anim109 = function(){
+				var name = "a_state_10006_item_1";
+				var next = anim110;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim110 = function(){
+				timeoutAnim(500, anim111);
+				funcIdex++;
+			}
+			var anim111 = function(){
+				var name = "a_state_10008_item_1";
+				var next = anim112;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim112 = function(){
+				timeoutAnim(500, anim113);
+				funcIdex++;
+			}
+			var anim113 = function(){
+				var name = "a_state_10008_item_1";
+				var next = anim114;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim114 = function(){
+				timeoutAnim(500, anim115);
+				funcIdex++;
+			}
+			var anim115 = function(){
+				var name = "a_state_10008_item_1";
+				var next = anim116;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim116 = function(){
+				timeoutAnim(500, anim117);
+				funcIdex++;
+			}
+			var anim117 = function(){
+				var name = "a_state_10008_item_1";
+				var next = anim118;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim118 = function(){
+				timeoutAnim(500, anim119);
+				funcIdex++;
+			}
+			var anim119 = function(){
+				var name = "trans_15";
+				var next = anim120;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim120 = function(){
+				timeoutAnim(500, anim121);
+				funcIdex++;
+			}
+			var anim121 = function(){
+				var name = "state_10014";
+				var next = anim122;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim122 = function(){
+				timeoutAnim(500, anim123);
+				funcIdex++;
+			}
+			var anim123 = function(){
+				var name = "a_state_10014_title";
+				var next = anim124;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim124 = function(){
+				timeoutAnim(500, anim125);
+				funcIdex++;
+			}
+			var anim125 = function(){
+				var name = "a_state_10014_item_1";
+				var next = anim126;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim126 = function(){
+				timeoutAnim(500, anim127);
+				funcIdex++;
+			}
+			var anim127 = function(){
+				var name = "a_state_10004_item_1";
+				var next = anim128;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim128 = function(){
+				timeoutAnim(500, anim129);
+				funcIdex++;
+			}
+			var anim129 = function(){
+				var name = "a_state_10004_item_1";
+				var next = anim130;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim130 = function(){
+				timeoutAnim(500, anim131);
+				funcIdex++;
+			}
+			var anim131 = function(){
+				var name = "a_state_10004_item_1";
+				var next = anim132;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim132 = function(){
+				timeoutAnim(500, anim133);
+				funcIdex++;
+			}
+			var anim133 = function(){
+				var name = "a_state_10004_item_1";
+				var next = anim134;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim134 = function(){
+				timeoutAnim(500, anim135);
+				funcIdex++;
+			}
+			var anim135 = function(){
+				var name = "trans_9";
+				var next = anim136;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim136 = function(){
+				timeoutAnim(500, anim137);
+				funcIdex++;
+			}
+			var anim137 = function(){
+				var name = "state_10011";
+				var next = anim138;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim138 = function(){
+				timeoutAnim(500, anim139);
+				funcIdex++;
+			}
+			var anim139 = function(){
+				var name = "a_state_10011_title";
+				var next = anim140;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim140 = function(){
+				timeoutAnim(500, anim141);
+				funcIdex++;
+			}
+			var anim141 = function(){
+				var name = "a_state_10011_item_1";
+				var next = anim142;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim142 = function(){
+				timeoutAnim(500, anim143);
+				funcIdex++;
+			}
+			var anim143 = function(){
+				var name = "a_state_10005_item_1";
+				var next = anim144;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim144 = function(){
+				timeoutAnim(500, anim145);
+				funcIdex++;
+			}
+			var anim145 = function(){
+				var name = "a_state_10005_item_1";
+				var next = anim146;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim146 = function(){
+				timeoutAnim(500, anim147);
+				funcIdex++;
+			}
+			var anim147 = function(){
+				var name = "a_state_10005_item_1";
+				var next = anim148;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim148 = function(){
+				timeoutAnim(500, anim149);
+				funcIdex++;
+			}
+			var anim149 = function(){
+				var name = "a_state_10005_item_1";
+				var next = anim150;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim150 = function(){
+				timeoutAnim(500, anim151);
+				funcIdex++;
+			}
+			var anim151 = function(){
+				var name = "trans_10";
+				var next = anim152;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim152 = function(){
+				timeoutAnim(500, anim153);
+				funcIdex++;
+			}
+			var anim153 = function(){
+				var name = "state_10012";
+				var next = anim154;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim154 = function(){
+				timeoutAnim(500, anim155);
+				funcIdex++;
+			}
+			var anim155 = function(){
+				var name = "a_state_10012_title";
+				var next = anim156;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim156 = function(){
+				timeoutAnim(500, anim157);
+				funcIdex++;
+			}
+			var anim157 = function(){
+				var name = "a_state_10012_item_1";
+				var next = anim158;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim158 = function(){
+				timeoutAnim(500, anim159);
+				funcIdex++;
+			}
+			var anim159 = function(){
+				var name = "a_state_10006_item_1";
+				var next = anim160;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim160 = function(){
+				timeoutAnim(500, anim161);
+				funcIdex++;
+			}
+			var anim161 = function(){
+				var name = "a_state_10006_item_1";
+				var next = anim162;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim162 = function(){
+				timeoutAnim(500, anim163);
+				funcIdex++;
+			}
+			var anim163 = function(){
+				var name = "a_state_10006_item_1";
+				var next = anim164;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim164 = function(){
+				timeoutAnim(500, anim165);
+				funcIdex++;
+			}
+			var anim165 = function(){
+				var name = "a_state_10006_item_1";
+				var next = anim166;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim166 = function(){
+				timeoutAnim(500, anim167);
+				funcIdex++;
+			}
+			var anim167 = function(){
+				var name = "trans_11";
+				var next = anim168;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim168 = function(){
+				timeoutAnim(500, anim169);
+				funcIdex++;
+			}
+			var anim169 = function(){
+				var name = "state_10009";
+				var next = anim170;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim170 = function(){
+				timeoutAnim(500, anim171);
+				funcIdex++;
+			}
+			var anim171 = function(){
+				var name = "a_state_10009_title";
+				var next = anim172;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim172 = function(){
+				timeoutAnim(500, anim173);
+				funcIdex++;
+			}
+			var anim173 = function(){
+				var name = "a_state_10009_item_1";
+				var next = anim174;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim174 = function(){
+				timeoutAnim(500, anim175);
+				funcIdex++;
+			}
+			var anim175 = function(){
+				var name = "trans_12";
+				var next = anim176;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim176 = function(){
+				timeoutAnim(500, anim177);
+				funcIdex++;
+			}
+			var anim177 = function(){
+				var name = "trans_13";
+				var next = anim178;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim178 = function(){
+				timeoutAnim(500, anim179);
+				funcIdex++;
+			}
+			var anim179 = function(){
+				var name = "a_state_10014_item_1";
+				var next = anim180;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim180 = function(){
+				timeoutAnim(500, anim181);
+				funcIdex++;
+			}
+			var anim181 = function(){
+				var name = "a_state_10014_item_1";
+				var next = anim182;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim182 = function(){
+				timeoutAnim(500, anim183);
+				funcIdex++;
+			}
+			var anim183 = function(){
+				var name = "a_state_10014_item_1";
+				var next = anim184;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim184 = function(){
+				timeoutAnim(500, anim185);
+				funcIdex++;
+			}
+			var anim185 = function(){
+				var name = "a_state_10014_item_1";
+				var next = anim186;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim186 = function(){
+				timeoutAnim(500, anim187);
+				funcIdex++;
+			}
+			var anim187 = function(){
+				var name = "trans_18";
+				var next = anim188;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim188 = function(){
+				timeoutAnim(500, anim189);
+				funcIdex++;
+			}
+			var anim189 = function(){
+				var name = "state_10016";
+				var next = anim190;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim190 = function(){
+				timeoutAnim(500, anim191);
+				funcIdex++;
+			}
+			var anim191 = function(){
+				var name = "a_state_10016_title";
+				var next = anim192;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim192 = function(){
+				timeoutAnim(500, anim193);
+				funcIdex++;
+			}
+			var anim193 = function(){
+				var name = "a_state_10016_item_1";
+				var next = anim194;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim194 = function(){
+				timeoutAnim(500, anim195);
+				funcIdex++;
+			}
+			var anim195 = function(){
+				var name = "trans_19";
+				var next = anim196;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim196 = function(){
+				timeoutAnim(500, anim197);
+				funcIdex++;
+			}
+			var anim197 = function(){
+				var name = "a_state_10011_item_1";
+				var next = anim198;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim198 = function(){
+				timeoutAnim(500, anim199);
+				funcIdex++;
+			}
+			var anim199 = function(){
+				var name = "a_state_10011_item_1";
+				var next = anim200;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim200 = function(){
+				timeoutAnim(500, anim201);
+				funcIdex++;
+			}
+			var anim201 = function(){
+				var name = "a_state_10011_item_1";
+				var next = anim202;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim202 = function(){
+				timeoutAnim(500, anim203);
+				funcIdex++;
+			}
+			var anim203 = function(){
+				var name = "a_state_10011_item_1";
+				var next = anim204;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim204 = function(){
+				timeoutAnim(500, anim205);
+				funcIdex++;
+			}
+			var anim205 = function(){
+				var name = "trans_16";
+				var next = anim206;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim206 = function(){
+				timeoutAnim(500, anim207);
+				funcIdex++;
+			}
+			var anim207 = function(){
+				var name = "state_10015";
+				var next = anim208;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim208 = function(){
+				timeoutAnim(500, anim209);
+				funcIdex++;
+			}
+			var anim209 = function(){
+				var name = "a_state_10015_title";
+				var next = anim210;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim210 = function(){
+				timeoutAnim(500, anim211);
+				funcIdex++;
+			}
+			var anim211 = function(){
+				var name = "a_state_10015_item_1";
+				var next = anim212;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim212 = function(){
+				var name = "trans_17";
+				var next = null;
+				var time = 200;
+				showElem(name, time, next);
+			}
+			var funcs = [anim0, anim1, anim2, anim3, anim4, anim5, anim6, anim7, anim8, anim9, anim10, anim11, anim12, anim13, anim14, anim15, anim16, anim17, anim18, anim19, anim20, anim21, anim22, anim23, anim24, anim25, anim26, anim27, anim28, anim29, anim30, anim31, anim32, anim33, anim34, anim35, anim36, anim37, anim38, anim39, anim40, anim41, anim42, anim43, anim44, anim45, anim46, anim47, anim48, anim49, anim50, anim51, anim52, anim53, anim54, anim55, anim56, anim57, anim58, anim59, anim60, anim61, anim62, anim63, anim64, anim65, anim66, anim67, anim68, anim69, anim70, anim71, anim72, anim73, anim74, anim75, anim76, anim77, anim78, anim79, anim80, anim81, anim82, anim83, anim84, anim85, anim86, anim87, anim88, anim89, anim90, anim91, anim92, anim93, anim94, anim95, anim96, anim97, anim98, anim99, anim100, anim101, anim102, anim103, anim104, anim105, anim106, anim107, anim108, anim109, anim110, anim111, anim112, anim113, anim114, anim115, anim116, anim117, anim118, anim119, anim120, anim121, anim122, anim123, anim124, anim125, anim126, anim127, anim128, anim129, anim130, anim131, anim132, anim133, anim134, anim135, anim136, anim137, anim138, anim139, anim140, anim141, anim142, anim143, anim144, anim145, anim146, anim147, anim148, anim149, anim150, anim151, anim152, anim153, anim154, anim155, anim156, anim157, anim158, anim159, anim160, anim161, anim162, anim163, anim164, anim165, anim166, anim167, anim168, anim169, anim170, anim171, anim172, anim173, anim174, anim175, anim176, anim177, anim178, anim179, anim180, anim181, anim182, anim183, anim184, anim185, anim186, anim187, anim188, anim189, anim190, anim191, anim192, anim193, anim194, anim195, anim196, anim197, anim198, anim199, anim200, anim201, anim202, anim203, anim204, anim205, anim206, anim207, anim208, anim209, anim210, anim211, anim212];
+			var names = [null,"state_10001",null,"a_state_10001_title",null,"a_state_10001_item_1",null,"a_state_10001_item_1",null,"a_state_10001_item_1",null,"a_state_10001_item_1",null,"a_state_10001_item_1",null,"trans_2",null,"state_10007",null,"a_state_10007_title",null,"a_state_10007_item_1",null,"trans_3",null,"state_10002",null,"a_state_10002_title",null,"a_state_10002_item_1",null,"trans_1",null,"state_10003",null,"a_state_10003_title",null,"a_state_10003_item_1",null,"a_state_10007_item_1",null,"a_state_10007_item_1",null,"a_state_10007_item_1",null,"a_state_10007_item_1",null,"trans_14",null,"state_10013",null,"a_state_10013_title",null,"a_state_10013_item_1",null,"a_state_10002_item_1",null,"a_state_10002_item_1",null,"a_state_10002_item_1",null,"a_state_10002_item_1",null,"trans_4",null,"state_10008",null,"a_state_10008_title",null,"a_state_10008_item_1",null,"trans_5",null,"state_10004",null,"a_state_10004_title",null,"a_state_10004_item_1",null,"trans_6",null,"state_10005",null,"a_state_10005_title",null,"a_state_10005_item_1",null,"a_state_10003_item_1",null,"a_state_10003_item_1",null,"a_state_10003_item_1",null,"a_state_10003_item_1",null,"trans_7",null,"state_10010",null,"a_state_10010_title",null,"a_state_10010_item_1",null,"trans_8",null,"state_10006",null,"a_state_10006_title",null,"a_state_10006_item_1",null,"a_state_10008_item_1",null,"a_state_10008_item_1",null,"a_state_10008_item_1",null,"a_state_10008_item_1",null,"trans_15",null,"state_10014",null,"a_state_10014_title",null,"a_state_10014_item_1",null,"a_state_10004_item_1",null,"a_state_10004_item_1",null,"a_state_10004_item_1",null,"a_state_10004_item_1",null,"trans_9",null,"state_10011",null,"a_state_10011_title",null,"a_state_10011_item_1",null,"a_state_10005_item_1",null,"a_state_10005_item_1",null,"a_state_10005_item_1",null,"a_state_10005_item_1",null,"trans_10",null,"state_10012",null,"a_state_10012_title",null,"a_state_10012_item_1",null,"a_state_10006_item_1",null,"a_state_10006_item_1",null,"a_state_10006_item_1",null,"a_state_10006_item_1",null,"trans_11",null,"state_10009",null,"a_state_10009_title",null,"a_state_10009_item_1",null,"trans_12",null,"trans_13",null,"a_state_10014_item_1",null,"a_state_10014_item_1",null,"a_state_10014_item_1",null,"a_state_10014_item_1",null,"trans_18",null,"state_10016",null,"a_state_10016_title",null,"a_state_10016_item_1",null,"trans_19",null,"a_state_10011_item_1",null,"a_state_10011_item_1",null,"a_state_10011_item_1",null,"a_state_10011_item_1",null,"trans_16",null,"state_10015",null,"a_state_10015_title",null,"a_state_10015_item_1","trans_17"];
+			var inicios = [0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,1];
+			var ultimaAnim = 212;
+
+			document.onmousedown = function (e) {
+				nextFrame();
+			}
+			document.onkeydown = function (e) { 
+			 switch(e.which) {
+			   case 27: case 37: case 65: // left
+			        previousFrame();
+			   break;
+			   case 32: case 39: case 68: // right
+					nextFrame();
+			   break;
+			   default: return;
+			   }
+			   e.preventDefault(); // prevent the default action (scroll / move caret)
+			};
+        };
+        </script>
+    </head>
+    <body>
+		<svg id="SvgAnimado" width="2000px" height="2000px">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: NFA Pages: 1 -->
+<svg width="955pt" height="440pt"
+ viewBox="0.00 0.00 955.00 439.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 435.5)">
+<title>NFA</title>
+<!-- state_10004 -->
+<g id="state_10004" class="node">
+<title>state_10004</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M362,-295C362,-295 302,-295 302,-295 296,-295 290,-289 290,-283 290,-283 290,-256 290,-256 290,-250 296,-244 302,-244 302,-244 362,-244 362,-244 368,-244 374,-250 374,-256 374,-256 374,-283 374,-283 374,-289 368,-295 362,-295"/>
+<g id="a_state_10004_title"><a xlink:href="#" xlink:title="state_10004_title">
+<text text-anchor="start" x="309" y="-277.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="348" y="-277.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">4</text>
+</a>
+</g>
+<g id="a_state_10004_item_1"><a xlink:href="#" xlink:title="state_10004_item_1">
+<text text-anchor="start" x="298" y="-256.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">L </text>
+<text text-anchor="start" x="311" y="-256.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="330" y="-256.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="340" y="-256.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> *</text>
+<text text-anchor="start" x="352" y="-256.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+</a>
+</g>
+</g>
+<!-- state_10011 -->
+<g id="state_10011" class="node">
+<title>state_10011</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M509,-295C509,-295 449,-295 449,-295 443,-295 437,-289 437,-283 437,-283 437,-256 437,-256 437,-250 443,-244 449,-244 449,-244 509,-244 509,-244 515,-244 521,-250 521,-256 521,-256 521,-283 521,-283 521,-289 515,-295 509,-295"/>
+<g id="a_state_10011_title"><a xlink:href="#" xlink:title="state_10011_title">
+<text text-anchor="start" x="452.5" y="-277.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="491.5" y="-277.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">11</text>
+</a>
+</g>
+<g id="a_state_10011_item_1"><a xlink:href="#" xlink:title="state_10011_item_1">
+<text text-anchor="start" x="445" y="-256.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">L </text>
+<text text-anchor="start" x="458" y="-256.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="477" y="-256.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> *</text>
+<text text-anchor="start" x="489" y="-256.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="499" y="-256.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+</a>
+</g>
+</g>
+<!-- state_10004&#45;&gt;state_10011 -->
+<g id="trans_9" class="edge">
+<title>state_10004&#45;&gt;state_10011</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M374.1243,-269.5C390.4242,-269.5 409.2586,-269.5 426.4302,-269.5"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="426.8696,-273.0001 436.8695,-269.5 426.8695,-266.0001 426.8696,-273.0001"/>
+<text text-anchor="start" x="399.5" y="-273.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> *</text>
+</g>
+<!-- state_10005 -->
+<g id="state_10005" class="node">
+<title>state_10005</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M798,-392C798,-392 748,-392 748,-392 742,-392 736,-386 736,-380 736,-380 736,-353 736,-353 736,-347 742,-341 748,-341 748,-341 798,-341 798,-341 804,-341 810,-347 810,-353 810,-353 810,-380 810,-380 810,-386 804,-392 798,-392"/>
+<g id="a_state_10005_title"><a xlink:href="#" xlink:title="state_10005_title">
+<text text-anchor="start" x="750" y="-374.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="789" y="-374.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">5</text>
+</a>
+</g>
+<g id="a_state_10005_item_1"><a xlink:href="#" xlink:title="state_10005_item_1">
+<text text-anchor="start" x="744" y="-353.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">L </text>
+<text text-anchor="start" x="757" y="-353.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="776" y="-353.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="786" y="-353.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> id</text>
+</a>
+</g>
+</g>
+<!-- state_10012 -->
+<g id="state_10012" class="node">
+<title>state_10012</title>
+<path fill="#f5f5dc" stroke="#b8860b" stroke-width="1.5" d="M931,-392C931,-392 881,-392 881,-392 875,-392 869,-386 869,-380 869,-380 869,-353 869,-353 869,-347 875,-341 881,-341 881,-341 931,-341 931,-341 937,-341 943,-347 943,-353 943,-353 943,-380 943,-380 943,-386 937,-392 931,-392"/>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M935,-396C935,-396 877,-396 877,-396 871,-396 865,-390 865,-384 865,-384 865,-349 865,-349 865,-343 871,-337 877,-337 877,-337 935,-337 935,-337 941,-337 947,-343 947,-349 947,-349 947,-384 947,-384 947,-390 941,-396 935,-396"/>
+<g id="a_state_10012_title"><a xlink:href="#" xlink:title="state_10012_title">
+<text text-anchor="start" x="879.5" y="-374.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="918.5" y="-374.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">12</text>
+</a>
+</g>
+<g id="a_state_10012_item_1"><a xlink:href="#" xlink:title="state_10012_item_1">
+<text text-anchor="start" x="877" y="-353.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">L </text>
+<text text-anchor="start" x="890" y="-353.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="909" y="-353.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> id</text>
+<text text-anchor="start" x="925" y="-353.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+</g>
+<!-- state_10005&#45;&gt;state_10012 -->
+<g id="trans_10" class="edge">
+<title>state_10005&#45;&gt;state_10012</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M810.0479,-366.5C823.912,-366.5 839.9164,-366.5 854.8323,-366.5"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="854.9452,-370.0001 864.9451,-366.5 854.9451,-363.0001 854.9452,-370.0001"/>
+<text text-anchor="start" x="831" y="-370.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> id</text>
+</g>
+<!-- state_10007 -->
+<g id="state_10007" class="node">
+<title>state_10007</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M215,-72C215,-72 153,-72 153,-72 147,-72 141,-66 141,-60 141,-60 141,-33 141,-33 141,-27 147,-21 153,-21 153,-21 215,-21 215,-21 221,-21 227,-27 227,-33 227,-33 227,-60 227,-60 227,-66 221,-72 215,-72"/>
+<g id="a_state_10007_title"><a xlink:href="#" xlink:title="state_10007_title">
+<text text-anchor="start" x="161" y="-54.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="200" y="-54.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">7</text>
+</a>
+</g>
+<g id="a_state_10007_item_1"><a xlink:href="#" xlink:title="state_10007_item_1">
+<text text-anchor="start" x="149" y="-33.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">E&#39; </text>
+<text text-anchor="start" x="165" y="-33.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="184" y="-33.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> E</text>
+<text text-anchor="start" x="197" y="-33.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="207" y="-33.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> $</text>
+</a>
+</g>
+</g>
+<!-- state_10013 -->
+<g id="state_10013" class="node">
+<title>state_10013</title>
+<path fill="#f5f5dc" stroke="#b8860b" stroke-width="1.5" d="M363,-55C363,-55 301,-55 301,-55 295,-55 289,-49 289,-43 289,-43 289,-16 289,-16 289,-10 295,-4 301,-4 301,-4 363,-4 363,-4 369,-4 375,-10 375,-16 375,-16 375,-43 375,-43 375,-49 369,-55 363,-55"/>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M367,-59C367,-59 297,-59 297,-59 291,-59 285,-53 285,-47 285,-47 285,-12 285,-12 285,-6 291,0 297,0 297,0 367,0 367,0 373,0 379,-6 379,-12 379,-12 379,-47 379,-47 379,-53 373,-59 367,-59"/>
+<g id="a_state_10013_title"><a xlink:href="#" xlink:title="state_10013_title">
+<text text-anchor="start" x="305.5" y="-37.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="344.5" y="-37.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">13</text>
+</a>
+</g>
+<g id="a_state_10013_item_1"><a xlink:href="#" xlink:title="state_10013_item_1">
+<text text-anchor="start" x="297" y="-16.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">E&#39; </text>
+<text text-anchor="start" x="313" y="-16.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="332" y="-16.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> E</text>
+<text text-anchor="start" x="345" y="-16.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> $</text>
+<text text-anchor="start" x="357" y="-16.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+</g>
+<!-- state_10007&#45;&gt;state_10013 -->
+<g id="trans_14" class="edge">
+<title>state_10007&#45;&gt;state_10013</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M227.2056,-41.5372C242.0434,-39.8329 258.8916,-37.8976 274.6727,-36.0849"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="275.322,-39.5334 284.8572,-34.915 274.5231,-32.5791 275.322,-39.5334"/>
+<text text-anchor="start" x="252" y="-43.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> $</text>
+</g>
+<!-- state_10008 -->
+<g id="state_10008" class="node">
+<title>state_10008</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M369,-364C369,-364 295,-364 295,-364 289,-364 283,-358 283,-352 283,-352 283,-325 283,-325 283,-319 289,-313 295,-313 295,-313 369,-313 369,-313 375,-313 381,-319 381,-325 381,-325 381,-352 381,-352 381,-358 375,-364 369,-364"/>
+<g id="a_state_10008_title"><a xlink:href="#" xlink:title="state_10008_title">
+<text text-anchor="start" x="309" y="-346.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="348" y="-346.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">8</text>
+</a>
+</g>
+<g id="a_state_10008_item_1"><a xlink:href="#" xlink:title="state_10008_item_1">
+<text text-anchor="start" x="291" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">E </text>
+<text text-anchor="start" x="304" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="323" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> L</text>
+<text text-anchor="start" x="336" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="346" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> =</text>
+<text text-anchor="start" x="359" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+</a>
+</g>
+</g>
+<!-- state_10014 -->
+<g id="state_10014" class="node">
+<title>state_10014</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M516,-364C516,-364 442,-364 442,-364 436,-364 430,-358 430,-352 430,-352 430,-325 430,-325 430,-319 436,-313 442,-313 442,-313 516,-313 516,-313 522,-313 528,-319 528,-325 528,-325 528,-352 528,-352 528,-358 522,-364 516,-364"/>
+<g id="a_state_10014_title"><a xlink:href="#" xlink:title="state_10014_title">
+<text text-anchor="start" x="452.5" y="-346.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="491.5" y="-346.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">14</text>
+</a>
+</g>
+<g id="a_state_10014_item_1"><a xlink:href="#" xlink:title="state_10014_item_1">
+<text text-anchor="start" x="438" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">E </text>
+<text text-anchor="start" x="451" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="470" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> L</text>
+<text text-anchor="start" x="483" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> =</text>
+<text text-anchor="start" x="496" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="506" y="-325.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+</a>
+</g>
+</g>
+<!-- state_10008&#45;&gt;state_10014 -->
+<g id="trans_15" class="edge">
+<title>state_10008&#45;&gt;state_10014</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M381.3578,-338.5C393.6651,-338.5 406.9883,-338.5 419.7197,-338.5"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="419.7725,-342.0001 429.7725,-338.5 419.7724,-335.0001 419.7725,-342.0001"/>
+<text text-anchor="start" x="399" y="-342.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> =</text>
+</g>
+<!-- state_10001 -->
+<g id="state_10001" class="node">
+<title>state_10001</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M74,-174C74,-174 12,-174 12,-174 6,-174 0,-168 0,-162 0,-162 0,-135 0,-135 0,-129 6,-123 12,-123 12,-123 74,-123 74,-123 80,-123 86,-129 86,-135 86,-135 86,-162 86,-162 86,-168 80,-174 74,-174"/>
+<g id="a_state_10001_title"><a xlink:href="#" xlink:title="state_10001_title">
+<text text-anchor="start" x="20" y="-156.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="59" y="-156.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">1</text>
+</a>
+</g>
+<g id="a_state_10001_item_1"><a xlink:href="#" xlink:title="state_10001_item_1">
+<text text-anchor="start" x="8" y="-135.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">E&#39; </text>
+<text text-anchor="start" x="24" y="-135.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="43" y="-135.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="53" y="-135.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> E</text>
+<text text-anchor="start" x="66" y="-135.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> $</text>
+</a>
+</g>
+</g>
+<!-- state_10001&#45;&gt;state_10007 -->
+<g id="trans_2" class="edge">
+<title>state_10001&#45;&gt;state_10007</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M78.5803,-122.7611C97.283,-109.2315 120.3722,-92.5286 140.1702,-78.2067"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="142.3803,-80.9277 148.4311,-72.2307 138.2774,-75.2561 142.3803,-80.9277"/>
+<text text-anchor="start" x="104" y="-108.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> E</text>
+</g>
+<!-- state_10002 -->
+<g id="state_10002" class="node">
+<title>state_10002</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M221,-337C221,-337 147,-337 147,-337 141,-337 135,-331 135,-325 135,-325 135,-298 135,-298 135,-292 141,-286 147,-286 147,-286 221,-286 221,-286 227,-286 233,-292 233,-298 233,-298 233,-325 233,-325 233,-331 227,-337 221,-337"/>
+<g id="a_state_10002_title"><a xlink:href="#" xlink:title="state_10002_title">
+<text text-anchor="start" x="161" y="-319.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="200" y="-319.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">2</text>
+</a>
+</g>
+<g id="a_state_10002_item_1"><a xlink:href="#" xlink:title="state_10002_item_1">
+<text text-anchor="start" x="143" y="-298.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">E </text>
+<text text-anchor="start" x="156" y="-298.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="175" y="-298.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="185" y="-298.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> L</text>
+<text text-anchor="start" x="198" y="-298.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> =</text>
+<text text-anchor="start" x="211" y="-298.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+</a>
+</g>
+</g>
+<!-- state_10001&#45;&gt;state_10002 -->
+<g id="trans_3" class="edge">
+<title>state_10001&#45;&gt;state_10002</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M65.3419,-174.3278C89.578,-202.3455 128.3592,-247.1776 154.9463,-277.9131"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="152.5733,-280.5198 161.7627,-285.793 157.8675,-275.9402 152.5733,-280.5198"/>
+<text text-anchor="start" x="105.5" y="-234.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ε</text>
+</g>
+<!-- state_10003 -->
+<g id="state_10003" class="node">
+<title>state_10003</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M208,-174C208,-174 160,-174 160,-174 154,-174 148,-168 148,-162 148,-162 148,-135 148,-135 148,-129 154,-123 160,-123 160,-123 208,-123 208,-123 214,-123 220,-129 220,-135 220,-135 220,-162 220,-162 220,-168 214,-174 208,-174"/>
+<g id="a_state_10003_title"><a xlink:href="#" xlink:title="state_10003_title">
+<text text-anchor="start" x="161" y="-156.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="200" y="-156.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">3</text>
+</a>
+</g>
+<g id="a_state_10003_item_1"><a xlink:href="#" xlink:title="state_10003_item_1">
+<text text-anchor="start" x="156" y="-135.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">E </text>
+<text text-anchor="start" x="169" y="-135.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="188" y="-135.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="198" y="-135.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+</a>
+</g>
+</g>
+<!-- state_10001&#45;&gt;state_10003 -->
+<g id="trans_1" class="edge">
+<title>state_10001&#45;&gt;state_10003</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M86.0708,-148.5C102.4353,-148.5 121.1358,-148.5 137.7797,-148.5"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="137.8378,-152.0001 147.8378,-148.5 137.8377,-145.0001 137.8378,-152.0001"/>
+<text text-anchor="start" x="105.5" y="-152.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ε</text>
+</g>
+<!-- state_10002&#45;&gt;state_10004 -->
+<g id="trans_5" class="edge">
+<title>state_10002&#45;&gt;state_10004</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M233.2819,-297.5146C248.3192,-293.2472 264.8951,-288.5433 280.1004,-284.2283"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="281.1999,-287.5545 289.8645,-281.4574 279.2888,-280.8204 281.1999,-287.5545"/>
+<text text-anchor="start" x="253" y="-295.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ε</text>
+</g>
+<!-- state_10002&#45;&gt;state_10005 -->
+<g id="trans_6" class="edge">
+<title>state_10002&#45;&gt;state_10005</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M203.1748,-337.1859C228.7903,-368.271 277.3404,-416.5 332,-416.5 332,-416.5 332,-416.5 631,-416.5 664.3163,-416.5 699.661,-404.1032 726.7539,-391.6551"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="728.4478,-394.7252 735.976,-387.2701 725.4419,-388.4034 728.4478,-394.7252"/>
+<text text-anchor="start" x="474" y="-420.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ε</text>
+</g>
+<!-- state_10002&#45;&gt;state_10008 -->
+<g id="trans_4" class="edge">
+<title>state_10002&#45;&gt;state_10008</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M233.2819,-320.4906C246.0134,-322.8133 259.8477,-325.3371 273.0194,-327.74"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="272.4675,-331.197 282.9333,-329.5487 273.7239,-324.3107 272.4675,-331.197"/>
+<text text-anchor="start" x="251.5" y="-329.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> L</text>
+</g>
+<!-- state_10006 -->
+<g id="state_10006" class="node">
+<title>state_10006</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M655,-234C655,-234 607,-234 607,-234 601,-234 595,-228 595,-222 595,-222 595,-195 595,-195 595,-189 601,-183 607,-183 607,-183 655,-183 655,-183 661,-183 667,-189 667,-195 667,-195 667,-222 667,-222 667,-228 661,-234 655,-234"/>
+<g id="a_state_10006_title"><a xlink:href="#" xlink:title="state_10006_title">
+<text text-anchor="start" x="608" y="-216.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="647" y="-216.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">6</text>
+</a>
+</g>
+<g id="a_state_10006_item_1"><a xlink:href="#" xlink:title="state_10006_item_1">
+<text text-anchor="start" x="603" y="-195.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">R </text>
+<text text-anchor="start" x="617" y="-195.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="636" y="-195.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="646" y="-195.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> L</text>
+</a>
+</g>
+</g>
+<!-- state_10003&#45;&gt;state_10006 -->
+<g id="trans_8" class="edge">
+<title>state_10003&#45;&gt;state_10006</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M220.2012,-153.3592C300.8716,-164.1875 495.3086,-190.2864 584.6669,-202.2808"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="584.3965,-205.7758 594.7733,-203.6374 585.3278,-198.838 584.3965,-205.7758"/>
+<text text-anchor="start" x="400.5" y="-182.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ε</text>
+</g>
+<!-- state_10010 -->
+<g id="state_10010" class="node">
+<title>state_10010</title>
+<path fill="#f5f5dc" stroke="#b8860b" stroke-width="1.5" d="M356,-132C356,-132 308,-132 308,-132 302,-132 296,-126 296,-120 296,-120 296,-93 296,-93 296,-87 302,-81 308,-81 308,-81 356,-81 356,-81 362,-81 368,-87 368,-93 368,-93 368,-120 368,-120 368,-126 362,-132 356,-132"/>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M360,-136C360,-136 304,-136 304,-136 298,-136 292,-130 292,-124 292,-124 292,-89 292,-89 292,-83 298,-77 304,-77 304,-77 360,-77 360,-77 366,-77 372,-83 372,-89 372,-89 372,-124 372,-124 372,-130 366,-136 360,-136"/>
+<g id="a_state_10010_title"><a xlink:href="#" xlink:title="state_10010_title">
+<text text-anchor="start" x="305.5" y="-114.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="344.5" y="-114.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">10</text>
+</a>
+</g>
+<g id="a_state_10010_item_1"><a xlink:href="#" xlink:title="state_10010_item_1">
+<text text-anchor="start" x="304" y="-93.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">E </text>
+<text text-anchor="start" x="317" y="-93.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="336" y="-93.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+<text text-anchor="start" x="350" y="-93.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+</g>
+<!-- state_10003&#45;&gt;state_10010 -->
+<g id="trans_7" class="edge">
+<title>state_10003&#45;&gt;state_10010</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M220.2049,-138.2256C238.8111,-132.9455 261.7749,-126.4287 282.0402,-120.6778"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="283.0763,-124.022 291.7409,-117.9249 281.1652,-117.288 283.0763,-124.022"/>
+<text text-anchor="start" x="251" y="-133.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+</g>
+<!-- state_10006&#45;&gt;state_10004 -->
+<g id="trans_12" class="edge">
+<title>state_10006&#45;&gt;state_10004</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M594.7238,-206.341C553.9286,-204.9002 486.0553,-205.4897 430,-220.5 414.0226,-224.7784 397.5928,-231.8035 382.8612,-239.2158"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="381.1858,-236.142 373.9274,-243.8599 384.4145,-242.3529 381.1858,-236.142"/>
+<text text-anchor="start" x="474" y="-224.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ε</text>
+</g>
+<!-- state_10006&#45;&gt;state_10005 -->
+<g id="trans_13" class="edge">
+<title>state_10006&#45;&gt;state_10005</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M667.1199,-229.7923C673.0441,-233.989 678.9044,-238.6177 684,-243.5 711.58,-269.9257 736.4543,-305.8474 752.8486,-332.0465"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="750.0614,-334.1955 758.2843,-340.8765 756.0225,-330.5259 750.0614,-334.1955"/>
+<text text-anchor="start" x="703.5" y="-280.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ε</text>
+</g>
+<!-- state_10009 -->
+<g id="state_10009" class="node">
+<title>state_10009</title>
+<path fill="#f5f5dc" stroke="#b8860b" stroke-width="1.5" d="M797,-234C797,-234 749,-234 749,-234 743,-234 737,-228 737,-222 737,-222 737,-195 737,-195 737,-189 743,-183 749,-183 749,-183 797,-183 797,-183 803,-183 809,-189 809,-195 809,-195 809,-222 809,-222 809,-228 803,-234 797,-234"/>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M801,-238C801,-238 745,-238 745,-238 739,-238 733,-232 733,-226 733,-226 733,-191 733,-191 733,-185 739,-179 745,-179 745,-179 801,-179 801,-179 807,-179 813,-185 813,-191 813,-191 813,-226 813,-226 813,-232 807,-238 801,-238"/>
+<g id="a_state_10009_title"><a xlink:href="#" xlink:title="state_10009_title">
+<text text-anchor="start" x="750" y="-216.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="789" y="-216.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">9</text>
+</a>
+</g>
+<g id="a_state_10009_item_1"><a xlink:href="#" xlink:title="state_10009_item_1">
+<text text-anchor="start" x="745" y="-195.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">R </text>
+<text text-anchor="start" x="759" y="-195.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="778" y="-195.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> L</text>
+<text text-anchor="start" x="791" y="-195.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+</g>
+<!-- state_10006&#45;&gt;state_10009 -->
+<g id="trans_11" class="edge">
+<title>state_10006&#45;&gt;state_10009</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M667.2,-208.5C684.0384,-208.5 704.3463,-208.5 722.649,-208.5"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="722.8631,-212.0001 732.8631,-208.5 722.863,-205.0001 722.8631,-212.0001"/>
+<text text-anchor="start" x="702" y="-212.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> L</text>
+</g>
+<!-- state_10011&#45;&gt;state_10006 -->
+<g id="trans_17" class="edge">
+<title>state_10011&#45;&gt;state_10006</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M521.3405,-252.5081C541.2846,-244.5042 565.1042,-234.945 585.4403,-226.7838"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="586.834,-229.9959 594.811,-223.0232 584.2268,-223.4995 586.834,-229.9959"/>
+<text text-anchor="start" x="548" y="-244.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ε</text>
+</g>
+<!-- state_10015 -->
+<g id="state_10015" class="node">
+<title>state_10015</title>
+<path fill="#f5f5dc" stroke="#b8860b" stroke-width="1.5" d="M661,-307C661,-307 601,-307 601,-307 595,-307 589,-301 589,-295 589,-295 589,-268 589,-268 589,-262 595,-256 601,-256 601,-256 661,-256 661,-256 667,-256 673,-262 673,-268 673,-268 673,-295 673,-295 673,-301 667,-307 661,-307"/>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M665,-311C665,-311 597,-311 597,-311 591,-311 585,-305 585,-299 585,-299 585,-264 585,-264 585,-258 591,-252 597,-252 597,-252 665,-252 665,-252 671,-252 677,-258 677,-264 677,-264 677,-299 677,-299 677,-305 671,-311 665,-311"/>
+<g id="a_state_10015_title"><a xlink:href="#" xlink:title="state_10015_title">
+<text text-anchor="start" x="604.5" y="-289.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="643.5" y="-289.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">15</text>
+</a>
+</g>
+<g id="a_state_10015_item_1"><a xlink:href="#" xlink:title="state_10015_item_1">
+<text text-anchor="start" x="597" y="-268.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">L </text>
+<text text-anchor="start" x="610" y="-268.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="629" y="-268.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> *</text>
+<text text-anchor="start" x="641" y="-268.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+<text text-anchor="start" x="655" y="-268.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+</g>
+<!-- state_10011&#45;&gt;state_10015 -->
+<g id="trans_16" class="edge">
+<title>state_10011&#45;&gt;state_10015</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M521.3405,-272.8427C537.8625,-274.147 557.0442,-275.6614 574.7017,-277.0554"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="574.6461,-280.5618 584.8905,-277.8598 575.197,-273.5835 574.6461,-280.5618"/>
+<text text-anchor="start" x="546" y="-279.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+</g>
+<!-- state_10014&#45;&gt;state_10006 -->
+<g id="trans_19" class="edge">
+<title>state_10014&#45;&gt;state_10006</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M528.1675,-319.2216C539.8347,-312.7836 551.3798,-304.6057 560,-294.5 575.5994,-276.2124 563.2013,-262.4414 578,-243.5 580.6349,-240.1275 583.6891,-236.9732 586.9748,-234.0483"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="589.354,-236.6271 594.9736,-227.6454 584.9795,-231.1622 589.354,-236.6271"/>
+<text text-anchor="start" x="548" y="-310.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ε</text>
+</g>
+<!-- state_10016 -->
+<g id="state_10016" class="node">
+<title>state_10016</title>
+<path fill="#f5f5dc" stroke="#b8860b" stroke-width="1.5" d="M668,-384C668,-384 594,-384 594,-384 588,-384 582,-378 582,-372 582,-372 582,-345 582,-345 582,-339 588,-333 594,-333 594,-333 668,-333 668,-333 674,-333 680,-339 680,-345 680,-345 680,-372 680,-372 680,-378 674,-384 668,-384"/>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M672,-388C672,-388 590,-388 590,-388 584,-388 578,-382 578,-376 578,-376 578,-341 578,-341 578,-335 584,-329 590,-329 590,-329 672,-329 672,-329 678,-329 684,-335 684,-341 684,-341 684,-376 684,-376 684,-382 678,-388 672,-388"/>
+<g id="a_state_10016_title"><a xlink:href="#" xlink:title="state_10016_title">
+<text text-anchor="start" x="604.5" y="-366.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="643.5" y="-366.1" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">16</text>
+</a>
+</g>
+<g id="a_state_10016_item_1"><a xlink:href="#" xlink:title="state_10016_item_1">
+<text text-anchor="start" x="590" y="-345.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29">E </text>
+<text text-anchor="start" x="603" y="-345.3" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="622" y="-345.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> L</text>
+<text text-anchor="start" x="635" y="-345.3" font-family="Times,serif" font-size="14.00" fill="#0a5040"> =</text>
+<text text-anchor="start" x="648" y="-345.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+<text text-anchor="start" x="662" y="-345.3" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+</g>
+<!-- state_10014&#45;&gt;state_10016 -->
+<g id="trans_18" class="edge">
+<title>state_10014&#45;&gt;state_10016</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M528.35,-344.9934C540.9912,-346.6567 554.7587,-348.4683 567.9855,-350.2086"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="567.5958,-353.6874 577.967,-351.522 568.5091,-346.7473 567.5958,-353.6874"/>
+<text text-anchor="start" x="546" y="-352.3" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> R</text>
+</g>
+</g>
+</svg>
+
+		</svg>
+    </body>
+</html>

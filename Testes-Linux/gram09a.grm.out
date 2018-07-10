@@ -1,0 +1,660 @@
+/*
++----------------------------------------+
+|  File name : gram09a.grm.out           |
+|  Created by: geraLR v.graphviz-Eberty  |
+|  Date/Time : Tue May 29 16:28:52 2018  |
++----------------------------------------+
+
+  COMMAND LINE
+  ------------
+  ./geraLR -w 0 -yndfoxlsLSNDA -C bege_marrom.cfg gram09a.grm 
+
+*/
+
++------------+
+| RULES:   8 |
++------------+
+
+  1: statement' -> statement $
+  2: statement -> if_stmt
+  3: statement -> other
+  4: if_stmt -> if ( bool_exp ) statement else_part
+  5: else_part -> else statement
+  6: else_part ->
+  7: bool_exp -> true
+  8: bool_exp -> false
+
++--------------------+
+| NON-TERMINALS:   5 |
++--------------------+
+
+Symbol 1001: statement'
+In lefthand  side of 1 rules: 1  
+In righthand side of 0 rules: 
+
+Symbol 1002: statement
+In lefthand  side of 2 rules: 2  3  
+In righthand side of 3 rules: 1  4  5  
+
+Symbol 1003: if_stmt
+In lefthand  side of 1 rules: 4  
+In righthand side of 1 rules: 2  
+
+Symbol 1004: bool_exp
+In lefthand  side of 2 rules: 7  8  
+In righthand side of 1 rules: 4  
+
+Symbol 1005: else_part
+In lefthand  side of 2 rules: 5  6  
+In righthand side of 1 rules: 4  
+
++----------------+
+| TERMINALS:   8 |
++----------------+
+
+Symbol 0001: $ (END_OF_INPUT)
+In righthand side of 1 rules: 1  
+
+Symbol 0002: other
+In righthand side of 1 rules: 3  
+
+Symbol 0003: if
+In righthand side of 1 rules: 4  
+
+Symbol 0004: (
+In righthand side of 1 rules: 4  
+
+Symbol 0005: )
+In righthand side of 1 rules: 4  
+
+Symbol 0006: else
+In righthand side of 1 rules: 5  
+
+Symbol 0007: true
+In righthand side of 1 rules: 7  
+
+Symbol 0008: false
+In righthand side of 1 rules: 8  
+
++---------+
+| Epsilon |
++---------+
+
+Symbol 0000: _epsilon_
+In righthand side of 1 rules: 6  
+
++-------------------+
+| NFA STATES: 22    |
++-------------------+
+
+State 10001: 
+Single shift on non-terminal & epsilon transition(s)
+  statement' -> • statement $
+
+State 10002: 
+Single shift on non-terminal & epsilon transition(s)
+  statement -> • if_stmt
+
+State 10003: 
+Single shift on terminal
+  statement -> • other
+
+State 10004: 
+Single shift on terminal
+  if_stmt -> • if ( bool_exp ) statement else_part
+
+State 10005: 
+Single shift on terminal
+  statement' -> statement • $
+
+State 10006: 
+Single reduction
+  statement -> if_stmt •
+
+State 10007: 
+Single reduction
+  statement -> other •
+
+State 10008: 
+Single shift on terminal
+  if_stmt -> if • ( bool_exp ) statement else_part
+
+State 10009: 
+Single reduction
+  statement' -> statement $ •
+
+State 10010: 
+Single shift on non-terminal & epsilon transition(s)
+  if_stmt -> if ( • bool_exp ) statement else_part
+
+State 10011: 
+Single shift on terminal
+  bool_exp -> • true
+
+State 10012: 
+Single shift on terminal
+  bool_exp -> • false
+
+State 10013: 
+Single shift on terminal
+  if_stmt -> if ( bool_exp • ) statement else_part
+
+State 10014: 
+Single reduction
+  bool_exp -> true •
+
+State 10015: 
+Single reduction
+  bool_exp -> false •
+
+State 10016: 
+Single shift on non-terminal & epsilon transition(s)
+  if_stmt -> if ( bool_exp ) • statement else_part
+
+State 10017: 
+Single shift on non-terminal & epsilon transition(s)
+  if_stmt -> if ( bool_exp ) statement • else_part
+
+State 10018: 
+Single shift on terminal
+  else_part -> • else statement
+
+State 10019: 
+Single reduction
+  else_part -> •
+
+State 10020: 
+Single reduction
+  if_stmt -> if ( bool_exp ) statement else_part •
+
+State 10021: 
+Single shift on non-terminal & epsilon transition(s)
+  else_part -> else • statement
+
+State 10022: 
+Single reduction
+  else_part -> else statement •
+
++-------------------------+
+| REDUCTION STATES: 8     |
++------------+------------+
+|    State   |     Rule   |
++------------+------------+
+|    10006   |        2   |
+|    10007   |        3   |
+|    10009   |        1   |
+|    10014   |        7   |
+|    10015   |        8   |
+|    10019   |        6   |
+|    10020   |        4   |
+|    10022   |        5   |
++------------+------------+
+
++---------------------------+
+| STATE TRANSITIONS: 25     |
++-------+-------+-----------+
+| From  | To    | With      |
+| state | state | symbol    |
++-------+-------+-----------+
+| 10001 | 10005 | statement |
+| 10001 | 10002 | _epsilon_ |
+| 10001 | 10003 | _epsilon_ |
+| 10002 | 10006 | if_stmt   |
+| 10002 | 10004 | _epsilon_ |
+| 10003 | 10007 | other     |
+| 10004 | 10008 | if        |
+| 10005 | 10009 | $         |
+| 10008 | 10010 | (         |
+| 10010 | 10013 | bool_exp  |
+| 10010 | 10011 | _epsilon_ |
+| 10010 | 10012 | _epsilon_ |
+| 10011 | 10014 | true      |
+| 10012 | 10015 | false     |
+| 10013 | 10016 | )         |
+| 10016 | 10017 | statement |
+| 10016 | 10002 | _epsilon_ |
+| 10016 | 10003 | _epsilon_ |
+| 10017 | 10020 | else_part |
+| 10017 | 10018 | _epsilon_ |
+| 10017 | 10019 | _epsilon_ |
+| 10018 | 10021 | else      |
+| 10021 | 10022 | statement |
+| 10021 | 10002 | _epsilon_ |
+| 10021 | 10003 | _epsilon_ |
++-------+-------+-----------+
+
++---------------------------------------------------------------------+
+|                    NFA STATE TRANSITIONS SUMMARY                    |
++---------------------------------------------------------------------+
+
++-------+---------------+          +--------------------+-------------+
+|       |  TRANSITIONS  |          | GRAMMAR SYMBOL     | Number of   |
+| STATE +-------+-------+          +--------+-----------+ transitions |
+|       | From  |    To |          |   Code | String    | with symbol |
++-------+-------+-------+          +--------+-----------+-------------+
+| 10001 |     3 |     0 |          |   1001 | statement |        0    |
+| 10002 |     2 |     3 |          |   1002 | statement |        3    |
+| 10003 |     1 |     3 |          |   1003 | if_stmt   |        1    |
+| 10004 |     1 |     1 |          |   1004 | bool_exp  |        1    |
+| 10005 |     1 |     1 |          |   1005 | else_part |        1    |
+| 10006 |     0 |     1 |          |      1 | $         |        1    |
+| 10007 |     0 |     1 |          |      2 | other     |        1    |
+| 10008 |     1 |     1 |          |      3 | if        |        1    |
+| 10009 |     0 |     1 |          |      4 | (         |        1    |
+| 10010 |     3 |     1 |          |      5 | )         |        1    |
+| 10011 |     1 |     1 |          |      6 | else      |        1    |
+| 10012 |     1 |     1 |          |      7 | true      |        1    |
+| 10013 |     1 |     1 |          |      8 | false     |        1    |
+| 10014 |     0 |     1 |          |        | _epsilon_ |       11    |
+| 10015 |     0 |     1 |          +--------+-----------+-------------+
+| 10016 |     3 |     1 |
+| 10017 |     3 |     1 |
+| 10018 |     1 |     1 |
+| 10019 |     0 |     1 |
+| 10020 |     0 |     1 |
+| 10021 |     3 |     1 |
+| 10022 |     0 |     1 |
++-------+-------+-------+
+
++--------------------------+
+|    NFA STATES SUMMARY    |
++--------------------------+
+|      Shift states:     8 |
+|     Reduce states:     8 |
+| Non-deterministic:     6 |
+|      TOTAL STATES:    22 |
++--------------------------+
+
++--------------------+
+|    NFA SUMMARY     |
++--------------------+
+|      States:    22 |
+|       Items:    22 |
+| Transitions:    25 |
++--------------------+
+
++-------------------+
+| DFA STATES: 15    |
++-------------------+
+
+State 1: 
+Shift(s) only
+  statement' -> • statement $
+  statement -> • if_stmt
+  statement -> • other
+  if_stmt -> • if ( bool_exp ) statement else_part
+
+State 2: 
+Shift(s) only
+  statement' -> statement • $
+
+State 3: 
+Single reduction only
+  statement -> if_stmt •
+
+State 4: 
+Single reduction only
+  statement -> other •
+
+State 5: 
+Shift(s) only
+  if_stmt -> if • ( bool_exp ) statement else_part
+
+State 6: 
+Single reduction only
+  statement' -> statement $ •
+
+State 7: 
+Shift(s) only
+  if_stmt -> if ( • bool_exp ) statement else_part
+  bool_exp -> • true
+  bool_exp -> • false
+
+State 8: 
+Shift(s) only
+  if_stmt -> if ( bool_exp • ) statement else_part
+
+State 9: 
+Single reduction only
+  bool_exp -> true •
+
+State 10: 
+Single reduction only
+  bool_exp -> false •
+
+State 11: 
+Shift(s) only
+  if_stmt -> if ( bool_exp ) • statement else_part
+  statement -> • if_stmt
+  statement -> • other
+  if_stmt -> • if ( bool_exp ) statement else_part
+
+State 12: 
+Shift(s) & single reduction
+  if_stmt -> if ( bool_exp ) statement • else_part
+  else_part -> • else statement
+  else_part -> •
+
+State 13: 
+Single reduction only
+  if_stmt -> if ( bool_exp ) statement else_part •
+
+State 14: 
+Shift(s) only
+  else_part -> else • statement
+  statement -> • if_stmt
+  statement -> • other
+  if_stmt -> • if ( bool_exp ) statement else_part
+
+State 15: 
+Single reduction only
+  else_part -> else statement •
+
++---------------------------+
+| SHIFT STATES: 7           |
++-------+-------------------+
+| State | Transition symbol |
++-------+-------------------+
+|     1 | statement         |
+|       | if_stmt           |
+|       | other             |
+|       | if                |
++-------+-------------------+
+|     2 | $                 |
++-------+-------------------+
+|     5 | (                 |
++-------+-------------------+
+|     7 | bool_exp          |
+|       | true              |
+|       | false             |
++-------+-------------------+
+|     8 | )                 |
++-------+-------------------+
+|    11 | statement         |
+|       | if_stmt           |
+|       | other             |
+|       | if                |
++-------+-------------------+
+|    14 | statement         |
+|       | if_stmt           |
+|       | other             |
+|       | if                |
++-------+-------------------+
+
++-------------------------+
+| REDUCTION STATES: 7     |
++------------+------------+
+|    State   |     Rule   |
++------------+------------+
+|        3   |        2   |
+|        4   |        3   |
+|        6   |        1   |
+|        9   |        7   |
+|       10   |        8   |
+|       13   |        4   |
+|       15   |        5   |
++------------+------------+
+
++-------------------------------+
+| SHIFT-REDUCE CONFLICTS: 1     |
++-------+-----------------------+
+| State | Actions               |
++-------+-----------------------+
+|    12 | shift else_part       |
+|       | shift else            |
+|       | reduce by rule 6      |
++-------+-----------------------+
+
++--------------------------------+
+| REDUCE-REDUCE CONFLICTS: 0     |
++--------------------------------+
+
++--------------------------------------+
+| SHIFT-REDUCE-REDUCE CONFLICTS: 0     |
++--------------------------------------+
+
+
++---------------------------+
+| STATE TRANSITIONS: 20     |
++-------+-------+-----------+
+|  From |    To | With      |
+| state | state | symbol    |
++-------+-------+-----------+
+|     1 |     2 | statement |
+|     1 |     3 | if_stmt   |
+|     1 |     4 | other     |
+|     1 |     5 | if        |
+|     2 |     6 | $         |
+|     5 |     7 | (         |
+|     7 |     8 | bool_exp  |
+|     7 |     9 | true      |
+|     7 |    10 | false     |
+|     8 |    11 | )         |
+|    11 |    12 | statement |
+|    11 |     3 | if_stmt   |
+|    11 |     4 | other     |
+|    11 |     5 | if        |
+|    12 |    13 | else_part |
+|    12 |    14 | else      |
+|    14 |    15 | statement |
+|    14 |     3 | if_stmt   |
+|    14 |     4 | other     |
+|    14 |     5 | if        |
++-------+-------+-----------+
+
++---------------------------------------------------------------------+
+|                    DFA STATE TRANSITIONS SUMMARY                    |
++---------------------------------------------------------------------+
+
++-------+---------------+          +--------------------+-------------+
+|       |  TRANSITIONS  |          | GRAMMAR SYMBOL     | Number of   |
+| STATE +-------+-------+          +--------+-----------+ transitions |
+|       | From  |    To |          |   Code | String    | with symbol |
++-------+-------+-------+          +--------+-----------+-------------+
+|     1 |     4 |     0 |          |   1001 | statement |        0    |
+|     2 |     1 |     1 |          |   1002 | statement |        3    |
+|     3 |     0 |     3 |          |   1003 | if_stmt   |        3    |
+|     4 |     0 |     3 |          |   1004 | bool_exp  |        1    |
+|     5 |     1 |     3 |          |   1005 | else_part |        1    |
+|     6 |     0 |     1 |          |      1 | $         |        1    |
+|     7 |     3 |     1 |          |      2 | other     |        3    |
+|     8 |     1 |     1 |          |      3 | if        |        3    |
+|     9 |     0 |     1 |          |      4 | (         |        1    |
+|    10 |     0 |     1 |          |      5 | )         |        1    |
+|    11 |     4 |     1 |          |      6 | else      |        1    |
+|    12 |     2 |     1 |          |      7 | true      |        1    |
+|    13 |     0 |     1 |          |      8 | false     |        1    |
+|    14 |     4 |     1 |          |        | _epsilon_ |        0    |
+|    15 |     0 |     1 |          +--------+-----------+-------------+
++-------+-------+-------+
+
++----------------------------+
+|     DFA STATES SUMMARY     |
++----------------------------+
+|  UNAMBIGUOUS STATES:    14 |
+|        Shift states:     7 |
+|       Reduce states:     7 |
+|     CONFLICT STATES:     1 |
+|        Shift-reduce:     1 |
+|       Reduce-reduce:     0 |
+| Shift-reduce-reduce:     0 |
+|        TOTAL STATES:    15 |
++----------------------------+
+
++--------------------+
+|    DFA SUMMARY     |
++--------------------+
+|      States:    15 |
+|       Items:    28 |
+| Transitions:    20 |
++--------------------+
+
++------------+
+| FIRST sets |
++------------+
+
+Symbol 1001: statement'
+  0002: other
+  0003: if
+
+Symbol 1002: statement
+  0002: other
+  0003: if
+
+Symbol 1003: if_stmt
+  0003: if
+
+Symbol 1004: bool_exp
+  0007: true
+  0008: false
+
+Symbol 1005: else_part
+  0006: else
+  0000: _epsilon_
+
+Symbol 0001: $
+  0001: $
+
+Symbol 0002: other
+  0002: other
+
+Symbol 0003: if
+  0003: if
+
+Symbol 0004: (
+  0004: (
+
+Symbol 0005: )
+  0005: )
+
+Symbol 0006: else
+  0006: else
+
+Symbol 0007: true
+  0007: true
+
+Symbol 0008: false
+  0008: false
+
++-------------+
+| FOLLOW sets |
++-------------+
+
+Symbol 1001: statement'
+  0001: $
+
+Symbol 1002: statement
+  0001: $
+  0006: else
+
+Symbol 1003: if_stmt
+  0001: $
+  0006: else
+
+Symbol 1004: bool_exp
+  0005: )
+
+Symbol 1005: else_part
+  0001: $
+  0006: else
+
++-------------------------------------------------------------------------------------------------------------------------------+
+| LR(0) Parse Table                                                                                                             |
++-------+-------------------------------------------------------------------------------+---------------------------------------+    +-----------------+
+|       |                                     ACTION                                    |                  GOTO                 |    |  TOTAL ACTIONS  |
+| STATE +---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|       |    $    |  other  |    if   |    (    |    )    |   else  |   true  |  false  |statement| if_stmt | bool_exp|else_part|    |shift| red | goto|
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|    1  |         |    s4   |    s5   |         |         |         |         |         |    2    |    3    |         |         |    |   2 |   0 |   2 |
+|    2  |    s6   |         |         |         |         |         |         |         |         |         |         |         |    |   1 |   0 |   0 |
+|    3  |    r2   |    r2   |    r2   |    r2   |    r2   |    r2   |    r2   |    r2   |         |         |         |         |    |   0 |   8 |   0 |
+|    4  |    r3   |    r3   |    r3   |    r3   |    r3   |    r3   |    r3   |    r3   |         |         |         |         |    |   0 |   8 |   0 |
+|    5  |         |         |         |    s7   |         |         |         |         |         |         |         |         |    |   1 |   0 |   0 |
+|    6  |   ACC   |   ACC   |   ACC   |   ACC   |   ACC   |   ACC   |   ACC   |   ACC   |         |         |         |         |    |   0 |   8 |   0 |
+|    7  |         |         |         |         |         |         |    s9   |   s10   |         |         |    8    |         |    |   2 |   0 |   1 |
+|    8  |         |         |         |         |   s11   |         |         |         |         |         |         |         |    |   1 |   0 |   0 |
+|    9  |    r7   |    r7   |    r7   |    r7   |    r7   |    r7   |    r7   |    r7   |         |         |         |         |    |   0 |   8 |   0 |
+|   10  |    r8   |    r8   |    r8   |    r8   |    r8   |    r8   |    r8   |    r8   |         |         |         |         |    |   0 |   8 |   0 |
+|   11  |         |    s4   |    s5   |         |         |         |         |         |    12   |    3    |         |         |    |   2 |   0 |   2 |
+|>  12 <|    r6   |    r6   |    r6   |    r6   |    r6   |    r6   |    r6   |    r6   |         |         |         |    13   |    |   1 |   8 |   1 |
+|       |         |         |         |         |         |   s14   |         |         |         |         |         |         |    |     |     |     |
+|   13  |    r4   |    r4   |    r4   |    r4   |    r4   |    r4   |    r4   |    r4   |         |         |         |         |    |   0 |   8 |   0 |
+|   14  |         |    s4   |    s5   |         |         |         |         |         |    15   |    3    |         |         |    |   2 |   0 |   2 |
+|   15  |    r5   |    r5   |    r5   |    r5   |    r5   |    r5   |    r5   |    r5   |         |         |         |         |    |   0 |   8 |   0 |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+| TOTAL ACTIONS                                                                                                                 |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|shift  |     1   |     3   |     3   |     1   |     1   |     1   |     1   |     1   |     0   |     0   |     0   |     0   |    |  12 |     |     |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|reduce |     8   |     8   |     8   |     8   |     8   |     8   |     8   |     8   |     0   |     0   |     0   |     0   |    |     |  64 |     |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|goto   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     3   |     3   |     1   |     1   |    |     |     |   8 |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+| sLR(1) Parse Table                                                                                                            |
++-------+-------------------------------------------------------------------------------+---------------------------------------+    +-----------------+
+|       |                                     ACTION                                    |                  GOTO                 |    |  TOTAL ACTIONS  |
+| STATE +---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|       |    $    |  other  |    if   |    (    |    )    |   else  |   true  |  false  |statement| if_stmt | bool_exp|else_part|    |shift| red | goto|
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|    1  |         |    s4   |    s5   |         |         |         |         |         |    2    |    3    |         |         |    |   2 |   0 |   2 |
+|    2  |    s6   |         |         |         |         |         |         |         |         |         |         |         |    |   1 |   0 |   0 |
+|    3  |    r2   |         |         |         |         |    r2   |         |         |         |         |         |         |    |   0 |   2 |   0 |
+|    4  |    r3   |         |         |         |         |    r3   |         |         |         |         |         |         |    |   0 |   2 |   0 |
+|    5  |         |         |         |    s7   |         |         |         |         |         |         |         |         |    |   1 |   0 |   0 |
+|    6  |   ACC   |         |         |         |         |         |         |         |         |         |         |         |    |   0 |   1 |   0 |
+|    7  |         |         |         |         |         |         |    s9   |   s10   |         |         |    8    |         |    |   2 |   0 |   1 |
+|    8  |         |         |         |         |   s11   |         |         |         |         |         |         |         |    |   1 |   0 |   0 |
+|    9  |         |         |         |         |    r7   |         |         |         |         |         |         |         |    |   0 |   1 |   0 |
+|   10  |         |         |         |         |    r8   |         |         |         |         |         |         |         |    |   0 |   1 |   0 |
+|   11  |         |    s4   |    s5   |         |         |         |         |         |    12   |    3    |         |         |    |   2 |   0 |   2 |
+|>  12 <|    r6   |         |         |         |         |    r6   |         |         |         |         |         |    13   |    |   1 |   2 |   1 |
+|       |         |         |         |         |         |   s14   |         |         |         |         |         |         |    |     |     |     |
+|   13  |    r4   |         |         |         |         |    r4   |         |         |         |         |         |         |    |   0 |   2 |   0 |
+|   14  |         |    s4   |    s5   |         |         |         |         |         |    15   |    3    |         |         |    |   2 |   0 |   2 |
+|   15  |    r5   |         |         |         |         |    r5   |         |         |         |         |         |         |    |   0 |   2 |   0 |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+| TOTAL ACTIONS                                                                                                                 |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|shift  |     1   |     3   |     3   |     1   |     1   |     1   |     1   |     1   |     0   |     0   |     0   |     0   |    |  12 |     |     |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|reduce |     6   |     0   |     0   |     0   |     2   |     5   |     0   |     0   |     0   |     0   |     0   |     0   |    |     |  13 |     |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|goto   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     3   |     3   |     1   |     1   |    |     |     |   8 |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+| LR(0) and sLR(1) table differences                                                                                            |
++-------+-------------------------------------------------------------------------------+---------------------------------------+    +-----------------+
+|       |                                     ACTION                                    |                  GOTO                 |    |  TOTAL ACTIONS  |
+| STATE +---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|       |    $    |  other  |    if   |    (    |    )    |   else  |   true  |  false  |statement| if_stmt | bool_exp|else_part|    |shift| red | goto|
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|    3  |         |    r2   |    r2   |    r2   |    r2   |         |    r2   |    r2   |         |         |         |         |    |   0 |   6 |   0 |
+|    4  |         |    r3   |    r3   |    r3   |    r3   |         |    r3   |    r3   |         |         |         |         |    |   0 |   6 |   0 |
+|    6  |         |   ACC   |   ACC   |   ACC   |   ACC   |   ACC   |   ACC   |   ACC   |         |         |         |         |    |   0 |   7 |   0 |
+|    9  |    r7   |    r7   |    r7   |    r7   |         |    r7   |    r7   |    r7   |         |         |         |         |    |   0 |   7 |   0 |
+|   10  |    r8   |    r8   |    r8   |    r8   |         |    r8   |    r8   |    r8   |         |         |         |         |    |   0 |   7 |   0 |
+|   12  |         |    r6   |    r6   |    r6   |    r6   |         |    r6   |    r6   |         |         |         |         |    |   0 |   6 |   0 |
+|   13  |         |    r4   |    r4   |    r4   |    r4   |         |    r4   |    r4   |         |         |         |         |    |   0 |   6 |   0 |
+|   15  |         |    r5   |    r5   |    r5   |    r5   |         |    r5   |    r5   |         |         |         |         |    |   0 |   6 |   0 |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+| TOTAL ACTIONS                                                                                                                 |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|shift  |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |    |   0 |     |     |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|reduce |     2   |     8   |     8   |     8   |     6   |     3   |     8   |     8   |     0   |     0   |     0   |     0   |    |     |  51 |     |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+|goto   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |     0   |    |     |     |   0 |
++-------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+    +-----+-----+-----+
+
+

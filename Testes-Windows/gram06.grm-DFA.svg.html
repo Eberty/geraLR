@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="snap.svg-min.js"></script>
+        <script>
+        window.onload = function () {
+            var s = Snap("#SvgAnimado");
+            var funcIdex=0;
+            var timeoutAnim = function(time, nextElem){
+				s.animate({},time, nextElem);
+			}
+			var nextFrame = function(){
+			if(funcIdex <= ultimaAnim){
+					funcs[funcIdex]();
+					funcIdex++;
+				}
+			}
+			var previousFrame = function(){
+				while(funcIdex>0 && names[funcIdex-1] == null){
+					funcIdex--;
+				}
+				if(funcIdex > 0 && names[funcIdex-1] != null){
+					if(s.select("#"+names[funcIdex-1]).attr("opacity")==0)
+						s.select("#"+names[funcIdex-1]).animate({opacity:1}, 200);
+					else
+						s.select("#"+names[funcIdex-1]).animate({opacity: 0}, 200);
+					funcIdex--;
+				}
+			}
+			var showElem = function(elem, time, next){
+				if(next == null)
+					s.select("#"+elem).animate({opacity: 1}, time);
+				else{
+					s.select("#"+elem).animate({opacity: 1}, time, timeoutAnim(time, next));
+					funcIdex++;
+				}
+			}
+			var hideElem = function(elem, time, next){
+				if(next == null)
+					s.select("#"+elem).animate({opacity: 0}, time);
+				else{
+					s.select("#"+elem).animate({opacity: 0}, time, timeoutAnim(time, next));
+					funcIdex++;
+				}
+			}
+
+			s.select("#"+"state_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_1_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_1_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_1_item_2").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_1_item_3").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_1_item_4").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_2").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_2_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_2_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_2_item_2").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_2_item_4").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_2_item_5").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_2_item_3").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_2").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_3").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_3_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_3_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_4").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_5").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_5_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_5_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_3").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_4").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_4_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_4_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_5").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_6").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_6_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_6_item_1").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_6_item_2").animate({opacity: 0}, 100);
+
+			s.select("#"+"trans_6").animate({opacity: 0}, 100);
+
+			s.select("#"+"state_7").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_7_title").animate({opacity: 0}, 100);
+
+			s.select("#"+"a_state_7_item_1").animate({opacity: 0}, 100);
+
+			var anim0 = function(){
+				timeoutAnim(500, anim1);
+				funcIdex++;
+			}
+			var anim1 = function(){
+				var name = "state_1";
+				var next = anim2;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim2 = function(){
+				timeoutAnim(500, anim3);
+				funcIdex++;
+			}
+			var anim3 = function(){
+				var name = "a_state_1_title";
+				var next = anim4;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim4 = function(){
+				timeoutAnim(500, anim5);
+				funcIdex++;
+			}
+			var anim5 = function(){
+				var name = "a_state_1_item_1";
+				var next = anim6;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim6 = function(){
+				timeoutAnim(500, anim7);
+				funcIdex++;
+			}
+			var anim7 = function(){
+				var name = "a_state_1_item_1";
+				var next = anim8;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim8 = function(){
+				timeoutAnim(500, anim9);
+				funcIdex++;
+			}
+			var anim9 = function(){
+				var name = "a_state_1_item_1";
+				var next = anim10;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim10 = function(){
+				timeoutAnim(500, anim11);
+				funcIdex++;
+			}
+			var anim11 = function(){
+				var name = "a_state_1_item_1";
+				var next = anim12;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim12 = function(){
+				timeoutAnim(500, anim13);
+				funcIdex++;
+			}
+			var anim13 = function(){
+				var name = "a_state_1_item_1";
+				var next = anim14;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim14 = function(){
+				timeoutAnim(500, anim15);
+				funcIdex++;
+			}
+			var anim15 = function(){
+				var name = "a_state_1_item_2";
+				var next = anim16;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim16 = function(){
+				timeoutAnim(500, anim17);
+				funcIdex++;
+			}
+			var anim17 = function(){
+				var name = "a_state_1_item_3";
+				var next = anim18;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim18 = function(){
+				timeoutAnim(500, anim19);
+				funcIdex++;
+			}
+			var anim19 = function(){
+				var name = "a_state_1_item_4";
+				var next = anim20;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim20 = function(){
+				timeoutAnim(500, anim21);
+				funcIdex++;
+			}
+			var anim21 = function(){
+				var name = "a_state_1_item_1";
+				var next = anim22;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim22 = function(){
+				var name = "a_state_1_item_3";
+				var next = anim23;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim23 = function(){
+				var name = "a_state_1_item_4";
+				var next = anim24;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim24 = function(){
+				timeoutAnim(500, anim25);
+				funcIdex++;
+			}
+			var anim25 = function(){
+				var name = "a_state_1_item_1";
+				var next = anim26;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim26 = function(){
+				var name = "a_state_1_item_3";
+				var next = anim27;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim27 = function(){
+				var name = "a_state_1_item_4";
+				var next = anim28;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim28 = function(){
+				timeoutAnim(500, anim29);
+				funcIdex++;
+			}
+			var anim29 = function(){
+				var name = "a_state_1_item_1";
+				var next = anim30;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim30 = function(){
+				var name = "a_state_1_item_3";
+				var next = anim31;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim31 = function(){
+				var name = "a_state_1_item_4";
+				var next = anim32;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim32 = function(){
+				timeoutAnim(500, anim33);
+				funcIdex++;
+			}
+			var anim33 = function(){
+				var name = "a_state_1_item_1";
+				var next = anim34;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim34 = function(){
+				var name = "a_state_1_item_3";
+				var next = anim35;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim35 = function(){
+				var name = "a_state_1_item_4";
+				var next = anim36;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim36 = function(){
+				timeoutAnim(500, anim37);
+				funcIdex++;
+			}
+			var anim37 = function(){
+				var name = "trans_1";
+				var next = anim38;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim38 = function(){
+				timeoutAnim(500, anim39);
+				funcIdex++;
+			}
+			var anim39 = function(){
+				var name = "state_2";
+				var next = anim40;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim40 = function(){
+				timeoutAnim(500, anim41);
+				funcIdex++;
+			}
+			var anim41 = function(){
+				var name = "a_state_2_title";
+				var next = anim42;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim42 = function(){
+				timeoutAnim(500, anim43);
+				funcIdex++;
+			}
+			var anim43 = function(){
+				var name = "a_state_2_item_1";
+				var next = anim44;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim44 = function(){
+				timeoutAnim(500, anim45);
+				funcIdex++;
+			}
+			var anim45 = function(){
+				var name = "a_state_2_item_2";
+				var next = anim46;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim46 = function(){
+				timeoutAnim(500, anim47);
+				funcIdex++;
+			}
+			var anim47 = function(){
+				var name = "a_state_2_item_2";
+				var next = anim48;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim48 = function(){
+				timeoutAnim(500, anim49);
+				funcIdex++;
+			}
+			var anim49 = function(){
+				var name = "a_state_2_item_2";
+				var next = anim50;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim50 = function(){
+				timeoutAnim(500, anim51);
+				funcIdex++;
+			}
+			var anim51 = function(){
+				var name = "a_state_2_item_2";
+				var next = anim52;
+				var time = 200;
+				hideElem(name, time, next);
+			}
+			var anim52 = function(){
+				timeoutAnim(500, anim53);
+				funcIdex++;
+			}
+			var anim53 = function(){
+				var name = "a_state_2_item_2";
+				var next = anim54;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim54 = function(){
+				timeoutAnim(500, anim55);
+				funcIdex++;
+			}
+			var anim55 = function(){
+				var name = "a_state_2_item_4";
+				var next = anim56;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim56 = function(){
+				timeoutAnim(500, anim57);
+				funcIdex++;
+			}
+			var anim57 = function(){
+				var name = "a_state_2_item_5";
+				var next = anim58;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim58 = function(){
+				timeoutAnim(500, anim59);
+				funcIdex++;
+			}
+			var anim59 = function(){
+				var name = "a_state_2_item_3";
+				var next = anim60;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim60 = function(){
+				timeoutAnim(500, anim61);
+				funcIdex++;
+			}
+			var anim61 = function(){
+				var name = "a_state_1_item_2";
+				var next = anim62;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim62 = function(){
+				timeoutAnim(500, anim63);
+				funcIdex++;
+			}
+			var anim63 = function(){
+				var name = "a_state_1_item_2";
+				var next = anim64;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim64 = function(){
+				timeoutAnim(500, anim65);
+				funcIdex++;
+			}
+			var anim65 = function(){
+				var name = "a_state_1_item_2";
+				var next = anim66;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim66 = function(){
+				timeoutAnim(500, anim67);
+				funcIdex++;
+			}
+			var anim67 = function(){
+				var name = "a_state_1_item_2";
+				var next = anim68;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim68 = function(){
+				timeoutAnim(500, anim69);
+				funcIdex++;
+			}
+			var anim69 = function(){
+				var name = "trans_2";
+				var next = anim70;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim70 = function(){
+				timeoutAnim(500, anim71);
+				funcIdex++;
+			}
+			var anim71 = function(){
+				var name = "state_3";
+				var next = anim72;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim72 = function(){
+				timeoutAnim(500, anim73);
+				funcIdex++;
+			}
+			var anim73 = function(){
+				var name = "a_state_3_title";
+				var next = anim74;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim74 = function(){
+				timeoutAnim(500, anim75);
+				funcIdex++;
+			}
+			var anim75 = function(){
+				var name = "a_state_3_item_1";
+				var next = anim76;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim76 = function(){
+				timeoutAnim(500, anim77);
+				funcIdex++;
+			}
+			var anim77 = function(){
+				var name = "a_state_2_item_1";
+				var next = anim78;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim78 = function(){
+				timeoutAnim(500, anim79);
+				funcIdex++;
+			}
+			var anim79 = function(){
+				var name = "a_state_2_item_1";
+				var next = anim80;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim80 = function(){
+				timeoutAnim(500, anim81);
+				funcIdex++;
+			}
+			var anim81 = function(){
+				var name = "a_state_2_item_1";
+				var next = anim82;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim82 = function(){
+				timeoutAnim(500, anim83);
+				funcIdex++;
+			}
+			var anim83 = function(){
+				var name = "a_state_2_item_1";
+				var next = anim84;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim84 = function(){
+				timeoutAnim(500, anim85);
+				funcIdex++;
+			}
+			var anim85 = function(){
+				var name = "trans_4";
+				var next = anim86;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim86 = function(){
+				timeoutAnim(500, anim87);
+				funcIdex++;
+			}
+			var anim87 = function(){
+				var name = "state_5";
+				var next = anim88;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim88 = function(){
+				timeoutAnim(500, anim89);
+				funcIdex++;
+			}
+			var anim89 = function(){
+				var name = "a_state_5_title";
+				var next = anim90;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim90 = function(){
+				timeoutAnim(500, anim91);
+				funcIdex++;
+			}
+			var anim91 = function(){
+				var name = "a_state_5_item_1";
+				var next = anim92;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim92 = function(){
+				timeoutAnim(500, anim93);
+				funcIdex++;
+			}
+			var anim93 = function(){
+				var name = "a_state_2_item_2";
+				var next = anim94;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim94 = function(){
+				timeoutAnim(500, anim95);
+				funcIdex++;
+			}
+			var anim95 = function(){
+				var name = "a_state_2_item_2";
+				var next = anim96;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim96 = function(){
+				timeoutAnim(500, anim97);
+				funcIdex++;
+			}
+			var anim97 = function(){
+				var name = "a_state_2_item_2";
+				var next = anim98;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim98 = function(){
+				timeoutAnim(500, anim99);
+				funcIdex++;
+			}
+			var anim99 = function(){
+				var name = "a_state_2_item_2";
+				var next = anim100;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim100 = function(){
+				timeoutAnim(500, anim101);
+				funcIdex++;
+			}
+			var anim101 = function(){
+				var name = "trans_3";
+				var next = anim102;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim102 = function(){
+				timeoutAnim(500, anim103);
+				funcIdex++;
+			}
+			var anim103 = function(){
+				var name = "state_4";
+				var next = anim104;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim104 = function(){
+				timeoutAnim(500, anim105);
+				funcIdex++;
+			}
+			var anim105 = function(){
+				var name = "a_state_4_title";
+				var next = anim106;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim106 = function(){
+				timeoutAnim(500, anim107);
+				funcIdex++;
+			}
+			var anim107 = function(){
+				var name = "a_state_4_item_1";
+				var next = anim108;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim108 = function(){
+				timeoutAnim(500, anim109);
+				funcIdex++;
+			}
+			var anim109 = function(){
+				var name = "a_state_2_item_3";
+				var next = anim110;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim110 = function(){
+				var name = "a_state_2_item_4";
+				var next = anim111;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim111 = function(){
+				timeoutAnim(500, anim112);
+				funcIdex++;
+			}
+			var anim112 = function(){
+				var name = "a_state_2_item_3";
+				var next = anim113;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim113 = function(){
+				var name = "a_state_2_item_4";
+				var next = anim114;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim114 = function(){
+				timeoutAnim(500, anim115);
+				funcIdex++;
+			}
+			var anim115 = function(){
+				var name = "a_state_2_item_3";
+				var next = anim116;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim116 = function(){
+				var name = "a_state_2_item_4";
+				var next = anim117;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim117 = function(){
+				timeoutAnim(500, anim118);
+				funcIdex++;
+			}
+			var anim118 = function(){
+				var name = "a_state_2_item_3";
+				var next = anim119;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim119 = function(){
+				var name = "a_state_2_item_4";
+				var next = anim120;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim120 = function(){
+				timeoutAnim(500, anim121);
+				funcIdex++;
+			}
+			var anim121 = function(){
+				var name = "trans_5";
+				var next = anim122;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim122 = function(){
+				timeoutAnim(500, anim123);
+				funcIdex++;
+			}
+			var anim123 = function(){
+				var name = "state_6";
+				var next = anim124;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim124 = function(){
+				timeoutAnim(500, anim125);
+				funcIdex++;
+			}
+			var anim125 = function(){
+				var name = "a_state_6_title";
+				var next = anim126;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim126 = function(){
+				timeoutAnim(500, anim127);
+				funcIdex++;
+			}
+			var anim127 = function(){
+				var name = "a_state_6_item_1";
+				var next = anim128;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim128 = function(){
+				timeoutAnim(500, anim129);
+				funcIdex++;
+			}
+			var anim129 = function(){
+				var name = "a_state_6_item_2";
+				var next = anim130;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim130 = function(){
+				timeoutAnim(500, anim131);
+				funcIdex++;
+			}
+			var anim131 = function(){
+				var name = "a_state_4_item_1";
+				var next = anim132;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim132 = function(){
+				timeoutAnim(500, anim133);
+				funcIdex++;
+			}
+			var anim133 = function(){
+				var name = "a_state_4_item_1";
+				var next = anim134;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim134 = function(){
+				timeoutAnim(500, anim135);
+				funcIdex++;
+			}
+			var anim135 = function(){
+				var name = "a_state_4_item_1";
+				var next = anim136;
+				var time = 0;
+				hideElem(name, time, next);
+			}
+			var anim136 = function(){
+				timeoutAnim(500, anim137);
+				funcIdex++;
+			}
+			var anim137 = function(){
+				var name = "a_state_4_item_1";
+				var next = anim138;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim138 = function(){
+				timeoutAnim(500, anim139);
+				funcIdex++;
+			}
+			var anim139 = function(){
+				var name = "trans_6";
+				var next = anim140;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim140 = function(){
+				timeoutAnim(500, anim141);
+				funcIdex++;
+			}
+			var anim141 = function(){
+				var name = "state_7";
+				var next = anim142;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim142 = function(){
+				timeoutAnim(500, anim143);
+				funcIdex++;
+			}
+			var anim143 = function(){
+				var name = "a_state_7_title";
+				var next = anim144;
+				var time = 0;
+				showElem(name, time, next);
+			}
+			var anim144 = function(){
+				var name = "a_state_7_item_1";
+				var next = null;
+				var time = 200;
+				showElem(name, time, next);
+			}
+			var funcs = [anim0, anim1, anim2, anim3, anim4, anim5, anim6, anim7, anim8, anim9, anim10, anim11, anim12, anim13, anim14, anim15, anim16, anim17, anim18, anim19, anim20, anim21, anim22, anim23, anim24, anim25, anim26, anim27, anim28, anim29, anim30, anim31, anim32, anim33, anim34, anim35, anim36, anim37, anim38, anim39, anim40, anim41, anim42, anim43, anim44, anim45, anim46, anim47, anim48, anim49, anim50, anim51, anim52, anim53, anim54, anim55, anim56, anim57, anim58, anim59, anim60, anim61, anim62, anim63, anim64, anim65, anim66, anim67, anim68, anim69, anim70, anim71, anim72, anim73, anim74, anim75, anim76, anim77, anim78, anim79, anim80, anim81, anim82, anim83, anim84, anim85, anim86, anim87, anim88, anim89, anim90, anim91, anim92, anim93, anim94, anim95, anim96, anim97, anim98, anim99, anim100, anim101, anim102, anim103, anim104, anim105, anim106, anim107, anim108, anim109, anim110, anim111, anim112, anim113, anim114, anim115, anim116, anim117, anim118, anim119, anim120, anim121, anim122, anim123, anim124, anim125, anim126, anim127, anim128, anim129, anim130, anim131, anim132, anim133, anim134, anim135, anim136, anim137, anim138, anim139, anim140, anim141, anim142, anim143, anim144];
+			var names = [null,"state_1",null,"a_state_1_title",null,"a_state_1_item_1",null,"a_state_1_item_1",null,"a_state_1_item_1",null,"a_state_1_item_1",null,"a_state_1_item_1",null,"a_state_1_item_2",null,"a_state_1_item_3",null,"a_state_1_item_4",null,"a_state_1_item_1","a_state_1_item_3","a_state_1_item_4",null,"a_state_1_item_1","a_state_1_item_3","a_state_1_item_4",null,"a_state_1_item_1","a_state_1_item_3","a_state_1_item_4",null,"a_state_1_item_1","a_state_1_item_3","a_state_1_item_4",null,"trans_1",null,"state_2",null,"a_state_2_title",null,"a_state_2_item_1",null,"a_state_2_item_2",null,"a_state_2_item_2",null,"a_state_2_item_2",null,"a_state_2_item_2",null,"a_state_2_item_2",null,"a_state_2_item_4",null,"a_state_2_item_5",null,"a_state_2_item_3",null,"a_state_1_item_2",null,"a_state_1_item_2",null,"a_state_1_item_2",null,"a_state_1_item_2",null,"trans_2",null,"state_3",null,"a_state_3_title",null,"a_state_3_item_1",null,"a_state_2_item_1",null,"a_state_2_item_1",null,"a_state_2_item_1",null,"a_state_2_item_1",null,"trans_4",null,"state_5",null,"a_state_5_title",null,"a_state_5_item_1",null,"a_state_2_item_2",null,"a_state_2_item_2",null,"a_state_2_item_2",null,"a_state_2_item_2",null,"trans_3",null,"state_4",null,"a_state_4_title",null,"a_state_4_item_1",null,"a_state_2_item_3","a_state_2_item_4",null,"a_state_2_item_3","a_state_2_item_4",null,"a_state_2_item_3","a_state_2_item_4",null,"a_state_2_item_3","a_state_2_item_4",null,"trans_5",null,"state_6",null,"a_state_6_title",null,"a_state_6_item_1",null,"a_state_6_item_2",null,"a_state_4_item_1",null,"a_state_4_item_1",null,"a_state_4_item_1",null,"a_state_4_item_1",null,"trans_6",null,"state_7",null,"a_state_7_title","a_state_7_item_1"];
+			var inicios = [0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,1];
+			var ultimaAnim = 144;
+
+			document.onmousedown = function (e) {
+				nextFrame();
+			}
+			document.onkeydown = function (e) { 
+			 switch(e.which) {
+			   case 27: case 37: case 65: // left
+			        previousFrame();
+			   break;
+			   case 32: case 39: case 68: // right
+					nextFrame();
+			   break;
+			   default: return;
+			   }
+			   e.preventDefault(); // prevent the default action (scroll / move caret)
+			};
+        };
+        </script>
+    </head>
+    <body>
+		<svg id="SvgAnimado" width="2000px" height="2000px">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: DFA Pages: 1 -->
+<svg width="1002pt" height="291pt"
+ viewBox="0.00 0.00 1002.00 290.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 286.5)">
+<title>DFA</title>
+<!-- state_1 -->
+<g id="state_1" class="node">
+<title>state_1</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M179,-250C179,-250 12,-250 12,-250 6,-250 0,-244 0,-238 0,-238 0,-142 0,-142 0,-136 6,-130 12,-130 12,-130 179,-130 179,-130 185,-130 191,-136 191,-142 191,-142 191,-238 191,-238 191,-244 185,-250 179,-250"/>
+<g id="a_state_1_title"><a xlink:href="#" xlink:title="state_1_title">
+<text text-anchor="start" x="73" y="-229.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="112" y="-229.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">1</text>
+</a>
+</g>
+<g id="a_state_1_item_1"><a xlink:href="#" xlink:title="state_1_item_1">
+<text text-anchor="start" x="11.5" y="-208.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List&#39; </text>
+<text text-anchor="start" x="39.5" y="-208.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="58.5" y="-208.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="68.5" y="-208.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> List</text>
+<text text-anchor="start" x="94.5" y="-208.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> $</text>
+</a>
+</g>
+<g id="a_state_1_item_2"><a xlink:href="#" xlink:title="state_1_item_2">
+<text text-anchor="start" x="11.5" y="-187.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List </text>
+<text text-anchor="start" x="37.5" y="-187.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="56.5" y="-187.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="66.5" y="-187.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> id</text>
+</a>
+</g>
+<g id="a_state_1_item_3"><a xlink:href="#" xlink:title="state_1_item_3">
+<text text-anchor="start" x="11.5" y="-166.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List </text>
+<text text-anchor="start" x="37.5" y="-166.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="56.5" y="-166.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="66.5" y="-166.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> List</text>
+<text text-anchor="start" x="92.5" y="-166.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> OptComma</text>
+<text text-anchor="start" x="164.5" y="-166.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> id</text>
+</a>
+</g>
+<g id="a_state_1_item_4"><a xlink:href="#" xlink:title="state_1_item_4">
+<text text-anchor="start" x="11.5" y="-145.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List </text>
+<text text-anchor="start" x="37.5" y="-145.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="56.5" y="-145.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="66.5" y="-145.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> List</text>
+<text text-anchor="start" x="92.5" y="-145.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ,</text>
+</a>
+</g>
+</g>
+<!-- state_3 -->
+<g id="state_3" class="node">
+<title>state_3</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M383,-278.5C383,-278.5 314,-278.5 314,-278.5 308,-278.5 302,-272.5 302,-266.5 302,-266.5 302,-233.5 302,-233.5 302,-227.5 308,-221.5 314,-221.5 314,-221.5 383,-221.5 383,-221.5 389,-221.5 395,-227.5 395,-233.5 395,-233.5 395,-266.5 395,-266.5 395,-272.5 389,-278.5 383,-278.5"/>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M387,-282.5C387,-282.5 310,-282.5 310,-282.5 304,-282.5 298,-276.5 298,-270.5 298,-270.5 298,-229.5 298,-229.5 298,-223.5 304,-217.5 310,-217.5 310,-217.5 387,-217.5 387,-217.5 393,-217.5 399,-223.5 399,-229.5 399,-229.5 399,-270.5 399,-270.5 399,-276.5 393,-282.5 387,-282.5"/>
+<g id="a_state_3_title"><a xlink:href="#" xlink:title="state_3_title">
+<text text-anchor="start" x="326" y="-257.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="365" y="-257.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">3</text>
+</a>
+</g>
+<g id="a_state_3_item_1"><a xlink:href="#" xlink:title="state_3_item_1">
+<text text-anchor="start" x="313.5" y="-236.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List </text>
+<text text-anchor="start" x="339.5" y="-236.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="358.5" y="-236.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> id</text>
+<text text-anchor="start" x="374.5" y="-236.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+</g>
+<!-- state_1&#45;&gt;state_3 -->
+<g id="trans_2" class="edge">
+<title>state_1&#45;&gt;state_3</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M191.1485,-212.6834C223.5684,-220.372 258.8675,-228.7433 287.8018,-235.6052"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="287.2178,-239.0637 297.7556,-237.9658 288.8331,-232.2526 287.2178,-239.0637"/>
+<text text-anchor="start" x="214" y="-224.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> id</text>
+</g>
+<!-- state_2 -->
+<g id="state_2" class="node">
+<title>state_2</title>
+<path fill="#f5f5dc" stroke="#b8860b" stroke-width="1.5" stroke-dasharray="5,2" d="M432,-199.5C432,-199.5 265,-199.5 265,-199.5 259,-199.5 253,-193.5 253,-187.5 253,-187.5 253,-70.5 253,-70.5 253,-64.5 259,-58.5 265,-58.5 265,-58.5 432,-58.5 432,-58.5 438,-58.5 444,-64.5 444,-70.5 444,-70.5 444,-187.5 444,-187.5 444,-193.5 438,-199.5 432,-199.5"/>
+<g id="a_state_2_title"><a xlink:href="#" xlink:title="state_2_title">
+<text text-anchor="start" x="326" y="-178.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="365" y="-178.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">2</text>
+</a>
+</g>
+<g id="a_state_2_item_1"><a xlink:href="#" xlink:title="state_2_item_1">
+<text text-anchor="start" x="264.5" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List&#39; </text>
+<text text-anchor="start" x="292.5" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="311.5" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> List</text>
+<text text-anchor="start" x="337.5" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="347.5" y="-157.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> $</text>
+</a>
+</g>
+<g id="a_state_2_item_2"><a xlink:href="#" xlink:title="state_2_item_2">
+<text text-anchor="start" x="264.5" y="-136.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List </text>
+<text text-anchor="start" x="290.5" y="-136.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="309.5" y="-136.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> List</text>
+<text text-anchor="start" x="335.5" y="-136.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="345.5" y="-136.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> OptComma</text>
+<text text-anchor="start" x="417.5" y="-136.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> id</text>
+</a>
+</g>
+<g id="a_state_2_item_3"><a xlink:href="#" xlink:title="state_2_item_3">
+<text text-anchor="start" x="264.5" y="-115.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List </text>
+<text text-anchor="start" x="290.5" y="-115.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="309.5" y="-115.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> List</text>
+<text text-anchor="start" x="335.5" y="-115.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="345.5" y="-115.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ,</text>
+</a>
+</g>
+<g id="a_state_2_item_4"><a xlink:href="#" xlink:title="state_2_item_4">
+<text text-anchor="start" x="264.5" y="-94.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">OptComma </text>
+<text text-anchor="start" x="336.5" y="-94.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="355.5" y="-94.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="365.5" y="-94.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ,</text>
+</a>
+</g>
+<g id="a_state_2_item_5"><a xlink:href="#" xlink:title="state_2_item_5">
+<text text-anchor="start" x="264.5" y="-73.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">OptComma </text>
+<text text-anchor="start" x="336.5" y="-73.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="355.5" y="-73.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+</g>
+<!-- state_1&#45;&gt;state_2 -->
+<g id="trans_1" class="edge">
+<title>state_1&#45;&gt;state_2</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M191.1485,-166.9385C207.9928,-162.8772 225.6143,-158.6286 242.7166,-154.5051"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="243.8153,-157.8406 252.7163,-152.0941 242.1745,-151.0356 243.8153,-157.8406"/>
+<text text-anchor="start" x="209" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> List</text>
+</g>
+<!-- state_4 -->
+<g id="state_4" class="node">
+<title>state_4</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M731,-236.5C731,-236.5 564,-236.5 564,-236.5 558,-236.5 552,-230.5 552,-224.5 552,-224.5 552,-191.5 552,-191.5 552,-185.5 558,-179.5 564,-179.5 564,-179.5 731,-179.5 731,-179.5 737,-179.5 743,-185.5 743,-191.5 743,-191.5 743,-224.5 743,-224.5 743,-230.5 737,-236.5 731,-236.5"/>
+<g id="a_state_4_title"><a xlink:href="#" xlink:title="state_4_title">
+<text text-anchor="start" x="625" y="-215.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="664" y="-215.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">4</text>
+</a>
+</g>
+<g id="a_state_4_item_1"><a xlink:href="#" xlink:title="state_4_item_1">
+<text text-anchor="start" x="563.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List </text>
+<text text-anchor="start" x="589.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="608.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> List</text>
+<text text-anchor="start" x="634.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> OptComma</text>
+<text text-anchor="start" x="706.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+<text text-anchor="start" x="716.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> id</text>
+</a>
+</g>
+</g>
+<!-- state_7 -->
+<g id="state_7" class="node">
+<title>state_7</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M978,-236.5C978,-236.5 811,-236.5 811,-236.5 805,-236.5 799,-230.5 799,-224.5 799,-224.5 799,-191.5 799,-191.5 799,-185.5 805,-179.5 811,-179.5 811,-179.5 978,-179.5 978,-179.5 984,-179.5 990,-185.5 990,-191.5 990,-191.5 990,-224.5 990,-224.5 990,-230.5 984,-236.5 978,-236.5"/>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M982,-240.5C982,-240.5 807,-240.5 807,-240.5 801,-240.5 795,-234.5 795,-228.5 795,-228.5 795,-187.5 795,-187.5 795,-181.5 801,-175.5 807,-175.5 807,-175.5 982,-175.5 982,-175.5 988,-175.5 994,-181.5 994,-187.5 994,-187.5 994,-228.5 994,-228.5 994,-234.5 988,-240.5 982,-240.5"/>
+<g id="a_state_7_title"><a xlink:href="#" xlink:title="state_7_title">
+<text text-anchor="start" x="872" y="-215.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="911" y="-215.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">7</text>
+</a>
+</g>
+<g id="a_state_7_item_1"><a xlink:href="#" xlink:title="state_7_item_1">
+<text text-anchor="start" x="810.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List </text>
+<text text-anchor="start" x="836.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="855.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> List</text>
+<text text-anchor="start" x="881.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> OptComma</text>
+<text text-anchor="start" x="953.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> id</text>
+<text text-anchor="start" x="969.5" y="-194.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+</g>
+<!-- state_4&#45;&gt;state_7 -->
+<g id="trans_6" class="edge">
+<title>state_4&#45;&gt;state_7</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M743.3502,-208C756.7497,-208 770.6069,-208 784.2462,-208"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="784.6225,-211.5001 794.6225,-208 784.6225,-204.5001 784.6225,-211.5001"/>
+<text text-anchor="start" x="761" y="-211.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> id</text>
+</g>
+<!-- state_5 -->
+<g id="state_5" class="node">
+<title>state_5</title>
+<path fill="#fffff0" stroke="#b8860b" stroke-width="1.5" d="M694,-157.5C694,-157.5 601,-157.5 601,-157.5 595,-157.5 589,-151.5 589,-145.5 589,-145.5 589,-112.5 589,-112.5 589,-106.5 595,-100.5 601,-100.5 601,-100.5 694,-100.5 694,-100.5 700,-100.5 706,-106.5 706,-112.5 706,-112.5 706,-145.5 706,-145.5 706,-151.5 700,-157.5 694,-157.5"/>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M698,-161.5C698,-161.5 597,-161.5 597,-161.5 591,-161.5 585,-155.5 585,-149.5 585,-149.5 585,-108.5 585,-108.5 585,-102.5 591,-96.5 597,-96.5 597,-96.5 698,-96.5 698,-96.5 704,-96.5 710,-102.5 710,-108.5 710,-108.5 710,-149.5 710,-149.5 710,-155.5 704,-161.5 698,-161.5"/>
+<g id="a_state_5_title"><a xlink:href="#" xlink:title="state_5_title">
+<text text-anchor="start" x="625" y="-136.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="664" y="-136.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">5</text>
+</a>
+</g>
+<g id="a_state_5_item_1"><a xlink:href="#" xlink:title="state_5_item_1">
+<text text-anchor="start" x="600.5" y="-115.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List&#39; </text>
+<text text-anchor="start" x="628.5" y="-115.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="647.5" y="-115.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> List</text>
+<text text-anchor="start" x="673.5" y="-115.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> $</text>
+<text text-anchor="start" x="685.5" y="-115.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+</g>
+<!-- state_2&#45;&gt;state_4 -->
+<g id="trans_3" class="edge">
+<title>state_2&#45;&gt;state_4</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M444.3392,-154.3221C475.5313,-162.5635 510.3167,-171.7542 542.1644,-180.1689"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="541.3843,-183.5828 551.9467,-182.7535 543.1725,-176.815 541.3843,-183.5828"/>
+<text text-anchor="start" x="462" y="-180.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> OptComma</text>
+</g>
+<!-- state_2&#45;&gt;state_5 -->
+<g id="trans_4" class="edge">
+<title>state_2&#45;&gt;state_5</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M444.3392,-129C486.6085,-129 535.4764,-129 574.6905,-129"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="574.701,-132.5001 584.7009,-129 574.7009,-125.5001 574.701,-132.5001"/>
+<text text-anchor="start" x="492" y="-132.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> $</text>
+</g>
+<!-- state_6 -->
+<g id="state_6" class="node">
+<title>state_6</title>
+<path fill="#f5f5dc" stroke="#b8860b" stroke-width="1.5" stroke-dasharray="5,2" d="M701,-78C701,-78 594,-78 594,-78 588,-78 582,-72 582,-66 582,-66 582,-12 582,-12 582,-6 588,0 594,0 594,0 701,0 701,0 707,0 713,-6 713,-12 713,-12 713,-66 713,-66 713,-72 707,-78 701,-78"/>
+<g id="a_state_6_title"><a xlink:href="#" xlink:title="state_6_title">
+<text text-anchor="start" x="625" y="-57.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">Estado </text>
+<text text-anchor="start" x="664" y="-57.6" font-family="Calibri" font-weight="bold" font-size="13.00" fill="#8b4513">6</text>
+</a>
+</g>
+<g id="a_state_6_item_1"><a xlink:href="#" xlink:title="state_6_item_1">
+<text text-anchor="start" x="593.5" y="-36.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">List </text>
+<text text-anchor="start" x="619.5" y="-36.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="638.5" y="-36.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29"> List</text>
+<text text-anchor="start" x="664.5" y="-36.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ,</text>
+<text text-anchor="start" x="672.5" y="-36.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+<g id="a_state_6_item_2"><a xlink:href="#" xlink:title="state_6_item_2">
+<text text-anchor="start" x="593.5" y="-15.8" font-family="Times,serif" font-size="14.00" fill="#bc1f29">OptComma </text>
+<text text-anchor="start" x="665.5" y="-15.8" font-family="Times,serif" font-size="14.00" fill="#0a5040">→ </text>
+<text text-anchor="start" x="684.5" y="-15.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ,</text>
+<text text-anchor="start" x="692.5" y="-15.8" font-family="Times,serif" font-size="14.00" fill="#f5a70a"> •</text>
+</a>
+</g>
+</g>
+<!-- state_2&#45;&gt;state_6 -->
+<g id="trans_5" class="edge">
+<title>state_2&#45;&gt;state_6</title>
+<path fill="none" stroke="#b8860b" stroke-width="1.5" d="M444.3392,-100.1521C485.7534,-87.6863 533.502,-73.3138 572.299,-61.6358"/>
+<polygon fill="#b8860b" stroke="#b8860b" stroke-width="1.5" points="573.3937,-64.9615 581.9605,-58.7276 571.376,-58.2585 573.3937,-64.9615"/>
+<text text-anchor="start" x="494" y="-97.8" font-family="Times,serif" font-size="14.00" fill="#0a5040"> ,</text>
+</g>
+</g>
+</svg>
+
+		</svg>
+    </body>
+</html>

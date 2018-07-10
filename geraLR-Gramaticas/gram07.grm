@@ -1,0 +1,13 @@
+List -> NoCommas IdList NoCommas ;
+
+IdList -> 'id'
+       |  IdList OneComma 'id' ;
+
+OneComma -> Commas
+         | ;
+
+NoCommas -> Commas
+         | ;
+
+Commas -> Commas ','
+       |  ',' ;

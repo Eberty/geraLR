@@ -1,0 +1,810 @@
+LISTA DE TOKENS RECONHECIDOS EM "gram08.grm-DFA.lda"
+
++-----+-----+-----+--------------------------------+----------------------------------------------------+--------------+
+| LIN | COL | COD | TOKEN                          | LEXEMA                                             | POS TAB SIMB |
++-----+-----+-----+--------------------------------+----------------------------------------------------+--------------+
+|   1 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "state_1"                                          |        1     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|   2 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_1_title"                                  |        3     |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  16 | tk_pontoVirgula                |                                                    |              |
+|   3 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_1_item_1"                                 |        4     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|   4 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_1_item_1"                                 |        4     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+|   5 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_1_item_1"                                 |        4     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+|   6 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_1_item_2"                                 |        5     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|   7 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_1_item_3"                                 |        6     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|   8 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_1_item_2"                                 |        5     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+|   9 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_1_item_2"                                 |        5     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+|  10 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_1_item_4"                                 |        7     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  11 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_1_item_5"                                 |        8     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  13 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_2                                          |        9     |
+|     |  18 |   5 | tk_CADEIA                      | "(a_state_1_item_1)"                               |       10     |
+|     |  38 |  16 | tk_pontoVirgula                |                                                    |              |
+|  14 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_2                                          |        9     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  15 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_2                                          |        9     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  17 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_2"                                          |       11     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  19 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "state_2"                                          |       12     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  20 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_2_title"                                  |       13     |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  16 | tk_pontoVirgula                |                                                    |              |
+|  21 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_2_item_1"                                 |       14     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  23 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_3                                          |       15     |
+|     |  18 |   5 | tk_CADEIA                      | "(a_state_1_item_2)"                               |       16     |
+|     |  38 |  16 | tk_pontoVirgula                |                                                    |              |
+|  24 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_3                                          |       15     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  25 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_3                                          |       15     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  27 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_3"                                          |       17     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  29 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "state_3"                                          |       18     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  30 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_3_title"                                  |       19     |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  16 | tk_pontoVirgula                |                                                    |              |
+|  31 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_3_item_1"                                 |       20     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  33 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_1                                          |       21     |
+|     |  18 |   5 | tk_CADEIA                      | "(a_state_1_item_3)"                               |       22     |
+|     |  38 |  16 | tk_pontoVirgula                |                                                    |              |
+|  34 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_1                                          |       21     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  35 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_1                                          |       21     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  37 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_1"                                          |       23     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  39 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "state_4"                                          |       24     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  40 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_4_title"                                  |       25     |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  16 | tk_pontoVirgula                |                                                    |              |
+|  41 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_4_item_1"                                 |       26     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  43 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_4                                          |       27     |
+|     |  18 |   5 | tk_CADEIA                      | "(a_state_1_item_4)|(a_state_1_item_5)"            |       28     |
+|     |  57 |  16 | tk_pontoVirgula                |                                                    |              |
+|  44 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_4                                          |       27     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  45 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_1_4                                          |       27     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  47 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_4"                                          |       29     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  49 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "state_5"                                          |       30     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  50 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_5_title"                                  |       31     |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  16 | tk_pontoVirgula                |                                                    |              |
+|  51 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_5_item_1"                                 |       32     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  52 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_5_item_1"                                 |       32     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+|  53 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_5_item_1"                                 |       32     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+|  54 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_5_item_3"                                 |       33     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  55 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_5_item_4"                                 |       34     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  56 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_5_item_2"                                 |       35     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  57 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_5_item_3"                                 |       33     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+|  58 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_5_item_3"                                 |       33     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+|  59 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_5_item_5"                                 |       36     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  60 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_5_item_6"                                 |       37     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  62 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_2_5                                          |       38     |
+|     |  18 |   5 | tk_CADEIA                      | "(a_state_2_item_1)"                               |       39     |
+|     |  38 |  16 | tk_pontoVirgula                |                                                    |              |
+|  63 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_2_5                                          |       38     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  64 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_2_5                                          |       38     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  66 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_5"                                          |       40     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  68 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "state_6"                                          |       41     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  69 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_6_title"                                  |       42     |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  16 | tk_pontoVirgula                |                                                    |              |
+|  70 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_6_item_1"                                 |       43     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  72 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_8                                          |       44     |
+|     |  18 |   5 | tk_CADEIA                      | "(a_state_5_item_1)|(a_state_5_item_2)"            |       45     |
+|     |  57 |  16 | tk_pontoVirgula                |                                                    |              |
+|  73 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_8                                          |       44     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  74 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_8                                          |       44     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  76 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_8"                                          |       46     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  78 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "state_7"                                          |       47     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  79 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_7_title"                                  |       48     |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  16 | tk_pontoVirgula                |                                                    |              |
+|  80 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_7_item_1"                                 |       49     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  81 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_7_item_2"                                 |       50     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+|  83 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_6                                          |       51     |
+|     |  18 |   5 | tk_CADEIA                      | "(a_state_5_item_3)"                               |       52     |
+|     |  38 |  16 | tk_pontoVirgula                |                                                    |              |
+|  84 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_6                                          |       51     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  85 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_6                                          |       51     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  87 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_6"                                          |       53     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  89 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_7                                          |       54     |
+|     |  18 |   5 | tk_CADEIA                      | "(a_state_5_item_4)"                               |       55     |
+|     |  38 |  16 | tk_pontoVirgula                |                                                    |              |
+|  90 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_7                                          |       54     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  91 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_7                                          |       54     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  93 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_7"                                          |       56     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+|  95 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_9                                          |       57     |
+|     |  18 |   5 | tk_CADEIA                      | "(a_state_5_item_5)|(a_state_5_item_6)"            |       58     |
+|     |  57 |  16 | tk_pontoVirgula                |                                                    |              |
+|  96 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_9                                          |       57     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  97 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_5_9                                          |       57     |
+|     |  18 |  10 | tk_juntos                      |                                                    |              |
+|     |  25 |  11 | tk_apos                        |                                                    |              |
+|     |  30 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  35 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  12 | tk_por                         |                                                    |              |
+|     |  48 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  53 |  13 | tk_segundos                    |                                                    |              |
+|     |  61 |  16 | tk_pontoVirgula                |                                                    |              |
+|  99 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_9"                                          |       59     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+| 101 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_7_10                                         |       60     |
+|     |  19 |   5 | tk_CADEIA                      | "(a_state_7_item_2)"                               |       61     |
+|     |  39 |  16 | tk_pontoVirgula                |                                                    |              |
+| 102 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_7_10                                         |       60     |
+|     |  19 |  10 | tk_juntos                      |                                                    |              |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  12 | tk_por                         |                                                    |              |
+|     |  49 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  54 |  13 | tk_segundos                    |                                                    |              |
+|     |  62 |  16 | tk_pontoVirgula                |                                                    |              |
+| 103 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_7_10                                         |       60     |
+|     |  19 |  10 | tk_juntos                      |                                                    |              |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  12 | tk_por                         |                                                    |              |
+|     |  49 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  54 |  13 | tk_segundos                    |                                                    |              |
+|     |  62 |  16 | tk_pontoVirgula                |                                                    |              |
+| 105 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_10"                                         |       62     |
+|     |  19 |  11 | tk_apos                        |                                                    |              |
+|     |  24 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  29 |  13 | tk_segundos                    |                                                    |              |
+|     |  37 |  16 | tk_pontoVirgula                |                                                    |              |
+| 107 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "state_8"                                          |       63     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+| 108 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_8_title"                                  |       64     |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  16 | tk_pontoVirgula                |                                                    |              |
+| 109 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_8_item_1"                                 |       65     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+| 110 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_8_item_1"                                 |       65     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+| 111 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_8_item_1"                                 |       65     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+| 112 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_8_item_2"                                 |       66     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+| 113 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_8_item_3"                                 |       67     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+| 114 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_8_item_2"                                 |       66     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+| 115 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_8_item_2"                                 |       66     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  46 |  12 | tk_por                         |                                                    |              |
+|     |  50 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  55 |  13 | tk_segundos                    |                                                    |              |
+|     |  63 |  16 | tk_pontoVirgula                |                                                    |              |
+| 116 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_8_item_4"                                 |       68     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+| 117 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_8_item_5"                                 |       69     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+| 119 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_11                                         |       70     |
+|     |  19 |   5 | tk_CADEIA                      | "(a_state_8_item_1)"                               |       71     |
+|     |  39 |  16 | tk_pontoVirgula                |                                                    |              |
+| 120 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_11                                         |       70     |
+|     |  19 |  10 | tk_juntos                      |                                                    |              |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  12 | tk_por                         |                                                    |              |
+|     |  49 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  54 |  13 | tk_segundos                    |                                                    |              |
+|     |  62 |  16 | tk_pontoVirgula                |                                                    |              |
+| 121 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_11                                         |       70     |
+|     |  19 |  10 | tk_juntos                      |                                                    |              |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  12 | tk_por                         |                                                    |              |
+|     |  49 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  54 |  13 | tk_segundos                    |                                                    |              |
+|     |  62 |  16 | tk_pontoVirgula                |                                                    |              |
+| 123 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_11"                                         |       72     |
+|     |  19 |  11 | tk_apos                        |                                                    |              |
+|     |  24 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  29 |  13 | tk_segundos                    |                                                    |              |
+|     |  37 |  16 | tk_pontoVirgula                |                                                    |              |
+| 125 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "state_9"                                          |       73     |
+|     |  18 |  11 | tk_apos                        |                                                    |              |
+|     |  23 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  28 |  13 | tk_segundos                    |                                                    |              |
+|     |  36 |  16 | tk_pontoVirgula                |                                                    |              |
+| 126 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_9_title"                                  |       74     |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  44 |  16 | tk_pontoVirgula                |                                                    |              |
+| 127 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "a_state_9_item_1"                                 |       75     |
+|     |  27 |  11 | tk_apos                        |                                                    |              |
+|     |  32 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  37 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  16 | tk_pontoVirgula                |                                                    |              |
+| 129 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_12                                         |       76     |
+|     |  19 |   5 | tk_CADEIA                      | "(a_state_8_item_2)"                               |       77     |
+|     |  39 |  16 | tk_pontoVirgula                |                                                    |              |
+| 130 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_12                                         |       76     |
+|     |  19 |  10 | tk_juntos                      |                                                    |              |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  12 | tk_por                         |                                                    |              |
+|     |  49 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  54 |  13 | tk_segundos                    |                                                    |              |
+|     |  62 |  16 | tk_pontoVirgula                |                                                    |              |
+| 131 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_12                                         |       76     |
+|     |  19 |  10 | tk_juntos                      |                                                    |              |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  12 | tk_por                         |                                                    |              |
+|     |  49 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  54 |  13 | tk_segundos                    |                                                    |              |
+|     |  62 |  16 | tk_pontoVirgula                |                                                    |              |
+| 133 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_12"                                         |       78     |
+|     |  19 |  11 | tk_apos                        |                                                    |              |
+|     |  24 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  29 |  13 | tk_segundos                    |                                                    |              |
+|     |  37 |  16 | tk_pontoVirgula                |                                                    |              |
+| 135 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_13                                         |       79     |
+|     |  19 |   5 | tk_CADEIA                      | "(a_state_8_item_3)"                               |       80     |
+|     |  39 |  16 | tk_pontoVirgula                |                                                    |              |
+| 136 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_13                                         |       79     |
+|     |  19 |  10 | tk_juntos                      |                                                    |              |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  12 | tk_por                         |                                                    |              |
+|     |  49 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  54 |  13 | tk_segundos                    |                                                    |              |
+|     |  62 |  16 | tk_pontoVirgula                |                                                    |              |
+| 137 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_13                                         |       79     |
+|     |  19 |  10 | tk_juntos                      |                                                    |              |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  12 | tk_por                         |                                                    |              |
+|     |  49 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  54 |  13 | tk_segundos                    |                                                    |              |
+|     |  62 |  16 | tk_pontoVirgula                |                                                    |              |
+| 139 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_13"                                         |       81     |
+|     |  19 |  11 | tk_apos                        |                                                    |              |
+|     |  24 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  29 |  13 | tk_segundos                    |                                                    |              |
+|     |  37 |  16 | tk_pontoVirgula                |                                                    |              |
+| 141 |   1 |   6 | tk_defina                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_14                                         |       82     |
+|     |  19 |   5 | tk_CADEIA                      | "(a_state_8_item_4)|(a_state_8_item_5)"            |       83     |
+|     |  58 |  16 | tk_pontoVirgula                |                                                    |              |
+| 142 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_14                                         |       82     |
+|     |  19 |  10 | tk_juntos                      |                                                    |              |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  12 | tk_por                         |                                                    |              |
+|     |  49 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  54 |  13 | tk_segundos                    |                                                    |              |
+|     |  62 |  16 | tk_pontoVirgula                |                                                    |              |
+| 143 |   1 |   8 | tk_apague                      |                                                    |              |
+|     |   8 |   2 | tk_IDEN                        | itens_8_14                                         |       82     |
+|     |  19 |  10 | tk_juntos                      |                                                    |              |
+|     |  26 |  11 | tk_apos                        |                                                    |              |
+|     |  31 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  36 |  13 | tk_segundos                    |                                                    |              |
+|     |  45 |  12 | tk_por                         |                                                    |              |
+|     |  49 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  54 |  13 | tk_segundos                    |                                                    |              |
+|     |  62 |  16 | tk_pontoVirgula                |                                                    |              |
+| 145 |   1 |   7 | tk_mostre                      |                                                    |              |
+|     |   8 |   5 | tk_CADEIA                      | "trans_14"                                         |       84     |
+|     |  19 |  11 | tk_apos                        |                                                    |              |
+|     |  24 |   4 | tk_DECIMAL                     | 0.500000                                           |        2     |
+|     |  29 |  13 | tk_segundos                    |                                                    |              |
+|     |  37 |  16 | tk_pontoVirgula                |                                                    |              |
+| 146 |   0 |   1 | tk_EOF                         |                                                    |              |
++-----+-----+-----+--------------------------------+----------------------------------------------------+--------------+
+
+
+  RESUMO
+
++-----+--------------------------------+------+
+| COD | TOKEN                          | USOS |
++-----+--------------------------------+------+
+|   1 | tk_EOF                         |    1 |
+|   2 | tk_IDEN                        |   42 |
+|   3 | tk_INTEIRO                     |    0 |
+|   4 | tk_DECIMAL                     |  135 |
+|   5 | tk_CADEIA                      |   81 |
+|   6 | tk_defina                      |   14 |
+|   7 | tk_mostre                      |   55 |
+|   8 | tk_apague                      |   40 |
+|   9 | tk_umAum                       |    0 |
+|  10 | tk_juntos                      |   28 |
+|  11 | tk_apos                        |   95 |
+|  12 | tk_por                         |   40 |
+|  13 | tk_segundos                    |  135 |
+|  14 | tk_segundo                     |    0 |
+|  15 | tk_tecla                       |    0 |
+|  16 | tk_pontoVirgula                |  109 |
++-----+--------------------------------+------+
+|   0 | TOTAL                          |  775 |
++-----+--------------------------------+------+
+
+
+TOTAL DE ERROS: 0

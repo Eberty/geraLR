@@ -1,0 +1,63 @@
+digraph DFA { 
+graph[size="auto" ratio="auto" margin=0.00 ordering="" rotate=0 color="steelblue" bgcolor="transparent" splines="spline" nodesep=0.25 ranksep=0.50 rankdir="LR" rank="same" ];
+
+// SHIFT STATES: 2 
+node[height=0.50 width=0.75 fixedsize=0 shape="rectangle" color="darkgoldenrod" fillcolor="ivory" style="filled,rounded" regular=0 peripheries=1 sides=4 orientation=0.00 distortion=0.00 skew=0.00 penwidth=1.50 margin=0.10 ];
+state_1[id="state_1" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_1_title" id="state_1_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">1</font></b></TD></TR>
+  <TR><TD TITLE="state_1_item_1" id="state_1_item_1" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List' </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> List</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> $</font></TD></TR>
+  <TR><TD TITLE="state_1_item_2" id="state_1_item_2" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> id</font></TD></TR>
+  <TR><TD TITLE="state_1_item_3" id="state_1_item_3" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> List</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> OptComma</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> id</font></TD></TR>
+  <TR><TD TITLE="state_1_item_4" id="state_1_item_4" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> List</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> ,</font></TD></TR>
+  </TABLE>>];
+state_4[id="state_4" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_4_title" id="state_4_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">4</font></b></TD></TR>
+  <TR><TD TITLE="state_4_item_1" id="state_4_item_1" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> List</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> OptComma</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> id</font></TD></TR>
+  </TABLE>>];
+
+// REDUCTION STATES: 3 
+node[height=0.50 width=0.75 fixedsize=0 shape="rectangle" color="darkgoldenrod" fillcolor="ivory" style="filled,rounded" regular=0 peripheries=2 sides=4 orientation=0.00 distortion=0.00 skew=0.00 penwidth=1.50 margin=0.10 ];
+state_3[id="state_3" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_3_title" id="state_3_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">3</font></b></TD></TR>
+  <TR><TD TITLE="state_3_item_1" id="state_3_item_1" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> id</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+state_5[id="state_5" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_5_title" id="state_5_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">5</font></b></TD></TR>
+  <TR><TD TITLE="state_5_item_1" id="state_5_item_1" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List' </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> List</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> $</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+state_7[id="state_7" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_7_title" id="state_7_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">7</font></b></TD></TR>
+  <TR><TD TITLE="state_7_item_1" id="state_7_item_1" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> List</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> OptComma</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> id</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+
+// STATES WHITH CONFLICTS 
+node[height=0.50 width=0.75 fixedsize=0 shape="rectangle" color="darkgoldenrod" fillcolor="beige" style="filled,rounded,dashed" regular=0 peripheries=1 sides=4 orientation=0.00 distortion=0.00 skew=0.00 penwidth=1.50 margin=0.10 ];
+
+// SHIFT-REDUCE CONFLICTS: 1 
+state_2[id="state_2" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_2_title" id="state_2_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">2</font></b></TD></TR>
+  <TR><TD TITLE="state_2_item_1" id="state_2_item_1" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List' </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> List</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> $</font></TD></TR>
+  <TR><TD TITLE="state_2_item_2" id="state_2_item_2" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> List</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> OptComma</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> id</font></TD></TR>
+  <TR><TD TITLE="state_2_item_3" id="state_2_item_3" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> List</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> ,</font></TD></TR>
+  <TR><TD TITLE="state_2_item_4" id="state_2_item_4" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">OptComma </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> ,</font></TD></TR>
+  <TR><TD TITLE="state_2_item_5" id="state_2_item_5" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">OptComma </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+
+// REDUCE-REDUCE CONFLICTS: 1 
+state_6[id="state_6" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_6_title" id="state_6_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">6</font></b></TD></TR>
+  <TR><TD TITLE="state_6_item_1" id="state_6_item_1" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">List </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> List</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> ,</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  <TR><TD TITLE="state_6_item_2" id="state_6_item_2" ALIGN="LEFT" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">OptComma </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> ,</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+
+// SHIFT-REDUCE-REDUCE CONFLICTS: 0 
+
+// TRANSITIONS: 6 
+edge[weight=1.00 style="" color="darkgoldenrod" dir="forward" tailclip=1 headclip=1 arrowhead="normal" arrowtail="normal" arrowsize=1.00 labeldistance=1.00 decorate=0 constraint=1 minlen=1 penwidth=1.50 ];
+state_1->state_2 [id="trans_1" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> List</font>>];
+state_1->state_3 [id="trans_2" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> id</font>>];
+state_2->state_4 [id="trans_3" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> OptComma</font>>];
+state_2->state_5 [id="trans_4" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> $</font>>];
+state_2->state_6 [id="trans_5" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ,</font>>];
+state_4->state_7 [id="trans_6" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> id</font>>];
+} 

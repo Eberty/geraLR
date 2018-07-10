@@ -1,0 +1,81 @@
+LISTA DE META-TOKENS RECONHECIDOS EM "LiDAS.mel"
+
++-----+-----+-----+--------------------------------+----------------------------------------------------+
+| LIN | COL | COD | META-TOKEN                     | LEXEMA                                             |
++-----+-----+-----+--------------------------------+----------------------------------------------------+
+|   9 |   1 |   2 | metaTk_caixa                   |                                                    |
+|  10 |   3 |   3 | metaTk_comandos                |                                                    |
+|     |  12 |  10 | metaTk_ignoram                 |                                                    |
+|  11 |   3 |   9 | metaTk_identificadores         |                                                    |
+|     |  19 |   6 | metaTk_distinguem              |                                                    |
+|  13 |   1 |   4 | metaTk_comentarios             |                                                    |
+|  14 |   3 |  13 | metaTk_linha                   |                                                    |
+|     |  10 |  15 | metaTk_metaString              | "//"                                               |
+|  15 |   3 |   1 | metaTk_abre                    |                                                    |
+|     |  10 |  15 | metaTk_metaString              | "/\*"                                              |
+|  16 |   3 |   7 | metaTk_fecha                   |                                                    |
+|     |  10 |  15 | metaTk_metaString              | "\*/"                                              |
+|  18 |   1 |  12 | metaTk_lexemas                 |                                                    |
+|  23 |   5 |   8 | metaTk_identificador           |                                                    |
+|     |  22 |  15 | metaTk_metaString              | "tk_IDEN"                                          |
+|     |  41 |  15 | metaTk_metaString              | "([a-zA-Z][a-zA-Z0-9_]*)"                          |
+|  24 |   5 |  11 | metaTk_inteiro                 |                                                    |
+|     |  22 |  15 | metaTk_metaString              | "tk_INTEIRO"                                       |
+|     |  41 |  15 | metaTk_metaString              | "([0-9]+)"                                         |
+|  25 |   5 |   5 | metaTk_decimal                 |                                                    |
+|     |  22 |  15 | metaTk_metaString              | "tk_DECIMAL"                                       |
+|     |  41 |  15 | metaTk_metaString              | "(([0-9]*\.[0-9]+)|([0-9]+\.[0-9]*))"              |
+|  26 |   5 |  14 | metaTk_string                  |                                                    |
+|     |  22 |  15 | metaTk_metaString              | "tk_CADEIA"                                        |
+|     |  41 |  15 | metaTk_metaString              | '("[^"]*")'                                        |
+|  28 |   1 |   3 | metaTk_comandos                |                                                    |
+|  33 |   5 |  15 | metaTk_metaString              | "defina"                                           |
+|     |  22 |  15 | metaTk_metaString              | "tk_defina"                                        |
+|  34 |   5 |  15 | metaTk_metaString              | "mostre"                                           |
+|     |  22 |  15 | metaTk_metaString              | "tk_mostre"                                        |
+|  35 |   5 |  15 | metaTk_metaString              | "apague"                                           |
+|     |  22 |  15 | metaTk_metaString              | "tk_apague"                                        |
+|  36 |   5 |  15 | metaTk_metaString              | "umAum"                                            |
+|     |  22 |  15 | metaTk_metaString              | "tk_umAum"                                         |
+|  37 |   5 |  15 | metaTk_metaString              | "juntos"                                           |
+|     |  22 |  15 | metaTk_metaString              | "tk_juntos"                                        |
+|  38 |   5 |  15 | metaTk_metaString              | "apos"                                             |
+|     |  22 |  15 | metaTk_metaString              | "tk_apos"                                          |
+|  39 |   5 |  15 | metaTk_metaString              | "por"                                              |
+|     |  22 |  15 | metaTk_metaString              | "tk_por"                                           |
+|  40 |   5 |  15 | metaTk_metaString              | "segundos"                                         |
+|     |  22 |  15 | metaTk_metaString              | "tk_segundos"                                      |
+|  41 |   2 |  15 | metaTk_metaString              | "segundo"                                          |
+|     |  14 |  15 | metaTk_metaString              | "tk_segundo"                                       |
+|  42 |   2 |  15 | metaTk_metaString              | "tecla"                                            |
+|     |  13 |  15 | metaTk_metaString              | "tk_tecla"                                         |
+|  43 |   5 |  15 | metaTk_metaString              | ";"                                                |
+|     |  21 |  15 | metaTk_metaString              | "tk_pontoVirgula"                                  |
++-----+-----+-----+--------------------------------+----------------------------------------------------+
+
+
+RESUMO DE META-TOKENS RECONHECIDOS
+
++-----+--------------------------------+------+
+| COD | META-TOKEN                     | USOS |
++-----+--------------------------------+------+
+|   1 | metaTk_abre                    |    1 |
+|   2 | metaTk_caixa                   |    1 |
+|   3 | metaTk_comandos                |    2 |
+|   4 | metaTk_comentarios             |    1 |
+|   5 | metaTk_decimal                 |    1 |
+|   6 | metaTk_distinguem              |    1 |
+|   7 | metaTk_fecha                   |    1 |
+|   8 | metaTk_identificador           |    1 |
+|   9 | metaTk_identificadores         |    1 |
+|  10 | metaTk_ignoram                 |    1 |
+|  11 | metaTk_inteiro                 |    1 |
+|  12 | metaTk_lexemas                 |    1 |
+|  13 | metaTk_linha                   |    1 |
+|  14 | metaTk_string                  |    1 |
+|  15 | metaTk_metaString              |   33 |
++-----+--------------------------------+------+
+|   0 | TOTAL                          |   48 |
++-----+--------------------------------+------+
+
+TOTAL DE ERROS: 0

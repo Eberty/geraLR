@@ -1,0 +1,11 @@
+/* Comment 1 */
+
+/*************
+ * Comment 2
+ *************/
+
+E -> L '=' R   /* Comment 3 */
+  |  R ;       // Comment 4
+L -> '*' R      # Comment 5
+  |  'id' ;
+R -> L ;

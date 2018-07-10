@@ -1,0 +1,292 @@
+mostre "state_1" apos 0.50 segundos;
+mostre "a_state_1_title" apos 0.50 segundos;
+mostre "a_state_1_item_1" apos 0.50 segundos;
+apague "a_state_1_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_1_item_1" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_1_item_2" apos 0.50 segundos;
+mostre "a_state_1_item_3" apos 0.50 segundos;
+apague "a_state_1_item_3" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_1_item_3" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_1_item_4" apos 0.50 segundos;
+mostre "a_state_1_item_5" apos 0.50 segundos;
+apague "a_state_1_item_5" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_1_item_5" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_1_item_6" apos 0.50 segundos;
+mostre "a_state_1_item_7" apos 0.50 segundos;
+
+defina itens_1_1 "(a_state_1_item_1)|(a_state_1_item_2)";
+apague itens_1_1 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_1_1 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_1" apos 0.50 segundos;
+
+mostre "state_2" apos 0.50 segundos;
+mostre "a_state_2_title" apos 0.50 segundos;
+mostre "a_state_2_item_1" apos 0.50 segundos;
+mostre "a_state_2_item_2" apos 0.50 segundos;
+apague "a_state_2_item_2" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_2_item_2" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_2_item_3" apos 0.50 segundos;
+mostre "a_state_2_item_4" apos 0.50 segundos;
+
+defina itens_1_2 "(a_state_1_item_3)|(a_state_1_item_4)";
+apague itens_1_2 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_1_2 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_2" apos 0.50 segundos;
+
+mostre "state_3" apos 0.50 segundos;
+mostre "a_state_3_title" apos 0.50 segundos;
+mostre "a_state_3_item_1" apos 0.50 segundos;
+mostre "a_state_3_item_2" apos 0.50 segundos;
+apague "a_state_3_item_2" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_3_item_2" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_3_item_3" apos 0.50 segundos;
+
+defina itens_1_3 "(a_state_1_item_5)";
+apague itens_1_3 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_1_3 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_3" apos 0.50 segundos;
+
+mostre "state_4" apos 0.50 segundos;
+mostre "a_state_4_title" apos 0.50 segundos;
+mostre "a_state_4_item_1" apos 0.50 segundos;
+
+defina itens_1_4 "(a_state_1_item_6)";
+apague itens_1_4 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_1_4 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_4" apos 0.50 segundos;
+
+mostre "state_5" apos 0.50 segundos;
+mostre "a_state_5_title" apos 0.50 segundos;
+mostre "a_state_5_item_1" apos 0.50 segundos;
+apague "a_state_5_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_5_item_1" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_5_item_2" apos 0.50 segundos;
+mostre "a_state_5_item_3" apos 0.50 segundos;
+apague "a_state_5_item_3" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_5_item_3" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_5_item_4" apos 0.50 segundos;
+mostre "a_state_5_item_5" apos 0.50 segundos;
+apague "a_state_5_item_5" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_5_item_5" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_5_item_6" apos 0.50 segundos;
+mostre "a_state_5_item_7" apos 0.50 segundos;
+
+defina itens_1_5 "(a_state_1_item_7)";
+apague itens_1_5 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_1_5 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_5" apos 0.50 segundos;
+
+mostre "state_6" apos 0.50 segundos;
+mostre "a_state_6_title" apos 0.50 segundos;
+mostre "a_state_6_item_1" apos 0.50 segundos;
+
+defina itens_2_7 "(a_state_2_item_1)";
+apague itens_2_7 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_2_7 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_7" apos 0.50 segundos;
+
+mostre "state_8" apos 0.50 segundos;
+mostre "a_state_8_title" apos 0.50 segundos;
+mostre "a_state_8_item_1" apos 0.50 segundos;
+
+defina itens_2_6 "(a_state_2_item_2)";
+apague itens_2_6 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_2_6 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_6" apos 0.50 segundos;
+
+mostre "state_7" apos 0.50 segundos;
+mostre "a_state_7_title" apos 0.50 segundos;
+mostre "a_state_7_item_1" apos 0.50 segundos;
+apague "a_state_7_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_7_item_1" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_7_item_2" apos 0.50 segundos;
+mostre "a_state_7_item_3" apos 0.50 segundos;
+apague "a_state_7_item_3" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_7_item_3" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_7_item_4" apos 0.50 segundos;
+mostre "a_state_7_item_5" apos 0.50 segundos;
+
+defina itens_2_8 "(a_state_2_item_3)";
+apague itens_2_8 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_2_8 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_8" apos 0.50 segundos;
+
+mostre "state_9" apos 0.50 segundos;
+mostre "a_state_9_title" apos 0.50 segundos;
+mostre "a_state_9_item_1" apos 0.50 segundos;
+
+defina itens_2_9 "(a_state_2_item_4)";
+apague itens_2_9 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_2_9 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_9" apos 0.50 segundos;
+
+mostre "state_10" apos 0.50 segundos;
+mostre "a_state_10_title" apos 0.50 segundos;
+mostre "a_state_10_item_1" apos 0.50 segundos;
+
+defina itens_3_10 "(a_state_3_item_2)";
+apague itens_3_10 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_3_10 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_10" apos 0.50 segundos;
+
+mostre "state_11" apos 0.50 segundos;
+mostre "a_state_11_title" apos 0.50 segundos;
+mostre "a_state_11_item_1" apos 0.50 segundos;
+apague "a_state_11_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_11_item_1" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_11_item_2" apos 0.50 segundos;
+mostre "a_state_11_item_3" apos 0.50 segundos;
+
+defina itens_3_11 "(a_state_3_item_3)";
+apague itens_3_11 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_3_11 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_11" apos 0.50 segundos;
+
+mostre "state_12" apos 0.50 segundos;
+mostre "a_state_12_title" apos 0.50 segundos;
+mostre "a_state_12_item_1" apos 0.50 segundos;
+
+defina itens_5_12 "(a_state_5_item_1)|(a_state_5_item_2)";
+apague itens_5_12 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_5_12 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_12" apos 0.50 segundos;
+
+mostre "state_13" apos 0.50 segundos;
+mostre "a_state_13_title" apos 0.50 segundos;
+mostre "a_state_13_item_1" apos 0.50 segundos;
+mostre "a_state_13_item_2" apos 0.50 segundos;
+apague "a_state_13_item_2" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_13_item_2" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_13_item_3" apos 0.50 segundos;
+mostre "a_state_13_item_4" apos 0.50 segundos;
+
+defina itens_5_13 "(a_state_5_item_3)|(a_state_5_item_4)";
+apague itens_5_13 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_5_13 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_13" apos 0.50 segundos;
+
+defina itens_5_14 "(a_state_5_item_5)";
+apague itens_5_14 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_5_14 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_14" apos 0.50 segundos;
+
+defina itens_5_15 "(a_state_5_item_6)";
+apague itens_5_15 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_5_15 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_15" apos 0.50 segundos;
+
+defina itens_5_16 "(a_state_5_item_7)";
+apague itens_5_16 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_5_16 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_16" apos 0.50 segundos;
+
+defina itens_7_17 "(a_state_7_item_1)|(a_state_7_item_2)";
+apague itens_7_17 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_7_17 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_17" apos 0.50 segundos;
+
+mostre "state_14" apos 0.50 segundos;
+mostre "a_state_14_title" apos 0.50 segundos;
+mostre "a_state_14_item_1" apos 0.50 segundos;
+mostre "a_state_14_item_2" apos 0.50 segundos;
+apague "a_state_14_item_2" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_14_item_2" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_14_item_3" apos 0.50 segundos;
+
+defina itens_7_18 "(a_state_7_item_3)";
+apague itens_7_18 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_7_18 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_18" apos 0.50 segundos;
+
+defina itens_7_19 "(a_state_7_item_4)";
+apague itens_7_19 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_7_19 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_19" apos 0.50 segundos;
+
+defina itens_7_20 "(a_state_7_item_5)";
+apague itens_7_20 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_7_20 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_20" apos 0.50 segundos;
+
+defina itens_11_21 "(a_state_11_item_1)";
+apague itens_11_21 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_11_21 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_21" apos 0.50 segundos;
+
+mostre "state_15" apos 0.50 segundos;
+mostre "a_state_15_title" apos 0.50 segundos;
+mostre "a_state_15_item_1" apos 0.50 segundos;
+
+defina itens_11_22 "(a_state_11_item_2)";
+apague itens_11_22 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_11_22 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_22" apos 0.50 segundos;
+
+defina itens_11_23 "(a_state_11_item_3)";
+apague itens_11_23 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_11_23 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_23" apos 0.50 segundos;
+
+defina itens_13_27 "(a_state_13_item_1)";
+apague itens_13_27 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_13_27 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_27" apos 0.50 segundos;
+
+mostre "state_16" apos 0.50 segundos;
+mostre "a_state_16_title" apos 0.50 segundos;
+mostre "a_state_16_item_1" apos 0.50 segundos;
+
+defina itens_13_24 "(a_state_13_item_2)";
+apague itens_13_24 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_13_24 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_24" apos 0.50 segundos;
+
+defina itens_13_25 "(a_state_13_item_3)";
+apague itens_13_25 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_13_25 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_25" apos 0.50 segundos;
+
+defina itens_13_26 "(a_state_13_item_4)";
+apague itens_13_26 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_13_26 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_26" apos 0.50 segundos;
+
+defina itens_14_28 "(a_state_14_item_2)";
+apague itens_14_28 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_14_28 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_28" apos 0.50 segundos;
+
+defina itens_14_29 "(a_state_14_item_3)";
+apague itens_14_29 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_14_29 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_29" apos 0.50 segundos;
+

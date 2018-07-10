@@ -1,0 +1,143 @@
+# depslib dependency file v1.0
+1525997027 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\analex.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<malloc.h>
+	<ctype.h>
+	"mystrings.h"
+	"error.h"
+	"report.h"
+	"lexan-PT.h"
+	"commline.h"
+
+1383616852 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\mystrings.h
+	<stddef.h>
+
+1383616852 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\error.h
+	<errno.h>
+
+1383616852 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\report.h
+	"common.h"
+
+1383616852 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\common.h
+	<limits.h>
+	<float.h>
+
+1526320987 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\lexan-pt.h
+	"regex.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+	"lexan.h"
+
+1341260828 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\regex.h
+	<stddef.h>
+
+1383616852 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\commline.h
+	<limits.h>
+
+1524518718 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\commline.c
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<getopt.h>
+	"mystrings.h"
+	"error.h"
+	"commline.h"
+
+1524518718 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\datastructs.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdarg.h>
+	"datastructs.h"
+
+1383616852 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\datastructs.h
+
+1465745424 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\error.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+
+1524518718 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\lexan-pt.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<limits.h>
+	"error.h"
+	"mystrings.h"
+	"lexan-PT.h"
+
+1524518719 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\mymath.c
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+	<time.h>
+	"error.h"
+	"random.h"
+	"mymath.h"
+
+1383616852 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\random.h
+
+1465773716 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\mymath.h
+	<math.h>
+	<stdint.h>
+	"common.h"
+
+1524518814 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\mystrings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"common.h"
+	"error.h"
+	"mystrings.h"
+
+1383616852 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\mytime.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"common.h"
+	"mytime.h"
+
+1383616852 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\mytime.h
+	<time.h>
+
+1383616852 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\random.c
+	"random.h"
+
+1338324956 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\regex.c
+	<config.h>
+	<sys/types.h>
+	"lisp.h"
+	"buffer.h"
+	"syntax.h"
+	<stdlib.h>
+	<string.h>
+	<strings.h>
+	"regex.h"
+	<ctype.h>
+	<alloca.h>
+	<stdio.h>
+	<assert.h>
+
+1524518719 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\lidas\report.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	"error.h"
+	"mytime.h"
+	"mystrings.h"
+	"report.h"
+

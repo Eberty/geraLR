@@ -1,0 +1,5 @@
+E -> T Elinha;
+Elinha -> '+' T Elinha | ;
+T -> F Tlinha;
+Tlinha -> '*' F Tlinha | ;
+F -> '(' E ')' | 'id';

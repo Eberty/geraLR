@@ -1,0 +1,76 @@
+mostre "state_1" apos 0.50 segundos;
+mostre "a_state_1_title" apos 0.50 segundos;
+mostre "a_state_1_item_1" apos 0.50 segundos;
+apague "a_state_1_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_1_item_1" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_1_item_2" apos 0.50 segundos;
+mostre "a_state_1_item_3" apos 0.50 segundos;
+mostre "a_state_1_item_4" apos 0.50 segundos;
+
+defina itens_1_1 "(a_state_1_item_1)|(a_state_1_item_3)|(a_state_1_item_4)";
+apague itens_1_1 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_1_1 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_1" apos 0.50 segundos;
+
+mostre "state_2" apos 0.50 segundos;
+mostre "a_state_2_title" apos 0.50 segundos;
+mostre "a_state_2_item_1" apos 0.50 segundos;
+mostre "a_state_2_item_2" apos 0.50 segundos;
+apague "a_state_2_item_2" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_2_item_2" apos 0.50 segundos por 0.50 segundos;
+mostre "a_state_2_item_4" apos 0.50 segundos;
+mostre "a_state_2_item_5" apos 0.50 segundos;
+mostre "a_state_2_item_3" apos 0.50 segundos;
+
+defina itens_1_2 "(a_state_1_item_2)";
+apague itens_1_2 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_1_2 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_2" apos 0.50 segundos;
+
+mostre "state_3" apos 0.50 segundos;
+mostre "a_state_3_title" apos 0.50 segundos;
+mostre "a_state_3_item_1" apos 0.50 segundos;
+
+defina itens_2_4 "(a_state_2_item_1)";
+apague itens_2_4 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_2_4 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_4" apos 0.50 segundos;
+
+mostre "state_5" apos 0.50 segundos;
+mostre "a_state_5_title" apos 0.50 segundos;
+mostre "a_state_5_item_1" apos 0.50 segundos;
+
+defina itens_2_3 "(a_state_2_item_2)";
+apague itens_2_3 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_2_3 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_3" apos 0.50 segundos;
+
+mostre "state_4" apos 0.50 segundos;
+mostre "a_state_4_title" apos 0.50 segundos;
+mostre "a_state_4_item_1" apos 0.50 segundos;
+
+defina itens_2_5 "(a_state_2_item_3)|(a_state_2_item_4)";
+apague itens_2_5 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_2_5 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_5" apos 0.50 segundos;
+
+mostre "state_6" apos 0.50 segundos;
+mostre "a_state_6_title" apos 0.50 segundos;
+mostre "a_state_6_item_1" apos 0.50 segundos;
+mostre "a_state_6_item_2" apos 0.50 segundos;
+
+defina itens_4_6 "(a_state_4_item_1)";
+apague itens_4_6 juntos apos 0.50 segundos por 0.50 segundos;
+apague itens_4_6 juntos apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_6" apos 0.50 segundos;
+
+mostre "state_7" apos 0.50 segundos;
+mostre "a_state_7_title" apos 0.50 segundos;
+mostre "a_state_7_item_1" apos 0.50 segundos;
+

@@ -1,0 +1,655 @@
+/*
++----------------------------------------+
+|  File name : gram07.grm.out            |
+|  Created by: geraLR v.graphviz-Eberty  |
+|  Date/Time : Tue May 29 16:28:52 2018  |
++----------------------------------------+
+
+  COMMAND LINE
+  ------------
+  ./geraLR -w 0 -yndfoxlsLSNDA -C bege_marrom.cfg gram07.grm 
+
+*/
+
++------------+
+| RULES:  10 |
++------------+
+
+  1: List' -> List $
+  2: List -> NoCommas IdList NoCommas
+  3: IdList -> id
+  4: IdList -> IdList OneComma id
+  5: OneComma -> Commas
+  6: OneComma ->
+  7: NoCommas -> Commas
+  8: NoCommas ->
+  9: Commas -> Commas ,
+ 10: Commas -> ,
+
++--------------------+
+| NON-TERMINALS:   6 |
++--------------------+
+
+Symbol 1001: List'
+In lefthand  side of 1 rules: 1  
+In righthand side of 0 rules: 
+
+Symbol 1002: List
+In lefthand  side of 1 rules: 2  
+In righthand side of 1 rules: 1  
+
+Symbol 1003: NoCommas
+In lefthand  side of 2 rules: 7  8  
+In righthand side of 1 rules: 2  
+
+Symbol 1004: IdList
+In lefthand  side of 2 rules: 3  4  
+In righthand side of 2 rules: 2  4  
+
+Symbol 1005: OneComma
+In lefthand  side of 2 rules: 5  6  
+In righthand side of 1 rules: 4  
+
+Symbol 1006: Commas
+In lefthand  side of 2 rules: 9  10  
+In righthand side of 3 rules: 5  7  9  
+
++----------------+
+| TERMINALS:   3 |
++----------------+
+
+Symbol 0001: $ (END_OF_INPUT)
+In righthand side of 1 rules: 1  
+
+Symbol 0002: id
+In righthand side of 2 rules: 3  4  
+
+Symbol 0003: ,
+In righthand side of 2 rules: 9  10  
+
++---------+
+| Epsilon |
++---------+
+
+Symbol 0000: _epsilon_
+In righthand side of 2 rules: 6  8  
+
++-------------------+
+| NFA STATES: 24    |
++-------------------+
+
+State 10001: 
+Single shift on non-terminal & epsilon transition(s)
+  List' -> • List $
+
+State 10002: 
+Single shift on non-terminal & epsilon transition(s)
+  List -> • NoCommas IdList NoCommas
+
+State 10003: 
+Single shift on non-terminal & epsilon transition(s)
+  NoCommas -> • Commas
+
+State 10004: 
+Single reduction
+  NoCommas -> •
+
+State 10005: 
+Single shift on non-terminal & epsilon transition(s)
+  Commas -> • Commas ,
+
+State 10006: 
+Single shift on terminal
+  Commas -> • ,
+
+State 10007: 
+Single shift on terminal
+  List' -> List • $
+
+State 10008: 
+Single shift on non-terminal & epsilon transition(s)
+  List -> NoCommas • IdList NoCommas
+
+State 10009: 
+Single shift on terminal
+  IdList -> • id
+
+State 10010: 
+Single shift on non-terminal & epsilon transition(s)
+  IdList -> • IdList OneComma id
+
+State 10011: 
+Single reduction
+  NoCommas -> Commas •
+
+State 10012: 
+Single shift on terminal
+  Commas -> Commas • ,
+
+State 10013: 
+Single reduction
+  Commas -> , •
+
+State 10014: 
+Single reduction
+  List' -> List $ •
+
+State 10015: 
+Single shift on non-terminal & epsilon transition(s)
+  List -> NoCommas IdList • NoCommas
+
+State 10016: 
+Single shift on non-terminal & epsilon transition(s)
+  IdList -> IdList • OneComma id
+
+State 10017: 
+Single shift on non-terminal & epsilon transition(s)
+  OneComma -> • Commas
+
+State 10018: 
+Single reduction
+  OneComma -> •
+
+State 10019: 
+Single reduction
+  IdList -> id •
+
+State 10020: 
+Single reduction
+  Commas -> Commas , •
+
+State 10021: 
+Single reduction
+  List -> NoCommas IdList NoCommas •
+
+State 10022: 
+Single shift on terminal
+  IdList -> IdList OneComma • id
+
+State 10023: 
+Single reduction
+  OneComma -> Commas •
+
+State 10024: 
+Single reduction
+  IdList -> IdList OneComma id •
+
++-------------------------+
+| REDUCTION STATES: 10    |
++------------+------------+
+|    State   |     Rule   |
++------------+------------+
+|    10004   |        8   |
+|    10011   |        7   |
+|    10013   |       10   |
+|    10014   |        1   |
+|    10018   |        6   |
+|    10019   |        3   |
+|    10020   |        9   |
+|    10021   |        2   |
+|    10023   |        5   |
+|    10024   |        4   |
++------------+------------+
+
++---------------------------+
+| STATE TRANSITIONS: 31     |
++-------+-------+-----------+
+| From  | To    | With      |
+| state | state | symbol    |
++-------+-------+-----------+
+| 10001 | 10007 | List      |
+| 10001 | 10002 | _epsilon_ |
+| 10002 | 10008 | NoCommas  |
+| 10002 | 10003 | _epsilon_ |
+| 10002 | 10004 | _epsilon_ |
+| 10003 | 10011 | Commas    |
+| 10003 | 10005 | _epsilon_ |
+| 10003 | 10006 | _epsilon_ |
+| 10005 | 10012 | Commas    |
+| 10005 | 10005 | _epsilon_ |
+| 10005 | 10006 | _epsilon_ |
+| 10006 | 10013 | ,         |
+| 10007 | 10014 | $         |
+| 10008 | 10015 | IdList    |
+| 10008 | 10009 | _epsilon_ |
+| 10008 | 10010 | _epsilon_ |
+| 10009 | 10019 | id        |
+| 10010 | 10016 | IdList    |
+| 10010 | 10009 | _epsilon_ |
+| 10010 | 10010 | _epsilon_ |
+| 10012 | 10020 | ,         |
+| 10015 | 10021 | NoCommas  |
+| 10015 | 10003 | _epsilon_ |
+| 10015 | 10004 | _epsilon_ |
+| 10016 | 10022 | OneComma  |
+| 10016 | 10017 | _epsilon_ |
+| 10016 | 10018 | _epsilon_ |
+| 10017 | 10023 | Commas    |
+| 10017 | 10005 | _epsilon_ |
+| 10017 | 10006 | _epsilon_ |
+| 10022 | 10024 | id        |
++-------+-------+-----------+
+
++---------------------------------------------------------------------+
+|                    NFA STATE TRANSITIONS SUMMARY                    |
++---------------------------------------------------------------------+
+
++-------+---------------+          +--------------------+-------------+
+|       |  TRANSITIONS  |          | GRAMMAR SYMBOL     | Number of   |
+| STATE +-------+-------+          +--------+-----------+ transitions |
+|       | From  |    To |          |   Code | String    | with symbol |
++-------+-------+-------+          +--------+-----------+-------------+
+| 10001 |     2 |     0 |          |   1001 | List'     |        0    |
+| 10002 |     3 |     1 |          |   1002 | List      |        1    |
+| 10003 |     3 |     2 |          |   1003 | NoCommas  |        2    |
+| 10004 |     0 |     2 |          |   1004 | IdList    |        2    |
+| 10005 |     3 |     3 |          |   1005 | OneComma  |        1    |
+| 10006 |     1 |     3 |          |   1006 | Commas    |        3    |
+| 10007 |     1 |     1 |          |      1 | $         |        1    |
+| 10008 |     3 |     1 |          |      2 | id        |        2    |
+| 10009 |     1 |     2 |          |      3 | ,         |        2    |
+| 10010 |     3 |     2 |          |        | _epsilon_ |       17    |
+| 10011 |     0 |     1 |          +--------+-----------+-------------+
+| 10012 |     1 |     1 |
+| 10013 |     0 |     1 |
+| 10014 |     0 |     1 |
+| 10015 |     3 |     1 |
+| 10016 |     3 |     1 |
+| 10017 |     3 |     1 |
+| 10018 |     0 |     1 |
+| 10019 |     0 |     1 |
+| 10020 |     0 |     1 |
+| 10021 |     0 |     1 |
+| 10022 |     1 |     1 |
+| 10023 |     0 |     1 |
+| 10024 |     0 |     1 |
++-------+-------+-------+
+
++--------------------------+
+|    NFA STATES SUMMARY    |
++--------------------------+
+|      Shift states:     5 |
+|     Reduce states:    10 |
+| Non-deterministic:     9 |
+|      TOTAL STATES:    24 |
++--------------------------+
+
++--------------------+
+|    NFA SUMMARY     |
++--------------------+
+|      States:    24 |
+|       Items:    24 |
+| Transitions:    31 |
++--------------------+
+
++-------------------+
+| DFA STATES: 13    |
++-------------------+
+
+State 1: 
+Shift(s) & single reduction
+  List' -> • List $
+  List -> • NoCommas IdList NoCommas
+  NoCommas -> • Commas
+  NoCommas -> •
+  Commas -> • Commas ,
+  Commas -> • ,
+
+State 2: 
+Shift(s) only
+  List' -> List • $
+
+State 3: 
+Shift(s) only
+  List -> NoCommas • IdList NoCommas
+  IdList -> • id
+  IdList -> • IdList OneComma id
+
+State 4: 
+Shift(s) & single reduction
+  NoCommas -> Commas •
+  Commas -> Commas • ,
+
+State 5: 
+Single reduction only
+  Commas -> , •
+
+State 6: 
+Single reduction only
+  List' -> List $ •
+
+State 7: 
+Shift(s) & multiple reductions
+  List -> NoCommas IdList • NoCommas
+  IdList -> IdList • OneComma id
+  NoCommas -> • Commas
+  NoCommas -> •
+  OneComma -> • Commas
+  OneComma -> •
+  Commas -> • Commas ,
+  Commas -> • ,
+
+State 8: 
+Single reduction only
+  IdList -> id •
+
+State 9: 
+Single reduction only
+  Commas -> Commas , •
+
+State 10: 
+Single reduction only
+  List -> NoCommas IdList NoCommas •
+
+State 11: 
+Shift(s) only
+  IdList -> IdList OneComma • id
+
+State 12: 
+Shift(s) & multiple reductions
+  NoCommas -> Commas •
+  OneComma -> Commas •
+  Commas -> Commas • ,
+
+State 13: 
+Single reduction only
+  IdList -> IdList OneComma id •
+
++---------------------------+
+| SHIFT STATES: 3           |
++-------+-------------------+
+| State | Transition symbol |
++-------+-------------------+
+|     2 | $                 |
++-------+-------------------+
+|     3 | IdList            |
+|       | id                |
+|       | IdList            |
++-------+-------------------+
+|    11 | id                |
++-------+-------------------+
+
++-------------------------+
+| REDUCTION STATES: 6     |
++------------+------------+
+|    State   |     Rule   |
++------------+------------+
+|        5   |       10   |
+|        6   |        1   |
+|        8   |        3   |
+|        9   |        9   |
+|       10   |        2   |
+|       13   |        4   |
++------------+------------+
+
++-------------------------------+
+| SHIFT-REDUCE CONFLICTS: 2     |
++-------+-----------------------+
+| State | Actions               |
++-------+-----------------------+
+|     1 | shift List            |
+|       | shift NoCommas        |
+|       | shift Commas          |
+|       | reduce by rule 8      |
+|       | shift Commas          |
+|       | shift ,               |
++-------+-----------------------+
+|     4 | reduce by rule 7      |
+|       | shift ,               |
++-------+-----------------------+
+
++--------------------------------+
+| REDUCE-REDUCE CONFLICTS: 0     |
++--------------------------------+
+
++--------------------------------------+
+| SHIFT-REDUCE-REDUCE CONFLICTS: 2     |
++-------+------------------------------+
+| State | Actions                      |
++-------+------------------------------+
+|     7 | shift NoCommas               |
+|       | shift OneComma               |
+|       | shift Commas                 |
+|       | reduce by rule 8             |
+|       | shift Commas                 |
+|       | reduce by rule 6             |
+|       | shift Commas                 |
+|       | shift ,                      |
++-------+------------------------------+
+|    12 | reduce by rule 7             |
+|       | reduce by rule 5             |
+|       | shift ,                      |
++-------+------------------------------+
+
+
++---------------------------+
+| STATE TRANSITIONS: 14     |
++-------+-------+-----------+
+|  From |    To | With      |
+| state | state | symbol    |
++-------+-------+-----------+
+|     1 |     2 | List      |
+|     1 |     3 | NoCommas  |
+|     1 |     4 | Commas    |
+|     1 |     5 | ,         |
+|     2 |     6 | $         |
+|     3 |     7 | IdList    |
+|     3 |     8 | id        |
+|     4 |     9 | ,         |
+|     7 |    10 | NoCommas  |
+|     7 |    11 | OneComma  |
+|     7 |    12 | Commas    |
+|     7 |     5 | ,         |
+|    11 |    13 | id        |
+|    12 |     9 | ,         |
++-------+-------+-----------+
+
++---------------------------------------------------------------------+
+|                    DFA STATE TRANSITIONS SUMMARY                    |
++---------------------------------------------------------------------+
+
++-------+---------------+          +--------------------+-------------+
+|       |  TRANSITIONS  |          | GRAMMAR SYMBOL     | Number of   |
+| STATE +-------+-------+          +--------+-----------+ transitions |
+|       | From  |    To |          |   Code | String    | with symbol |
++-------+-------+-------+          +--------+-----------+-------------+
+|     1 |     4 |     0 |          |   1001 | List'     |        0    |
+|     2 |     1 |     1 |          |   1002 | List      |        1    |
+|     3 |     2 |     1 |          |   1003 | NoCommas  |        2    |
+|     4 |     1 |     1 |          |   1004 | IdList    |        1    |
+|     5 |     0 |     2 |          |   1005 | OneComma  |        1    |
+|     6 |     0 |     1 |          |   1006 | Commas    |        2    |
+|     7 |     4 |     1 |          |      1 | $         |        1    |
+|     8 |     0 |     1 |          |      2 | id        |        2    |
+|     9 |     0 |     2 |          |      3 | ,         |        4    |
+|    10 |     0 |     1 |          |        | _epsilon_ |        0    |
+|    11 |     1 |     1 |          +--------+-----------+-------------+
+|    12 |     1 |     1 |
+|    13 |     0 |     1 |
++-------+-------+-------+
+
++----------------------------+
+|     DFA STATES SUMMARY     |
++----------------------------+
+|  UNAMBIGUOUS STATES:     9 |
+|        Shift states:     3 |
+|       Reduce states:     6 |
+|     CONFLICT STATES:     4 |
+|        Shift-reduce:     2 |
+|       Reduce-reduce:     0 |
+| Shift-reduce-reduce:     2 |
+|        TOTAL STATES:    13 |
++----------------------------+
+
++--------------------+
+|    DFA SUMMARY     |
++--------------------+
+|      States:    13 |
+|       Items:    30 |
+| Transitions:    14 |
++--------------------+
+
++------------+
+| FIRST sets |
++------------+
+
+Symbol 1001: List'
+  0002: id
+  0003: ,
+
+Symbol 1002: List
+  0002: id
+  0003: ,
+
+Symbol 1003: NoCommas
+  0003: ,
+  0000: _epsilon_
+
+Symbol 1004: IdList
+  0002: id
+
+Symbol 1005: OneComma
+  0003: ,
+  0000: _epsilon_
+
+Symbol 1006: Commas
+  0003: ,
+
+Symbol 0001: $
+  0001: $
+
+Symbol 0002: id
+  0002: id
+
+Symbol 0003: ,
+  0003: ,
+
++-------------+
+| FOLLOW sets |
++-------------+
+
+Symbol 1001: List'
+  0001: $
+
+Symbol 1002: List
+  0001: $
+
+Symbol 1003: NoCommas
+  0002: id
+  0001: $
+
+Symbol 1004: IdList
+  0003: ,
+  0001: $
+  0002: id
+
+Symbol 1005: OneComma
+  0002: id
+
+Symbol 1006: Commas
+  0002: id
+  0001: $
+  0003: ,
+
++-------------------------------------------------------------------------------+
+| LR(0) Parse Table                                                             |
++-------+--------------------------+--------------------------------------------+    +-----------------+
+|       |          ACTION          |                    GOTO                    |    |  TOTAL ACTIONS  |
+| STATE +--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|       |    $   |   id   |    ,   |  List  |NoCommas| IdList |OneComma| Commas |    |shift| red | goto|
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|>   1 <|   r8   |   r8   |   s5   |    2   |    3   |        |        |    4   |    |   1 |   3 |   3 |
+|       |        |        |   r8   |        |        |        |        |        |    |     |     |     |
+|    2  |   s6   |        |        |        |        |        |        |        |    |   1 |   0 |   0 |
+|    3  |        |   s8   |        |        |        |    7   |        |        |    |   1 |   0 |   1 |
+|>   4 <|   r7   |   r7   |   s9   |        |        |        |        |        |    |   1 |   3 |   0 |
+|       |        |        |   r7   |        |        |        |        |        |    |     |     |     |
+|    5  |   r10  |   r10  |   r10  |        |        |        |        |        |    |   0 |   3 |   0 |
+|    6  |   ACC  |   ACC  |   ACC  |        |        |        |        |        |    |   0 |   3 |   0 |
+|>   7 <|   r6   |   r6   |   s5   |        |   10   |        |   11   |   12   |    |   1 |   6 |   3 |
+|       |   r8   |   r8   |   r6   |        |        |        |        |        |    |     |     |     |
+|       |        |        |   r8   |        |        |        |        |        |    |     |     |     |
+|    8  |   r3   |   r3   |   r3   |        |        |        |        |        |    |   0 |   3 |   0 |
+|    9  |   r9   |   r9   |   r9   |        |        |        |        |        |    |   0 |   3 |   0 |
+|   10  |   r2   |   r2   |   r2   |        |        |        |        |        |    |   0 |   3 |   0 |
+|   11  |        |   s13  |        |        |        |        |        |        |    |   1 |   0 |   0 |
+|>  12 <|   r5   |   r5   |   s9   |        |        |        |        |        |    |   1 |   6 |   0 |
+|       |   r7   |   r7   |   r5   |        |        |        |        |        |    |     |     |     |
+|       |        |        |   r7   |        |        |        |        |        |    |     |     |     |
+|   13  |   r4   |   r4   |   r4   |        |        |        |        |        |    |   0 |   3 |   0 |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+
++-------------------------------------------------------------------------------+
+| TOTAL ACTIONS                                                                 |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|shift  |     1  |     2  |     4  |     0  |     0  |     0  |     0  |     0  |    |   7 |     |     |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|reduce |    12  |    12  |    12  |     0  |     0  |     0  |     0  |     0  |    |     |  36 |     |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|goto   |     0  |     0  |     0  |     1  |     2  |     1  |     1  |     2  |    |     |     |   7 |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+
+
++-------------------------------------------------------------------------------+
+| sLR(1) Parse Table                                                            |
++-------+--------------------------+--------------------------------------------+    +-----------------+
+|       |          ACTION          |                    GOTO                    |    |  TOTAL ACTIONS  |
+| STATE +--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|       |    $   |   id   |    ,   |  List  |NoCommas| IdList |OneComma| Commas |    |shift| red | goto|
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|    1  |   r8   |   r8   |   s5   |    2   |    3   |        |        |    4   |    |   1 |   2 |   3 |
+|    2  |   s6   |        |        |        |        |        |        |        |    |   1 |   0 |   0 |
+|    3  |        |   s8   |        |        |        |    7   |        |        |    |   1 |   0 |   1 |
+|    4  |   r7   |   r7   |   s9   |        |        |        |        |        |    |   1 |   2 |   0 |
+|    5  |   r10  |   r10  |   r10  |        |        |        |        |        |    |   0 |   3 |   0 |
+|    6  |   ACC  |        |        |        |        |        |        |        |    |   0 |   1 |   0 |
+|>   7 <|   r8   |   r6   |   s5   |        |   10   |        |   11   |   12   |    |   1 |   3 |   3 |
+|       |        |   r8   |        |        |        |        |        |        |    |     |     |     |
+|    8  |   r3   |   r3   |   r3   |        |        |        |        |        |    |   0 |   3 |   0 |
+|    9  |   r9   |   r9   |   r9   |        |        |        |        |        |    |   0 |   3 |   0 |
+|   10  |   r2   |        |        |        |        |        |        |        |    |   0 |   1 |   0 |
+|   11  |        |   s13  |        |        |        |        |        |        |    |   1 |   0 |   0 |
+|>  12 <|   r7   |   r5   |   s9   |        |        |        |        |        |    |   1 |   3 |   0 |
+|       |        |   r7   |        |        |        |        |        |        |    |     |     |     |
+|   13  |   r4   |   r4   |   r4   |        |        |        |        |        |    |   0 |   3 |   0 |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+
++-------------------------------------------------------------------------------+
+| TOTAL ACTIONS                                                                 |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|shift  |     1  |     2  |     4  |     0  |     0  |     0  |     0  |     0  |    |   7 |     |     |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|reduce |    10  |    10  |     4  |     0  |     0  |     0  |     0  |     0  |    |     |  24 |     |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|goto   |     0  |     0  |     0  |     1  |     2  |     1  |     1  |     2  |    |     |     |   7 |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+
+
++-------------------------------------------------------------------------------+
+| LR(0) and sLR(1) table differences                                            |
++-------+--------------------------+--------------------------------------------+    +-----------------+
+|       |          ACTION          |                    GOTO                    |    |  TOTAL ACTIONS  |
+| STATE +--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|       |    $   |   id   |    ,   |  List  |NoCommas| IdList |OneComma| Commas |    |shift| red | goto|
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|    1  |        |        |   r8   |        |        |        |        |        |    |   0 |   1 |   0 |
+|    4  |        |        |   r7   |        |        |        |        |        |    |   0 |   1 |   0 |
+|    6  |        |   ACC  |   ACC  |        |        |        |        |        |    |   0 |   2 |   0 |
+|>   7 <|   r6   |        |   r8   |        |        |        |        |        |    |   0 |   3 |   0 |
+|       |        |        |   r6   |        |        |        |        |        |    |     |     |     |
+|   10  |        |   r2   |   r2   |        |        |        |        |        |    |   0 |   2 |   0 |
+|>  12 <|   r5   |        |   r7   |        |        |        |        |        |    |   0 |   3 |   0 |
+|       |        |        |   r5   |        |        |        |        |        |    |     |     |     |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+
++-------------------------------------------------------------------------------+
+| TOTAL ACTIONS                                                                 |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|shift  |     0  |     0  |     0  |     0  |     0  |     0  |     0  |     0  |    |   0 |     |     |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|reduce |     2  |     2  |     8  |     0  |     0  |     0  |     0  |     0  |    |     |  12 |     |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+|goto   |     0  |     0  |     0  |     0  |     0  |     0  |     0  |     0  |    |     |     |   0 |
++-------+--------+--------+--------+--------+--------+--------+--------+--------+    +-----+-----+-----+
+
+

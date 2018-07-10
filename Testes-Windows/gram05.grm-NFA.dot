@@ -1,0 +1,147 @@
+digraph NFA { 
+graph[size="auto" ratio="auto" margin=0.00 ordering="" rotate=0 color="black" bgcolor="transparent" splines="spline" nodesep=0.25 ranksep=0.50 rankdir="LR" rank="same" ];
+
+// SHIFT STATES: 6 
+node[height=0.50 width=0.75 fixedsize=0 shape="rect" color="darkgoldenrod" fillcolor="ivory" style="filled,rounded" regular=0 peripheries=1 sides=4 orientation=0.00 distortion=0.00 skew=0.00 penwidth=1.50 margin=0.05 ];
+state_10004[id="state_10004" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10004_title" id="state_10004_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">4</font></b></TD></TR>
+  <TR><TD TITLE="state_10004_item_1" id="state_10004_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">F </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> (</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> E</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> )</font></TD></TR>
+  </TABLE>>];
+state_10005[id="state_10005" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10005_title" id="state_10005_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">5</font></b></TD></TR>
+  <TR><TD TITLE="state_10005_item_1" id="state_10005_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">F </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> id</font></TD></TR>
+  </TABLE>>];
+state_10006[id="state_10006" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10006_title" id="state_10006_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">6</font></b></TD></TR>
+  <TR><TD TITLE="state_10006_item_1" id="state_10006_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">E' </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> E</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> $</font></TD></TR>
+  </TABLE>>];
+state_10008[id="state_10008" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10008_title" id="state_10008_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">8</font></b></TD></TR>
+  <TR><TD TITLE="state_10008_item_1" id="state_10008_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">Elinha </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> +</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> T</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Elinha</font></TD></TR>
+  </TABLE>>];
+state_10011[id="state_10011" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10011_title" id="state_10011_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">11</font></b></TD></TR>
+  <TR><TD TITLE="state_10011_item_1" id="state_10011_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">Tlinha </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> *</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> F</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Tlinha</font></TD></TR>
+  </TABLE>>];
+state_10020[id="state_10020" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10020_title" id="state_10020_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">20</font></b></TD></TR>
+  <TR><TD TITLE="state_10020_item_1" id="state_10020_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">F </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> (</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> E</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> )</font></TD></TR>
+  </TABLE>>];
+
+// NON DETERMINISTIC STATES: 10 
+node[height=0.50 width=0.75 fixedsize=0 shape="rect" color="darkgoldenrod" fillcolor="ivory" style="filled,rounded" regular=0 peripheries=1 sides=4 orientation=0.00 distortion=0.00 skew=0.00 penwidth=1.50 margin=0.05 ];
+state_10001[id="state_10001" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10001_title" id="state_10001_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">1</font></b></TD></TR>
+  <TR><TD TITLE="state_10001_item_1" id="state_10001_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">E' </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> E</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> $</font></TD></TR>
+  </TABLE>>];
+state_10002[id="state_10002" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10002_title" id="state_10002_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">2</font></b></TD></TR>
+  <TR><TD TITLE="state_10002_item_1" id="state_10002_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">E </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> T</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Elinha</font></TD></TR>
+  </TABLE>>];
+state_10003[id="state_10003" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10003_title" id="state_10003_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">3</font></b></TD></TR>
+  <TR><TD TITLE="state_10003_item_1" id="state_10003_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">T </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> F</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Tlinha</font></TD></TR>
+  </TABLE>>];
+state_10007[id="state_10007" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10007_title" id="state_10007_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">7</font></b></TD></TR>
+  <TR><TD TITLE="state_10007_item_1" id="state_10007_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">E </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> T</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Elinha</font></TD></TR>
+  </TABLE>>];
+state_10010[id="state_10010" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10010_title" id="state_10010_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">10</font></b></TD></TR>
+  <TR><TD TITLE="state_10010_item_1" id="state_10010_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">T </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> F</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Tlinha</font></TD></TR>
+  </TABLE>>];
+state_10013[id="state_10013" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10013_title" id="state_10013_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">13</font></b></TD></TR>
+  <TR><TD TITLE="state_10013_item_1" id="state_10013_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">F </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> (</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> E</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> )</font></TD></TR>
+  </TABLE>>];
+state_10017[id="state_10017" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10017_title" id="state_10017_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">17</font></b></TD></TR>
+  <TR><TD TITLE="state_10017_item_1" id="state_10017_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">Elinha </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> +</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> T</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Elinha</font></TD></TR>
+  </TABLE>>];
+state_10019[id="state_10019" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10019_title" id="state_10019_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">19</font></b></TD></TR>
+  <TR><TD TITLE="state_10019_item_1" id="state_10019_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">Tlinha </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> *</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> F</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Tlinha</font></TD></TR>
+  </TABLE>>];
+state_10021[id="state_10021" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10021_title" id="state_10021_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">21</font></b></TD></TR>
+  <TR><TD TITLE="state_10021_item_1" id="state_10021_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">Elinha </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> +</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> T</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Elinha</font></TD></TR>
+  </TABLE>>];
+state_10022[id="state_10022" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10022_title" id="state_10022_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">22</font></b></TD></TR>
+  <TR><TD TITLE="state_10022_item_1" id="state_10022_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">Tlinha </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> *</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> F</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Tlinha</font></TD></TR>
+  </TABLE>>];
+
+// REDUCTION STATES: 9 
+node[height=0.50 width=0.75 fixedsize=0 shape="rect" color="darkgoldenrod" fillcolor="beige" style="filled,rounded" regular=0 peripheries=2 sides=4 orientation=0.00 distortion=0.00 skew=0.00 penwidth=1.50 margin=0.05 ];
+state_10009[id="state_10009" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10009_title" id="state_10009_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">9</font></b></TD></TR>
+  <TR><TD TITLE="state_10009_item_1" id="state_10009_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">Elinha </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+state_10012[id="state_10012" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10012_title" id="state_10012_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">12</font></b></TD></TR>
+  <TR><TD TITLE="state_10012_item_1" id="state_10012_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">Tlinha </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+state_10014[id="state_10014" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10014_title" id="state_10014_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">14</font></b></TD></TR>
+  <TR><TD TITLE="state_10014_item_1" id="state_10014_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">F </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> id</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+state_10015[id="state_10015" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10015_title" id="state_10015_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">15</font></b></TD></TR>
+  <TR><TD TITLE="state_10015_item_1" id="state_10015_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">E' </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> E</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> $</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+state_10016[id="state_10016" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10016_title" id="state_10016_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">16</font></b></TD></TR>
+  <TR><TD TITLE="state_10016_item_1" id="state_10016_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">E </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> T</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Elinha</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+state_10018[id="state_10018" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10018_title" id="state_10018_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">18</font></b></TD></TR>
+  <TR><TD TITLE="state_10018_item_1" id="state_10018_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">T </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> F</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Tlinha</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+state_10023[id="state_10023" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10023_title" id="state_10023_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">23</font></b></TD></TR>
+  <TR><TD TITLE="state_10023_item_1" id="state_10023_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">F </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> (</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> E</font><font color="#0A5040" face="Times-Roman" point-size="14.0"> )</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+state_10024[id="state_10024" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10024_title" id="state_10024_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">24</font></b></TD></TR>
+  <TR><TD TITLE="state_10024_item_1" id="state_10024_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">Elinha </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> +</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> T</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Elinha</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+state_10025[id="state_10025" label=<<TABLE BORDER="0">
+  <TR><TD TITLE="state_10025_title" id="state_10025_title" BORDER="0" SIDES="B" href="#"><b><font color="#8B4513" face="Calibri" point-size="13.0">Estado </font><font color="#8B4513" face="Calibri" point-size="13.0">25</font></b></TD></TR>
+  <TR><TD TITLE="state_10025_item_1" id="state_10025_item_1" href="#"><font color="#BC1F29" face="Times-Roman" point-size="14.0">Tlinha </font><font color="#0A5040" face="Times-Roman" point-size="14.0">→ </font><font color="#0A5040" face="Times-Roman" point-size="14.0"> *</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> F</font><font color="#BC1F29" face="Times-Roman" point-size="14.0"> Tlinha</font><font color="#F5A70A" face="Times-Roman" point-size="14.0"> •</font></TD></TR>
+  </TABLE>>];
+
+// TRANSITIONS: 32 
+edge[weight=1.00 style="" color="darkgoldenrod" dir="forward" tailclip=1 headclip=1 arrowhead="normal" arrowtail="normal" arrowsize=1.00 labeldistance=1.00 decorate=0 constraint=1 minlen=1 penwidth=1.50 ];
+state_10001->state_10006 [id="trans_1" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> E</font>>];
+state_10001->state_10002 [id="trans_2" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10002->state_10007 [id="trans_3" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> T</font>>];
+state_10002->state_10003 [id="trans_4" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10003->state_10010 [id="trans_5" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> F</font>>];
+state_10003->state_10004 [id="trans_6" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10003->state_10005 [id="trans_7" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10004->state_10013 [id="trans_8" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> (</font>>];
+state_10005->state_10014 [id="trans_9" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> id</font>>];
+state_10006->state_10015 [id="trans_10" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> $</font>>];
+state_10007->state_10016 [id="trans_11" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> Elinha</font>>];
+state_10007->state_10008 [id="trans_12" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10007->state_10009 [id="trans_13" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10008->state_10017 [id="trans_14" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> +</font>>];
+state_10010->state_10011 [id="trans_15" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10010->state_10012 [id="trans_16" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10010->state_10018 [id="trans_17" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> Tlinha</font>>];
+state_10011->state_10019 [id="trans_18" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> *</font>>];
+state_10013->state_10020 [id="trans_19" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> E</font>>];
+state_10013->state_10002 [id="trans_20" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10017->state_10021 [id="trans_21" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> T</font>>];
+state_10017->state_10003 [id="trans_22" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10019->state_10004 [id="trans_23" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10019->state_10005 [id="trans_24" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10019->state_10022 [id="trans_25" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> F</font>>];
+state_10020->state_10023 [id="trans_26" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> )</font>>];
+state_10021->state_10024 [id="trans_27" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> Elinha</font>>];
+state_10021->state_10008 [id="trans_28" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10021->state_10009 [id="trans_29" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10022->state_10025 [id="trans_30" label=<<font color="#BC1F29" face="Times-Roman" point-size="14.0"> Tlinha</font>>];
+state_10022->state_10011 [id="trans_31" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+state_10022->state_10012 [id="trans_32" label=<<font color="#0A5040" face="Times-Roman" point-size="14.0"> ε</font>>];
+} 

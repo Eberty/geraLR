@@ -1,0 +1,191 @@
+defina itens_10001 "a_state_10001_item_.*";
+mostre "state_10001" apos 0.50 segundos;
+mostre "a_state_10001_title" apos 0.50 segundos;
+mostre itens_10001 umAum apos 0.50 segundos;
+
+apague "a_state_10001_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10001_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_3" apos 0.50 segundos;
+
+defina itens_10005 "a_state_10005_item_.*";
+mostre "state_10005" apos 0.50 segundos;
+mostre "a_state_10005_title" apos 0.50 segundos;
+mostre itens_10005 umAum apos 0.50 segundos;
+
+mostre "trans_4" apos 0.50 segundos;
+
+defina itens_10002 "a_state_10002_item_.*";
+mostre "state_10002" apos 0.50 segundos;
+mostre "a_state_10002_title" apos 0.50 segundos;
+mostre itens_10002 umAum apos 0.50 segundos;
+
+mostre "trans_1" apos 0.50 segundos;
+
+defina itens_10003 "a_state_10003_item_.*";
+mostre "state_10003" apos 0.50 segundos;
+mostre "a_state_10003_title" apos 0.50 segundos;
+mostre itens_10003 umAum apos 0.50 segundos;
+
+mostre "trans_2" apos 0.50 segundos;
+
+defina itens_10004 "a_state_10004_item_.*";
+mostre "state_10004" apos 0.50 segundos;
+mostre "a_state_10004_title" apos 0.50 segundos;
+mostre itens_10004 umAum apos 0.50 segundos;
+
+apague "a_state_10005_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10005_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_7" apos 0.50 segundos;
+
+defina itens_10011 "a_state_10011_item_.*";
+mostre "state_10011" apos 0.50 segundos;
+mostre "a_state_10011_title" apos 0.50 segundos;
+mostre itens_10011 umAum apos 0.50 segundos;
+
+apague "a_state_10002_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10002_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_5" apos 0.50 segundos;
+
+defina itens_10006 "a_state_10006_item_.*";
+mostre "state_10006" apos 0.50 segundos;
+mostre "a_state_10006_title" apos 0.50 segundos;
+mostre itens_10006 umAum apos 0.50 segundos;
+
+apague "a_state_10003_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10003_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_6" apos 0.50 segundos;
+
+defina itens_10010 "a_state_10010_item_.*";
+mostre "state_10010" apos 0.50 segundos;
+mostre "a_state_10010_title" apos 0.50 segundos;
+mostre itens_10010 umAum apos 0.50 segundos;
+
+apague "a_state_10006_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10006_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_8" apos 0.50 segundos;
+
+defina itens_10013 "a_state_10013_item_.*";
+mostre "state_10013" apos 0.50 segundos;
+mostre "a_state_10013_title" apos 0.50 segundos;
+mostre itens_10013 umAum apos 0.50 segundos;
+
+mostre "trans_9" apos 0.50 segundos;
+
+defina itens_10007 "a_state_10007_item_.*";
+mostre "state_10007" apos 0.50 segundos;
+mostre "a_state_10007_title" apos 0.50 segundos;
+mostre itens_10007 umAum apos 0.50 segundos;
+
+mostre "trans_10" apos 0.50 segundos;
+
+defina itens_10008 "a_state_10008_item_.*";
+mostre "state_10008" apos 0.50 segundos;
+mostre "a_state_10008_title" apos 0.50 segundos;
+mostre itens_10008 umAum apos 0.50 segundos;
+
+mostre "trans_11" apos 0.50 segundos;
+
+defina itens_10009 "a_state_10009_item_.*";
+mostre "state_10009" apos 0.50 segundos;
+mostre "a_state_10009_title" apos 0.50 segundos;
+mostre itens_10009 umAum apos 0.50 segundos;
+
+apague "a_state_10010_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10010_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_17" apos 0.50 segundos;
+
+defina itens_10015 "a_state_10015_item_.*";
+mostre "state_10015" apos 0.50 segundos;
+mostre "a_state_10015_title" apos 0.50 segundos;
+mostre itens_10015 umAum apos 0.50 segundos;
+
+mostre "trans_18" apos 0.50 segundos;
+
+mostre "trans_19" apos 0.50 segundos;
+
+mostre "trans_20" apos 0.50 segundos;
+
+apague "a_state_10013_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10013_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_21" apos 0.50 segundos;
+
+defina itens_10016 "a_state_10016_item_.*";
+mostre "state_10016" apos 0.50 segundos;
+mostre "a_state_10016_title" apos 0.50 segundos;
+mostre itens_10016 umAum apos 0.50 segundos;
+
+apague "a_state_10007_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10007_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_12" apos 0.50 segundos;
+
+defina itens_10012 "a_state_10012_item_.*";
+mostre "state_10012" apos 0.50 segundos;
+mostre "a_state_10012_title" apos 0.50 segundos;
+mostre itens_10012 umAum apos 0.50 segundos;
+
+mostre "trans_13" apos 0.50 segundos;
+
+mostre "trans_14" apos 0.50 segundos;
+
+mostre "trans_15" apos 0.50 segundos;
+
+apague "a_state_10008_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10008_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_16" apos 0.50 segundos;
+
+defina itens_10014 "a_state_10014_item_.*";
+mostre "state_10014" apos 0.50 segundos;
+mostre "a_state_10014_title" apos 0.50 segundos;
+mostre itens_10014 umAum apos 0.50 segundos;
+
+apague "a_state_10015_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10015_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_22" apos 0.50 segundos;
+
+defina itens_10017 "a_state_10017_item_.*";
+mostre "state_10017" apos 0.50 segundos;
+mostre "a_state_10017_title" apos 0.50 segundos;
+mostre itens_10017 umAum apos 0.50 segundos;
+
+apague "a_state_10016_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10016_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_23" apos 0.50 segundos;
+
+defina itens_10018 "a_state_10018_item_.*";
+mostre "state_10018" apos 0.50 segundos;
+mostre "a_state_10018_title" apos 0.50 segundos;
+mostre itens_10018 umAum apos 0.50 segundos;
+
+mostre "trans_24" apos 0.50 segundos;
+
+mostre "trans_25" apos 0.50 segundos;
+
+mostre "trans_26" apos 0.50 segundos;
+
+apague "a_state_10017_item_1" apos 0.50 segundos por 0.50 segundos;
+apague "a_state_10017_item_1" apos 0.50 segundos por 0.50 segundos;
+
+mostre "trans_27" apos 0.50 segundos;
+
+defina itens_10019 "a_state_10019_item_.*";
+mostre "state_10019" apos 0.50 segundos;
+mostre "a_state_10019_title" apos 0.50 segundos;
+mostre itens_10019 umAum apos 0.50 segundos;
+
+mostre "trans_28" apos 0.50 segundos;
+
+mostre "trans_29" apos 0.50 segundos;
+
+mostre "trans_30" apos 0.50 segundos;
+

@@ -1,0 +1,62 @@
+LISTA DE ERROS LEXICOS EM "gram06.grm-DFA.lda"
+
+[   1] mostre "state_1" apos 0.50 segundos;
+[   2] mostre "a_state_1_title" apos 0.50 segundos;
+[   3] mostre "a_state_1_item_1" apos 0.50 segundos;
+[   4] apague "a_state_1_item_1" apos 0.50 segundos por 0.50 segundos;
+[   5] apague "a_state_1_item_1" apos 0.50 segundos por 0.50 segundos;
+[   6] mostre "a_state_1_item_2" apos 0.50 segundos;
+[   7] mostre "a_state_1_item_3" apos 0.50 segundos;
+[   8] mostre "a_state_1_item_4" apos 0.50 segundos;
+[  10] defina itens_1_1 "(a_state_1_item_1)|(a_state_1_item_3)|(a_state_1_item_4)";
+[  11] apague itens_1_1 juntos apos 0.50 segundos por 0.50 segundos;
+[  12] apague itens_1_1 juntos apos 0.50 segundos por 0.50 segundos;
+[  14] mostre "trans_1" apos 0.50 segundos;
+[  16] mostre "state_2" apos 0.50 segundos;
+[  17] mostre "a_state_2_title" apos 0.50 segundos;
+[  18] mostre "a_state_2_item_1" apos 0.50 segundos;
+[  19] mostre "a_state_2_item_2" apos 0.50 segundos;
+[  20] apague "a_state_2_item_2" apos 0.50 segundos por 0.50 segundos;
+[  21] apague "a_state_2_item_2" apos 0.50 segundos por 0.50 segundos;
+[  22] mostre "a_state_2_item_4" apos 0.50 segundos;
+[  23] mostre "a_state_2_item_5" apos 0.50 segundos;
+[  24] mostre "a_state_2_item_3" apos 0.50 segundos;
+[  26] defina itens_1_2 "(a_state_1_item_2)";
+[  27] apague itens_1_2 juntos apos 0.50 segundos por 0.50 segundos;
+[  28] apague itens_1_2 juntos apos 0.50 segundos por 0.50 segundos;
+[  30] mostre "trans_2" apos 0.50 segundos;
+[  32] mostre "state_3" apos 0.50 segundos;
+[  33] mostre "a_state_3_title" apos 0.50 segundos;
+[  34] mostre "a_state_3_item_1" apos 0.50 segundos;
+[  36] defina itens_2_4 "(a_state_2_item_1)";
+[  37] apague itens_2_4 juntos apos 0.50 segundos por 0.50 segundos;
+[  38] apague itens_2_4 juntos apos 0.50 segundos por 0.50 segundos;
+[  40] mostre "trans_4" apos 0.50 segundos;
+[  42] mostre "state_5" apos 0.50 segundos;
+[  43] mostre "a_state_5_title" apos 0.50 segundos;
+[  44] mostre "a_state_5_item_1" apos 0.50 segundos;
+[  46] defina itens_2_3 "(a_state_2_item_2)";
+[  47] apague itens_2_3 juntos apos 0.50 segundos por 0.50 segundos;
+[  48] apague itens_2_3 juntos apos 0.50 segundos por 0.50 segundos;
+[  50] mostre "trans_3" apos 0.50 segundos;
+[  52] mostre "state_4" apos 0.50 segundos;
+[  53] mostre "a_state_4_title" apos 0.50 segundos;
+[  54] mostre "a_state_4_item_1" apos 0.50 segundos;
+[  56] defina itens_2_5 "(a_state_2_item_3)|(a_state_2_item_4)";
+[  57] apague itens_2_5 juntos apos 0.50 segundos por 0.50 segundos;
+[  58] apague itens_2_5 juntos apos 0.50 segundos por 0.50 segundos;
+[  60] mostre "trans_5" apos 0.50 segundos;
+[  62] mostre "state_6" apos 0.50 segundos;
+[  63] mostre "a_state_6_title" apos 0.50 segundos;
+[  64] mostre "a_state_6_item_1" apos 0.50 segundos;
+[  65] mostre "a_state_6_item_2" apos 0.50 segundos;
+[  67] defina itens_4_6 "(a_state_4_item_1)";
+[  68] apague itens_4_6 juntos apos 0.50 segundos por 0.50 segundos;
+[  69] apague itens_4_6 juntos apos 0.50 segundos por 0.50 segundos;
+[  71] mostre "trans_6" apos 0.50 segundos;
+[  73] mostre "state_7" apos 0.50 segundos;
+[  74] mostre "a_state_7_title" apos 0.50 segundos;
+[  75] mostre "a_state_7_item_1" apos 0.50 segundos;
+
+
+TOTAL DE ERROS: 0

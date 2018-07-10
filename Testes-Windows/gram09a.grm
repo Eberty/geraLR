@@ -1,0 +1,4 @@
+statement -> if_stmt | 'other' ;
+if_stmt -> 'if' '(' bool_exp ')' statement else_part ;
+else_part -> 'else' statement | ;
+bool_exp -> 'true' | 'false' ;

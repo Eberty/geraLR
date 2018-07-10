@@ -1,0 +1,43 @@
+(#
+  UNIVERSIDADE ESTADUAL DE SANTA CRUZ - UESC
+  DEPARTAMENTO DE CIÊNCIAS EXATAS E TECNOLÓGICAS - DCET
+  COLEGIADO DE CIÊNCIA DA COMPUTAÇÃO
+
+  Especificação léxica de LiDAS - Linguagem de Definição de Animação de SVGs
+#)
+
+CAIXA
+  Comandos ignoram
+  Identificadores distinguem
+
+COMENTARIOS
+  Linha  "//"      /# Abre  comentário de linha
+  Abre   "/\*"     /# Abre  comentário de bloco
+  Fecha  "\*/"     /# Fecha comentário de bloco
+
+LEXEMAS
+
+/#  -------------    ---------------    -----------------------------------------------------
+/#  Token            Rótulo             Expressão regular
+/#  -------------    ---------------    -----------------------------------------------------
+    Identificador    "tk_IDEN"          "([a-zA-Z][a-zA-Z0-9_]*)"
+    Inteiro          "tk_INTEIRO"       "([0-9]+)"                               /#  ([-+]?[0-9]+)
+    Decimal          "tk_DECIMAL"       "(([0-9]*\.[0-9]+)|([0-9]+\.[0-9]*))"    /#  (([-+]?[0-9]*\.[0-9]+)|([-+]?[0-9]+\.[0-9]*))
+    String           "tk_CADEIA"        '("[^"]*")'
+
+COMANDOS
+
+/#  ----------       ------------------
+/#  Cadeia           Rótulo
+/#  ----------       ------------------
+    "defina"         "tk_defina"
+    "mostre"         "tk_mostre"
+    "apague"         "tk_apague"
+    "umAum"          "tk_umAum"
+    "juntos"         "tk_juntos"
+    "apos"           "tk_apos"
+    "por"            "tk_por"
+    "segundos"       "tk_segundos"
+	"segundo"		 "tk_segundo"
+	"tecla"			 "tk_tecla"
+    ";"              "tk_pontoVirgula"

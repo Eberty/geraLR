@@ -1,0 +1,28 @@
+LISTA DE ERROS EM "LiDAS.mel"
+
+[   9] CAIXA
+[  10]   Comandos ignoram
+[  11]   Identificadores distinguem
+[  13] COMENTARIOS
+[  14]   Linha  "//"      /# Abre  comentário de linha
+[  15]   Abre   "/\*"     /# Abre  comentário de bloco
+[  16]   Fecha  "\*/"     /# Fecha comentário de bloco
+[  18] LEXEMAS
+[  23]     Identificador    "tk_IDEN"          "([a-zA-Z][a-zA-Z0-9_]*)"
+[  24]     Inteiro          "tk_INTEIRO"       "([0-9]+)"                               /#  ([-+]?[0-9]+)
+[  25]     Decimal          "tk_DECIMAL"       "(([0-9]*\.[0-9]+)|([0-9]+\.[0-9]*))"    /#  (([-+]?[0-9]*\.[0-9]+)|([-+]?[0-9]+\.[0-9]*))
+[  26]     String           "tk_CADEIA"        '("[^"]*")'
+[  28] COMANDOS
+[  33]     "defina"         "tk_defina"
+[  34]     "mostre"         "tk_mostre"
+[  35]     "apague"         "tk_apague"
+[  36]     "umAum"          "tk_umAum"
+[  37]     "juntos"         "tk_juntos"
+[  38]     "apos"           "tk_apos"
+[  39]     "por"            "tk_por"
+[  40]     "segundos"       "tk_segundos"
+[  41] 	"segundo"		 "tk_segundo"
+[  42] 	"tecla"			 "tk_tecla"
+[  43]     ";"              "tk_pontoVirgula"
+
+TOTAL DE ERROS: 0
