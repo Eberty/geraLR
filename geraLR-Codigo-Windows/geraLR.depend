@@ -1,0 +1,956 @@
+# depslib dependency file v1.0
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\commline.c
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<getopt.h>
+	"mystrings.h"
+	"error.h"
+	"commline.h"
+
+1522359578 h"
+
+1341279832 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\mystrings.h
+	<stddef.h>
+
+1521317139 
+
+1521263491 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\error.h
+	<errno.h>
+
+1521263491 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\commline.h
+	<limits.h>
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\datastructs.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdarg.h>
+	"datastructs.h"
+
+1522359578 ts.h"
+
+1521263491 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\datastructs.h
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\diagrams.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	"datastructs.h"
+	"error.h"
+	"mystrings.h"
+	"mytime.h"
+	"report.h"
+	"grammar.h"
+	"diagrams.h"
+	"geraLR.h"
+
+1341271590 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\mytime.h
+	<time.h>
+
+1341271590 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\report.h
+	"common.h"
+
+1521263491 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\common.h
+	<limits.h>
+	<float.h>
+	<stdbool.h>
+
+1521314103 >
+
+1521263383 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\grammar.h
+
+1521248190 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\diagrams.h
+
+1521263383 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\geralr.h
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\error.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\geralr.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<malloc.h>
+	"common.h"
+	"datastructs.h"
+	"error.h"
+	"mystrings.h"
+	"report.h"
+	"lexan.h"
+	"commline.h"
+	"grammar.h"
+	"diagrams.h"
+	"geraLR.h"
+
+1521263383 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\lexan.h
+	"regex.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+	"lexan.h"
+
+1521117092 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\regex.h
+	<stddef.h>
+
+1521264127 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\grammar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"common.h"
+	"error.h"
+	"lexan.h"
+	"datastructs.h"
+	"grammar.h"
+
+1521266411 "
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\lexan.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<limits.h>
+	"error.h"
+	"lexan.h"
+
+1414084536 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\mystrings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"common.h"
+	"error.h"
+	"mystrings.h"
+
+1521314153 .h"
+
+1338607718 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\random.c
+	"random.h"
+
+1338223696 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\random.h
+
+1414084629 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\regex.c
+	<config.h>
+	<sys/types.h>
+	"lisp.h"
+	"buffer.h"
+	"syntax.h"
+	<stdlib.h>
+	<string.h>
+	<strings.h>
+	"regex.h"
+	<ctype.h>
+	<alloca.h>
+	<stdio.h>
+	<assert.h>
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\report.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	"error.h"
+	"mytime.h"
+	"mystrings.h"
+	"report.h"
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\geralr\fonte\mytime.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"common.h"
+	"mytime.h"
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\commline.c
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<getopt.h>
+	"mystrings.h"
+	"error.h"
+	"commline.h"
+
+1341279832 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\mystrings.h
+	<stddef.h>
+
+1521263491 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\error.h
+	<errno.h>
+
+1521263491 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\commline.h
+	<limits.h>
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\datastructs.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdarg.h>
+	"datastructs.h"
+
+1521263491 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\datastructs.h
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\diagrams.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	"datastructs.h"
+	"error.h"
+	"mystrings.h"
+	"mytime.h"
+	"report.h"
+	"grammar.h"
+	"diagrams.h"
+	"geraLR.h"
+
+1341271590 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\mytime.h
+	<time.h>
+
+1341271590 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\report.h
+	"common.h"
+
+1521263491 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\common.h
+	<limits.h>
+	<float.h>
+	<stdbool.h>
+
+1521264513 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\grammar.h
+
+1521248190 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\diagrams.h
+
+1521263383 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\geralr.h
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\error.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+
+1521264865 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\geralr.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<malloc.h>
+	"common.h"
+	"datastructs.h"
+	"error.h"
+	"mystrings.h"
+	"report.h"
+	"lexan.h"
+	"commline.h"
+	"grammar.h"
+	"diagrams.h"
+	"geraLR.h"
+
+1521263383 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\lexan.h
+	"regex.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+	"lexan.h"
+
+1521117092 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\regex.h
+	<stddef.h>
+
+1521266411 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\grammar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"common.h"
+	"error.h"
+	"lexan.h"
+	"datastructs.h"
+	"grammar.h"
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\lexan.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<limits.h>
+	"error.h"
+	"lexan.h"
+
+1414084536 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\mystrings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"common.h"
+	"error.h"
+	"mystrings.h"
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\mytime.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"common.h"
+	"mytime.h"
+
+1338607718 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\random.c
+	"random.h"
+
+1338223696 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\random.h
+
+1414084629 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\regex.c
+	<config.h>
+	<sys/types.h>
+	"lisp.h"
+	"buffer.h"
+	"syntax.h"
+	<stdlib.h>
+	<string.h>
+	<strings.h>
+	"regex.h"
+	<ctype.h>
+	<alloca.h>
+	<stdio.h>
+	<assert.h>
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-20180316\compilado-win-codeblocks\fonte\report.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	"error.h"
+	"mytime.h"
+	"mystrings.h"
+	"report.h"
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\commline.c
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<getopt.h>
+	"mystrings.h"
+	"error.h"
+	"commline.h"
+
+1341279832 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\mystrings.h
+	<stddef.h>
+
+1521312123 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\error.h
+	<stdbool.h>
+	<errno.h>
+
+1521263491 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\commline.h
+	<limits.h>
+
+1521314083 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\datastructs.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdarg.h>
+	"datastructs.h"
+
+1521312616 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\datastructs.h
+	<stdbool.h>
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\diagrams.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	"datastructs.h"
+	"error.h"
+	"mystrings.h"
+	"mytime.h"
+	"report.h"
+	"grammar.h"
+	"diagrams.h"
+	"geraLR.h"
+
+1341271590 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\mytime.h
+	<time.h>
+
+1341271590 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\report.h
+	"common.h"
+
+1521312470 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\common.h
+	<limits.h>
+	<float.h>
+	<stdbool.h>
+
+1521264513 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\grammar.h
+
+1521248190 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\diagrams.h
+
+1521263383 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\geralr.h
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\error.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+
+1521314132 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\geralr.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<malloc.h>
+	"common.h"
+	"datastructs.h"
+	"error.h"
+	"mystrings.h"
+	"report.h"
+	"lexan.h"
+	"commline.h"
+	"grammar.h"
+	"diagrams.h"
+	"geraLR.h"
+
+1521263383 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\lexan.h
+	"regex.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+	"lexan.h"
+
+1521117092 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\regex.h
+	<stddef.h>
+
+1521266411 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\grammar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"common.h"
+	"error.h"
+	"lexan.h"
+	"datastructs.h"
+	"grammar.h"
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\lexan.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<limits.h>
+	"error.h"
+	"lexan.h"
+
+1521314153 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\mystrings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"common.h"
+	"error.h"
+	"mystrings.h"
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\mytime.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"common.h"
+	"mytime.h"
+
+1338607718 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\random.c
+	"random.h"
+
+1338223696 d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\random.h
+
+1414084629 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\regex.c
+	<config.h>
+	<sys/types.h>
+	"lisp.h"
+	"buffer.h"
+	"syntax.h"
+	<stdlib.h>
+	<string.h>
+	<strings.h>
+	"regex.h"
+	<ctype.h>
+	<alloca.h>
+	<stdio.h>
+	<assert.h>
+
+1521263491 source:d:\uesc\orientações\2018-01 eberty alves\código\geralr-eberty-semsvg-20180317\compilado-windows\fonte\report.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	"error.h"
+	"mytime.h"
+	"mystrings.h"
+	"report.h"
+
+1521317139 source:/home/eberty/Dropbox/DocumentosCIC/Semestre7/TCC/geraLR-Eberty-2018-05-10/geraLR-Codigo-Windows/Fonte/error.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+
+1521314118 /home/eberty/Dropbox/DocumentosCIC/Semestre7/TCC/geraLR-Eberty-2018-05-10/geraLR-Codigo-Windows/Fonte/error.h
+	<stdbool.h>
+	<errno.h>
+	<stdbool.h>
+	<errno.h>
+
+1338607718 source:/home/eberty/Dropbox/DocumentosCIC/Semestre7/TCC/geraLR-Eberty-2018-05-10/geraLR-Codigo-Windows/Fonte/random.c
+	"random.h"
+	"random.h"
+
+1338223696 /home/eberty/Dropbox/DocumentosCIC/Semestre7/TCC/geraLR-Eberty-2018-05-10/geraLR-Codigo-Windows/Fonte/random.h
+
+1522359578 source:/home/eberty/Dropbox/DocumentosCIC/Semestre7/TCC/geraLR-Eberty-2018-05-10/geraLR-Codigo-Windows/Fonte/commline.c
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<getopt.h>
+	"mystrings.h"
+	"error.h"
+	"commline.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<getopt.h>
+	"mystrings.h"
+	"error.h"
+	"commline.h"
+
+1341279832 /home/eberty/Dropbox/DocumentosCIC/Semestre7/TCC/geraLR-Eberty-2018-05-10/geraLR-Codigo-Windows/Fonte/mystrings.h
+	<stddef.h>
+	<stddef.h>
+
+1521263491 /home/eberty/Dropbox/DocumentosCIC/Semestre7/TCC/geraLR-Eberty-2018-05-10/geraLR-Codigo-Windows/Fonte/commline.h
+	<limits.h>
+	<limits.h>
+
+1522359578 source:/home/eberty/Dropbox/DocumentosCIC/Semestre7/TCC/geraLR-Eberty-2018-05-10/geraLR-Codigo-Windows/Fonte/datastructs.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdarg.h>
+	"datastructs.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdarg.h>
+	"datastructs.h"
+
+1521314103 /home/eberty/Dropbox/DocumentosCIC/Semestre7/TCC/geraLR-Eberty-2018-05-10/geraLR-Codigo-Windows/Fonte/datastructs.h
+	<stdbool.h>
+	<stdbool.h>
+
+1522359578 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\commline.c
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<getopt.h>
+	"mystrings.h"
+	"error.h"
+	"commline.h"
+
+1341279832 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\mystrings.h
+	<stddef.h>
+
+1521314118 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\error.h
+	<stdbool.h>
+	<errno.h>
+
+1521263491 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\commline.h
+	<limits.h>
+
+1522359578 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\datastructs.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdarg.h>
+	"datastructs.h"
+
+1521314103 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\datastructs.h
+	<stdbool.h>
+
+1521317139 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\error.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+
+1338607718 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\random.c
+	"random.h"
+
+1338223696 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\random.h
+
+1526334997 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\diagrams.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	<gvc.h>
+	<libconfig.h>
+	"datastructs.h"
+	"error.h"
+	"mystrings.h"
+	"mytime.h"
+	"report.h"
+	"grammar.h"
+	"diagrams.h"
+	"geraLR.h"
+
+1506488584 c:\cygwin64\usr\include\graphviz\gvc.h
+	"types.h"
+	"gvplugin.h"
+
+1506488582 c:\cygwin64\usr\include\graphviz\types.h
+	<stdio.h>
+	<assert.h>
+	<signal.h>
+	"geom.h"
+	"gvcext.h"
+	"pathgeom.h"
+	"textspan.h"
+	"cgraph.h"
+	"usershape.h"
+
+1506488582 c:\cygwin64\usr\include\graphviz\geom.h
+	"arith.h"
+
+1506488582 c:\cygwin64\usr\include\graphviz\arith.h
+	<limits.h>
+	<values.h>
+	<math.h>
+
+1506488584 c:\cygwin64\usr\include\graphviz\gvcext.h
+
+1506488580 c:\cygwin64\usr\include\graphviz\pathgeom.h
+
+1506488582 c:\cygwin64\usr\include\graphviz\textspan.h
+
+1506488579 c:\cygwin64\usr\include\graphviz\cgraph.h
+	<inttypes.h>
+	"cdt.h"
+
+1506488578 c:\cygwin64\usr\include\graphviz\cdt.h
+	<stddef.h>
+	<string.h>
+
+1506488582 c:\cygwin64\usr\include\graphviz\usershape.h
+	"cdt.h"
+
+1506488584 c:\cygwin64\usr\include\graphviz\gvplugin.h
+	"gvcext.h"
+
+1341271590 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\mytime.h
+	<time.h>
+
+1341271590 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\report.h
+	"common.h"
+
+1522531129 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\common.h
+	<limits.h>
+	<float.h>
+	<stdbool.h>
+
+1524099060 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\grammar.h
+
+1526305326 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\diagrams.h
+	<stdbool.h>
+
+1524599747 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\geralr.h
+
+1526153999 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\geralr.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<malloc.h>
+	"common.h"
+	"datastructs.h"
+	"error.h"
+	"mystrings.h"
+	"report.h"
+	"lexan.h"
+	"commline.h"
+	"grammar.h"
+	"diagrams.h"
+	"geraLR.h"
+
+1521319246 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\lexan.h
+	"regex.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+	"lexan.h"
+
+1521117092 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\regex.h
+	<stddef.h>
+
+1522359578 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\grammar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"common.h"
+	"error.h"
+	"lexan.h"
+	"datastructs.h"
+	"grammar.h"
+
+1522359578 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\lexan.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<limits.h>
+	"error.h"
+	"lexan.h"
+
+1522533530 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\mystrings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"common.h"
+	"error.h"
+	"mystrings.h"
+
+1522534003 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\mytime.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"common.h"
+	"mytime.h"
+
+1523385230 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\regex.c
+	<config.h>
+	<sys/types.h>
+	"lisp.h"
+	"buffer.h"
+	"syntax.h"
+	<stdlib.h>
+	<string.h>
+	<strings.h>
+	"regex.h"
+	<ctype.h>
+	<alloca.h>
+	<stdio.h>
+	<assert.h>
+
+1522359579 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr-eberty-2018-05-10\geralr-codigo-windows\fonte\report.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	"error.h"
+	"mytime.h"
+	"mystrings.h"
+	"report.h"
+
+1522359578 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\commline.c
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<string.h>
+	<ctype.h>
+	<getopt.h>
+	"mystrings.h"
+	"error.h"
+	"commline.h"
+
+1341279832 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\mystrings.h
+	<stddef.h>
+
+1521314118 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\error.h
+	<stdbool.h>
+	<errno.h>
+
+1521263491 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\commline.h
+	<limits.h>
+
+1522359578 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\datastructs.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<stdarg.h>
+	"datastructs.h"
+
+1521314103 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\datastructs.h
+	<stdbool.h>
+
+1521317139 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\error.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+
+1526863336 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\geralr.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<malloc.h>
+	"common.h"
+	"datastructs.h"
+	"error.h"
+	"mystrings.h"
+	"report.h"
+	"lexan.h"
+	"commline.h"
+	"grammar.h"
+	"diagrams.h"
+	"geraLR.h"
+
+1522531129 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\common.h
+	<limits.h>
+	<float.h>
+	<stdbool.h>
+
+1341271590 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\report.h
+	"common.h"
+
+1521319246 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\lexan.h
+	"regex.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"error.h"
+	"lexan.h"
+
+1521117092 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\regex.h
+	<stddef.h>
+
+1526784490 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\grammar.h
+
+1526863344 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\diagrams.h
+	<stdbool.h>
+
+1524599747 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\geralr.h
+
+1522359578 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\lexan.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<limits.h>
+	"error.h"
+	"lexan.h"
+
+1522533530 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\mystrings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"common.h"
+	"error.h"
+	"mystrings.h"
+
+1522534003 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\mytime.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"common.h"
+	"mytime.h"
+
+1341271590 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\mytime.h
+	<time.h>
+
+1338607718 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\random.c
+	"random.h"
+
+1338223696 c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\random.h
+
+1523385230 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\regex.c
+	<config.h>
+	<sys/types.h>
+	"lisp.h"
+	"buffer.h"
+	"syntax.h"
+	<stdlib.h>
+	<string.h>
+	<strings.h>
+	"regex.h"
+	<ctype.h>
+	<alloca.h>
+	<stdio.h>
+	<assert.h>
+
+1522359579 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\report.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	"error.h"
+	"mytime.h"
+	"mystrings.h"
+	"report.h"
+
+1527621955 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\diagrams.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	<gvc.h>
+	<libconfig.h>
+	"datastructs.h"
+	"error.h"
+	"mystrings.h"
+	"mytime.h"
+	"report.h"
+	"grammar.h"
+	"diagrams.h"
+	"geraLR.h"
+
+1526784483 source:c:\users\eberty\dropbox\documentoscic\semestre7\tcc\geralr_lidas_eberty\geralr-codigo-windows\fonte\grammar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"common.h"
+	"error.h"
+	"lexan.h"
+	"datastructs.h"
+	"grammar.h"
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="geraLR" />
+		<Option pch_mode="2" />
+		<Option compiler="cygwin" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/geraLR" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="cygwin" />
+				<Compiler>
+					<Add option="-ansi" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/geraLR" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="cygwin" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-ansi" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c99" />
+			<Add directory="C:/cygwin64/usr/include/graphviz" />
+		</Compiler>
+		<Linker>
+			<Add option="-lgvc -lcgraph -lcdt -lconfig" />
+			<Add directory="C:/cygwin64/lib" />
+		</Linker>
+		<Unit filename="Fonte/commline.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/commline.h" />
+		<Unit filename="Fonte/common.h" />
+		<Unit filename="Fonte/datastructs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/datastructs.h" />
+		<Unit filename="Fonte/diagrams.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/diagrams.h" />
+		<Unit filename="Fonte/error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/error.h" />
+		<Unit filename="Fonte/geraLR.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/geraLR.h" />
+		<Unit filename="Fonte/grammar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/grammar.h" />
+		<Unit filename="Fonte/lexan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/lexan.h" />
+		<Unit filename="Fonte/mystrings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/mystrings.h" />
+		<Unit filename="Fonte/mytime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/mytime.h" />
+		<Unit filename="Fonte/random.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/random.h" />
+		<Unit filename="Fonte/regex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/regex.h" />
+		<Unit filename="Fonte/report.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fonte/report.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

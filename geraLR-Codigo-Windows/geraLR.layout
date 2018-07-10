@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Release" />
+	<File name="Fonte\regex.c" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="110109" topLine="3417" />
+		</Cursor>
+	</File>
+	<File name="Fonte\commline.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="62613" topLine="2148" />
+		</Cursor>
+	</File>
+	<File name="Fonte\datastructs.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5993" topLine="158" />
+		</Cursor>
+	</File>
+	<File name="Fonte\report.c" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4163" topLine="100" />
+		</Cursor>
+	</File>
+	<File name="Fonte\commline.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1038" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="Fonte\lexan.c" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2501" topLine="63" />
+		</Cursor>
+	</File>
+	<File name="Fonte\mystrings.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="19021" topLine="477" />
+		</Cursor>
+	</File>
+	<File name="Fonte\grammar.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9116" topLine="180" />
+		</Cursor>
+	</File>
+	<File name="Fonte\lexan.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Fonte\mytime.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1815" topLine="37" />
+		</Cursor>
+	</File>
+	<File name="Fonte\datastructs.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="805" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="Fonte\grammar.h" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8628" topLine="328" />
+		</Cursor>
+	</File>
+	<File name="Fonte\geraLR.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3171" topLine="97" />
+		</Cursor>
+	</File>
+	<File name="Fonte\common.h" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2312" topLine="56" />
+		</Cursor>
+	</File>
+	<File name="Fonte\geraLR.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="17566" topLine="498" />
+		</Cursor>
+	</File>
+	<File name="Fonte\diagrams.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="721" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="Fonte\error.c" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2125" topLine="69" />
+		</Cursor>
+	</File>
+	<File name="Fonte\error.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1094" topLine="23" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
